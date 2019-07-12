@@ -38,14 +38,14 @@ public class Test40 {
 		driver.manage().window().maximize();
 	}
 
-	@Given("^Usuario: mveron$")
+	@Given("^Usuario: (.*)$")
 	public void usuario_mveron(String usuario) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.ingresoUser(usuario);
 	}
 
-	@Given("^Pass: Mv(\\d+)$")
-	public void pass_Mv(int arg1, String password) throws Exception {
+	@Given("^Pass: (.*)$")
+	public void pass_Mv(String password) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
 		AltaResDePago.ingresoPass(password);
 	}

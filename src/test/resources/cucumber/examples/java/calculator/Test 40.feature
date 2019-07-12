@@ -21,7 +21,7 @@ Feature: Med 126 - Obligatorios numero 42
     Then Validar pantalla bandeja de entrada
 
     Examples: 
-      | Responsable | usuario | password | descripcion                   | cuit-cuil   | correo             | fechaDeVigencia | fechaInicio |
-      | Empresa     | mveron  | Mv190319 | PONCE CESAR HERNAN            | 20107321048 | Mveron@OpenDev.com | 04/07/2019      | 04/07/2019  |
-      | Empresa     | mveron  | Mv190319 | INSTITUTO MARIA MADRE NUESTRA | 30679250945 | Mveron@OpenDev.com | 04/07/2019      | 03/07/2019  |
-      | Empresa     | mveron  | Mv190319 | BANCO PIANO S.A.              | 30569151763 | Mveron@OpenDev.com | 04/07/2019      | 01/07/2019  |
+      | Responsable | usuario   | password | descripcion                   | cuit-cuil   | correo               | fechaDeVigencia | fechaInicio |
+      | Empresa     | mveron    | Mv190319 | PONCE CESAR HERNAN            | 20107321048 | Mveron@OpenDev.com   | 04/07/2019      | 04/07/2019  |
+      | Empresa     | mponcetta | Mp190319 | INSTITUTO MARIA MADRE NUESTRA | 30679250945 | Mponceta@OpenDev.com | 06/07/2019      | 03/07/2019  |
+      | Empresa     | mciarla   | Mc190319 | BANCO PIANO S.A.              | 30569151763 | Mciarla@OpenDev.com  | 08/07/2019      | 01/07/2019  |
