@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.examples.java.calculator.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 146.84 sec <<< FAILURE!
-Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa  Time elapsed: 6.095 sec  <<< ERROR!
+Tests run: 15, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 187.454 sec <<< FAILURE!
+Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa  Time elapsed: 10.953 sec  <<< ERROR!
 java.lang.NullPointerException
 	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
 	at java.util.regex.Matcher.reset(Matcher.java:309)

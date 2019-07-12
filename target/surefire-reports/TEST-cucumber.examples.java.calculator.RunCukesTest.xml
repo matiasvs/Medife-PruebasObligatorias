@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="0" name="cucumber.examples.java.calculator.RunCukesTest" time="145.703" errors="1" skipped="0">
+<testsuite tests="15" failures="0" name="cucumber.examples.java.calculator.RunCukesTest" time="184.35" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Equipo\medife\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf150400567496572320.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Equipo\medife\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6649561962393135866.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_212\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_212/bin/server;C:/Program Files/Java/jre1.8.0_212/bin;C:/Program Files/Java/jre1.8.0_212/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;%CLASSPATH%;C:\TestNGtestng-6.0.1.jar.;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\;C:\Program Files\apache-maven-3.0.5;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Equipo\Documents;C:\Users\Equipo\Downloads\oc-3.11.98-windows;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\;C:\Program Files\apache-maven-3.0.5\bin;C:\Program Files\Java\jdk1.8.0_212\bin;C:\Users\Equipo\AppData\Local\Programs\Fiddler;C:\Program Files\Docker Toolbox;C:\Users\Equipo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Equipo\AppData\Roaming\npm;C:\Windows\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,10 +61,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="21.083"/>
-  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="19.995"/>
-  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="21.201"/>
-  <testcase classname="Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa" name="Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa" time="6.095">
+  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="21.841"/>
+  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="28.807"/>
+  <testcase classname="Med 126 - Obligatorios 01 - Validar la lista desplegable del combo Tipo de Responsable" name="Comportamiento" time="26.325"/>
+  <testcase classname="Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa" name="Feature: Med 127 - Obligatorios 02 - Validar comportamiento de la pantalla segun seleccion tipo de responsable = Empresa" time="10.953">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
 	at java.util.regex.Matcher.reset(Matcher.java:309)
@@ -116,23 +116,23 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-err>Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 1905
+    <system-err>Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 38190
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1562965983.795][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
-Jul 12, 2019 6:13:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1562967294.290][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 12, 2019 6:34:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="22.185"/>
-  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="25.164"/>
-  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="29.845"/>
-  <testcase classname="Basic Arithmetic" name="Addition" time="0.018"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="31.653"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="33.061"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="31.597"/>
+  <testcase classname="Basic Arithmetic" name="Addition" time="0.017"/>
   <testcase classname="Basic Arithmetic" name="Another Addition" time="0.002"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0.055"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0"/>
-  <testcase classname="Dates with different date formats" name="Determine past date" time="0.054"/>
-  <testcase classname="Shopping" name="Give correct change" time="0.006"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.046"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.004"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.007"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.005"/>
+  <testcase classname="Dates with different date formats" name="Determine past date" time="0.02"/>
+  <testcase classname="Shopping" name="Give correct change" time="0.012"/>
 </testsuite>
