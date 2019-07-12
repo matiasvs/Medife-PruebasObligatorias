@@ -9,7 +9,11 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 278077,
+=======
+              "duration": 252086,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -27,7 +31,11 @@
           {
             "result": {
               "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat cucumber.examples.java.calculator.Steps05.obligatorio_Ingreso_al_sistema_medife(Steps05.java:13)\r\n\tat ✽.Obligatorio 4 Ingreso al sistema medife(cucumber/examples/java/calculator/Test 04.feature:5)\r\n",
+<<<<<<< HEAD
               "duration": 109843318,
+=======
+              "duration": 143359641,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "pending"
             },
             "line": 5,
@@ -68,7 +76,11 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 39451,
+=======
+              "duration": 44261,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -86,7 +98,11 @@
           {
             "result": {
               "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat cucumber.examples.java.calculator.Steps05.obligatorio_Ingreso_al_sistema_medife(Steps05.java:13)\r\n\tat ✽.Obligatorio 5 Ingreso al sistema medife(cucumber/examples/java/calculator/Test 05.feature:5)\r\n",
+<<<<<<< HEAD
               "duration": 340300,
+=======
+              "duration": 386337,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "pending"
             },
             "line": 5,
@@ -127,7 +143,11 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 35281,
+=======
+              "duration": 43382,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -139,6 +159,7 @@
         "name": "Comportamiento",
         "description": "",
         "id": "med-126---obligatorios-numero-42;comportamiento;;2",
+<<<<<<< HEAD
         "after": [
           {
             "result": {
@@ -748,13 +769,21 @@
             }
           }
         ],
+=======
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 15195163897,
               "status": "passed"
+=======
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d75.0.3770.100)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00274.0.0-alpha-2\u0027, revision: \u0027f148142cf8\u0027, time: \u00272019-07-01T20:55:26\u0027\nSystem info: host: \u0027DESKTOP-C97NRF6\u0027, ip: \u002710.5.222.7\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\blender\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54864}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}\nSession ID: 76311a94fd491b7fcbc9dc2dc366bd02\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:884)\r\n\tat cucumber.examples.java.calculator.Test40.ingreso_al_sistema_Sume(Test40.java:38)\r\n\tat ✽.Ingreso al sistema Sume(cucumber/examples/java/calculator/Test 40.feature:4)\r\n",
+              "duration": 4792782539,
+              "status": "failed"
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
             },
             "line": 4,
             "name": "Ingreso al sistema Sume",
@@ -764,6 +793,7 @@
             "keyword": "Given "
           },
           {
+<<<<<<< HEAD
             "result": {
               "duration": 74082033,
               "status": "passed"
@@ -1014,6 +1044,11 @@
               "location": "Test40.validar_pantalla_bandeja_de_entrada()"
             },
             "keyword": "Then "
+=======
+            "line": 5,
+            "name": "Usuario: mveron",
+            "keyword": "And "
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
           }
         ]
       }
@@ -1037,7 +1072,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 283209,
+=======
+              "duration": 289606,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1057,7 +1096,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 27904,
+=======
+              "duration": 36054,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1070,7 +1113,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1807982,
+=======
+              "duration": 733688,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 9,
@@ -1092,7 +1139,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2405190,
+=======
+              "duration": 2659216,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 10,
@@ -1124,7 +1175,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 158443,
+=======
+              "duration": 168839,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1144,7 +1199,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 17641,
+=======
+              "duration": 35175,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1157,7 +1216,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 213609,
+=======
+              "duration": 446427,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 14,
@@ -1179,7 +1242,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 146255,
+=======
+              "duration": 1013328,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 15,
@@ -1211,7 +1278,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 116427,
+=======
+              "duration": 614094,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1231,7 +1302,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 20206,
+=======
+              "duration": 31071,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1244,7 +1319,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 57002586,
+=======
+              "duration": 18840803,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 18,
@@ -1279,7 +1358,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1008390,
+=======
+              "duration": 656889,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 22,
@@ -1297,7 +1380,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 869191,
+=======
+              "duration": 565728,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 23,
@@ -1319,7 +1406,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 183460,
+=======
+              "duration": 230688,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 24,
@@ -1337,7 +1428,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 177366,
+=======
+              "duration": 260293,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 25,
@@ -1369,7 +1464,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 149142,
+=======
+              "duration": 190530,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1389,7 +1488,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 17640,
+=======
+              "duration": 27847,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1402,7 +1505,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 606830,
+=======
+              "duration": 667442,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 18,
@@ -1437,7 +1544,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 117068,
+=======
+              "duration": 220722,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 22,
@@ -1455,7 +1566,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 139841,
+=======
+              "duration": 390440,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 23,
@@ -1477,7 +1592,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 138878,
+=======
+              "duration": 220135,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 24,
@@ -1495,7 +1614,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 173838,
+=======
+              "duration": 303676,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 25,
@@ -1527,7 +1650,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 132143,
+=======
+              "duration": 364353,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1547,7 +1674,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 21168,
+=======
+              "duration": 29312,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1560,7 +1691,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 738973,
+=======
+              "duration": 1110645,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 18,
@@ -1595,7 +1730,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 152990,
+=======
+              "duration": 191996,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 22,
@@ -1613,7 +1752,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 322980,
+=======
+              "duration": 242999,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 23,
@@ -1635,7 +1778,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 160047,
+=======
+              "duration": 171478,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 24,
@@ -1653,7 +1800,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 140802,
+=======
+              "duration": 194927,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 25,
@@ -1685,7 +1836,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 105201,
+=======
+              "duration": 185547,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 5,
@@ -1705,7 +1860,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 22773,
+=======
+              "duration": 23450,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1718,7 +1877,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1621956,
+=======
+              "duration": 611162,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 18,
@@ -1753,7 +1916,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 204308,
+=======
+              "duration": 226292,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 22,
@@ -1771,7 +1938,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 188912,
+=======
+              "duration": 264690,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 23,
@@ -1793,7 +1964,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 135350,
+=======
+              "duration": 216032,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 24,
@@ -1811,7 +1986,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 308547,
+=======
+              "duration": 240361,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 25,
@@ -1861,7 +2040,11 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 42337,
+=======
+              "duration": 46900,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1876,7 +2059,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 25338,
+=======
+              "duration": 21984,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1889,7 +2076,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 787404,
+=======
+              "duration": 472808,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 6,
@@ -1907,7 +2098,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2630987,
+=======
+              "duration": 1880094,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 7,
@@ -1925,7 +2120,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 441331,
+=======
+              "duration": 817228,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 8,
@@ -1961,7 +2160,11 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 217458,
+=======
+              "duration": 43675,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1976,7 +2179,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 18603,
+=======
+              "duration": 26088,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "match": {
@@ -1989,7 +2196,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6226103,
+=======
+              "duration": 4190199,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 4,
@@ -2027,7 +2238,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 187309,
+=======
+              "duration": 385750,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 9,
@@ -2045,7 +2260,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 144651,
+=======
+              "duration": 289606,
+>>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
               "status": "passed"
             },
             "line": 10,
