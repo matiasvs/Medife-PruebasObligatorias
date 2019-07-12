@@ -79,19 +79,13 @@ public class CargaDeDatosFiscalesTarea {
 	
 	// TELEFONO - PopUp - BOTON
 	private By ByConfirmarTelefonoPopUp = By.xpath("//*[@id=\"mat-dialog-3\"]/app-telefono/div[2]/div/button");
-												    //*[@id="mat-dialog-3"]/app-telefono/div[2]/div/button
 	private By ByConfirmarNuevo = By.xpath("//*[@id=\"mat-dialog-4\"]/app-telefono/div[2]/div/button");
-	//private By ByCheckboxTelefono = By.xpath("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]");
 	private By ByModificarTelefono = By.xpath("//*[@id=\'collapseTelefonoData\']/div/div[2]/div/button[2]");
-	
 	private By ByBorrarTelefono = By.xpath("//*[@id=\'collapseTelefonoData\']/div/div[2]/div/button[3]");
 	
 	
 	// BOTONES - Domicilio de facturacion
 	private By ByBtnValidar = By.xpath("//*[@id=\'collapseBillingAdress\']/div[10]/div/button");
-	//private By ByBtnConfirmar = By.xpath("//*[@id=\'collapseBillingAdress\']/div[9]/div[2]/div/button[1]");
-									      //*[@id="collapseBillingAdress"]/div[9]/div[2]/div/button[1]
-	
 	private By ByBtnGuardar = By.xpath("//*[@id=\'collapseBillingAdress\']/div[11]/div/button[2]");
 	private By ByBtnCancelar = By.xpath("//*[@id=\'collapseBillingAdress\']/div[11]/div/button[1]");
 	
@@ -144,22 +138,6 @@ public class CargaDeDatosFiscalesTarea {
 		return null;
 	}
 	
-//	public WebElement ingresoCondicionIVAExento(String condicionIVA) {
-//		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN,Keys.DOWN,Keys.DOWN, Keys.DOWN, Keys.TAB);
-//		return null;
-//	}
-	
-//	public WebElement ingresoCondicionIVAMonotributo(String condicionIVA) {
-//		this.driver.findElement(ByCondicionIVA).sendKeys(Keys.DOWN,Keys.DOWN,Keys.DOWN, Keys.DOWN, Keys.TAB);
-//		return null;
-//	}
-//	public WebElement ingresoCondicionIVA(String condicionIVA) {
-//		this.driver.findElement(ByCondicionIVA).sendKeys(condicionIVA);
-//		Actions action = new Actions(driver);		 
-//		action.sendKeys(Keys.TAB).build().perform();
-//		return null;
-//	} //*[@id="mat-datepicker-2"]/div/mat-month-view/table/tbody/tr[2]/td[5]
-	
 	public void ingresoFechaInicioCondicionIVA(String fechaInicio) {
 		WebDriverWait wait=new WebDriverWait(driver, 420);
 		WebElement guru99seleniumlink28;
@@ -171,30 +149,6 @@ public class CargaDeDatosFiscalesTarea {
 		guru99seleniumlink28.sendKeys(fechaInicio.trim());
 	}
 	
-//	public void ingresoTipoResponsableEmpresa(String tipoResponsable){
-//		WebDriverWait wait=new WebDriverWait(driver, 420);
-//		WebElement guru99seleniumlink30;
-//		guru99seleniumlink30= wait.until(ExpectedConditions.elementToBeClickable(ByTipoResponsable));
-//		boolean tipoResponsables = guru99seleniumlink30.isEnabled();
-//		System.out.println("Tipo forma de pago es visible?: " + tipoResponsables);
-//		guru99seleniumlink30.sendKeys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.TAB);	
-//	}
-	
-//	public void ingresoFechaInicioCondicionIVA() {
-//		WebDriverWait wait=new WebDriverWait(driver, 420);
-//		WebElement guru99seleniumlink2;
-//		guru99seleniumlink2= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\'mat-datepicker-2\']/div/mat-month-view/table/tbody/tr[2]/td[5]")));
-//		guru99seleniumlink2.click();
-//		//guru99seleniumlink2.sendKeys(fechaInicio.trim());
-//	}
-	
-//	public void ingresoFechaInicioCondicionIVA() {
-//		this.driver.findElement(ByFechaInicioCondicionIVA).sendKeys("03/07/2019");
-//	}
-//	public void ingresoFechaInicioCondicionIVA(String fechaInicioCondicionIVA) {
-//		this.driver.findElement(ByFechaInicioCondicionIVA).sendKeys(fechaInicioCondicionIVA.trim());
-//	}
-
 	public WebElement ingresoCondicionIIBB(String condicionIIBB) {
 		//this.driver.findElement(ByCondicionIIBB).sendKeys(Keys.SPACE);
 		this.driver.findElement(ByCondicionIIBB).sendKeys(condicionIIBB);
@@ -215,12 +169,7 @@ public class CargaDeDatosFiscalesTarea {
 		boolean formaDePago = guru99seleniumlink33.isEnabled();
 		System.out.println("Forma de pago es visible?: " + formaDePago);
 		guru99seleniumlink33.sendKeys("Pago");
-		//return null;
 	}
-//	public WebElement ingresoFormaDePagoPresencial() {
-//		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.TAB);
-//		return null;
-//	}
 	
 	public WebElement ingresoFormaDepagoDebitoEnCuenta() {
 		this.driver.findElement(ByFormaDePago).sendKeys(Keys.DOWN, Keys.DOWN, Keys.TAB);
@@ -240,28 +189,16 @@ public class CargaDeDatosFiscalesTarea {
 		this.driver.findElement(ByFechaVencimientoTarjeta).sendKeys(fechaTarjeta.trim());;		
 	}
 	
-	//yTipoDeTarjeta ByTipoDeTarjeta
 	public WebElement tipoDeTarjetaDebito(String tarjetaDebito) {
 		this.driver.findElement(ByTipoDeTarjeta).sendKeys(Keys.DOWN , Keys.TAB);
 		return null;
-	}		
-		
-	// METODOS Adherido factura electr�nica	
-//	public void ingresoAdheridoAFacturaElectronica(String adheridoAFacturaElectronica) {
-//		this.driver.findElement(ByAdheridoAFacturaElectronica).sendKeys(Keys.SPACE);
-//		//*[normalize-space(text()) and normalize-space(.)='Adherido factura electr�nica'])[1]/following::div[4]
-//	}
+	}
 	
 	public void BingresoAdheridoAFacturaElectronica() throws InterruptedException {
 		driver.findElement(By.id("mat-checkbox-2")).click();
 		System.out.println("check22");
 		Thread.sleep(2000);
 	}
-//	public void BingresoAdheridoAFacturaElectronica() throws InterruptedException {
-//		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Adherido factura electr�nica'])[1]/following::div[4]")).click();
-//		System.out.println("check22");
-//		Thread.sleep(2000);
-//	}
 	
 	public void ingresoEmailAdherido(String emailAdherido) {
 		this.driver.findElement(ByEmailAdherido).sendKeys(emailAdherido.trim());
@@ -291,8 +228,7 @@ public class CargaDeDatosFiscalesTarea {
 	public void validarEmailAdherido(String emailAdherido) {
 		boolean emailParaAdherido =  this.driver.findElement(ByEmailAdherido).isEnabled();
 		System.out.println("Email adheriso: " + emailParaAdherido);
-	}
-	
+	}	
 	
 	// METODOS DOMICILIO DE FACTURA
 	public void ingresoProvincia(String provincia) {
@@ -382,15 +318,7 @@ public class CargaDeDatosFiscalesTarea {
 		WebElement guru99seleniumlink;
 		guru99seleniumlink= wait.until(ExpectedConditions.elementToBeClickable(ByNuevoTelefono));
 		guru99seleniumlink.click();		
-		}
-//		this.driver.findElement(ByNuevoTelefono).click();
-//		Thread.sleep(8000);
-//	}
-
-//	public void ingresoNuevoTelefono () throws InterruptedException {
-//		this.driver.findElement(ByNuevoTelefono).click();
-//		Thread.sleep(8000);
-//	}
+	}
 	
 	// METODOS TELEFONO - PopUp
 	public WebElement ingresoTipoDeTelefonoLaboral(String tipoDeTelefono) {
@@ -408,19 +336,7 @@ public class CargaDeDatosFiscalesTarea {
 		boolean tipoDeTelefono = guru99seleniumlink36.isEnabled();
 		System.out.println("Tipo de telefono es visible?: " + tipoDeTelefono);
 		guru99seleniumlink36.sendKeys(Keys.DOWN, Keys.TAB);
-	}	
-//	public WebElement ingresoTipoDeTelefono() throws InterruptedException {
-//		this.driver.findElement(ByTipoDeTelefono).sendKeys(Keys.DOWN, Keys.TAB);
-//		return null;
-//		
-//	}
-//	public WebElement ingresoTipoDeTelefono(String tipoDeTelefono) throws InterruptedException {
-//		this.driver.findElement(ByTipoDeTelefono).sendKeys(tipoDeTelefono);
-//		Actions action = new Actions(driver);
-//		action.sendKeys(Keys.ENTER).build().perform();
-//		Thread.sleep(5000);
-//		return null;
-//	}
+	}
 	
 	public void ingresoPrefijo() {
 		WebDriverWait wait=new WebDriverWait(driver, 420);
@@ -428,18 +344,6 @@ public class CargaDeDatosFiscalesTarea {
 		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByPrefijo));
 		guru99seleniumlink3.sendKeys("11");
 	}
-//	public void ingresoPrefijo(String prefijo) {
-//		WebDriverWait wait=new WebDriverWait(driver, 20);
-//		WebElement guru99seleniumlink3;
-//		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByPrefijo));
-//		guru99seleniumlink3.sendKeys(prefijo);
-//	}
-	
-		//this.driver.findElement(ByPrefijo).sendKeys(prefijo.trim());
-	//}
-//	public void ingresoPrefijo(String prefijo) {
-//		this.driver.findElement(ByPrefijo).sendKeys(prefijo.trim());
-//	}
 	
 	public void ingresoPrefijoNuevo(String prefijo) {
 		this.driver.findElement(ByPrefijo).clear();
@@ -452,9 +356,6 @@ public class CargaDeDatosFiscalesTarea {
 		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByNumeroPopup));
 		guru99seleniumlink3.sendKeys("58236478");
 	}
-//	public void ingresoNumeroPopup(String numeroPopUp) {
-//		this.driver.findElement(ByNumeroPopup).sendKeys(numeroPopUp.trim());
-//	}
 	
 	public void ingresoNumeroPopupNuevo(String numeroPopUp) {
 		this.driver.findElement(ByNumeroPopup).clear();
@@ -465,16 +366,13 @@ public class CargaDeDatosFiscalesTarea {
 		this.driver.findElement(ByNumeroInterno).sendKeys(interno.trim());
 	}
 	
-	// METODOS TELEFONO - PopUp - BOTON  //*[@id="mat-dialog-4"]/app-telefono/div[2]/div/button
+	// METODOS TELEFONO - PopUp - BOTON  
 	public void ingresoConfirmarPopUp() {
 		WebDriverWait wait=new WebDriverWait(driver, 450);
 		WebElement guru99seleniumlink3;
 		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByConfirmarTelefonoPopUp));
 		guru99seleniumlink3.click();
 	}
-//	public void ingresoConfirmarPopUp() {
-//		this.driver.findElement(ByConfirmarTelefonoPopUp).click();
-//	}
 	
 	public void ingresoConfirmarPopUpNuevo() {
 		this.driver.findElement(ByConfirmarNuevo).click();
@@ -492,14 +390,6 @@ public class CargaDeDatosFiscalesTarea {
 		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(By.id("mat-input-29")));
 		guru99seleniumlink3.sendKeys(Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.ENTER);
 	}
-//	public void btnConfirmar2() throws InterruptedException {
-//		this.driver.findElement(By.id("mat-input-29")).sendKeys(Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.ENTER);
-//		Thread.sleep(2000);
-//	}
-//	public void btnConfirmar2() throws InterruptedException {
-//		this.driver.findElement(ByBtnConfirmar).click();
-//		Thread.sleep(2000);
-//	}
 	
 	public void btnGuardar() throws InterruptedException {
 		this.driver.findElement(ByBtnGuardar).click();
@@ -511,42 +401,16 @@ public class CargaDeDatosFiscalesTarea {
 		Thread.sleep(2000);
 	}
 	
-//	public void checkboxTelefono() throws InterruptedException {
-//		WebDriverWait wait=new WebDriverWait(driver, 20);
-//		WebElement guru99seleniumlink5;
-//		guru99seleniumlink5= wait.until(ExpectedConditions.elementIfVisible(//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]));
-//		guru99seleniumlink5.click()));
-//	}
 	public void checkboxTelefono() throws InterruptedException {
 		Thread.sleep(3000);
-		//driver.findElement(By.id("mat-checkbox-3")).sendKeys(Keys.TAB);
-		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]")).click();
 		driver.findElement(By.xpath("//*[@id=\"mat-checkbox-13\"]")).click();
-		
-		//System.out.println("check22");
 		Thread.sleep(3000);
 	}
-//	public void checkboxTelefono() throws InterruptedException {
-//		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Interno'])[1]/following::div[1]")).click();
-//		//System.out.println("check22");
-//		Thread.sleep(3000);  
-//	}
-	
-//	public void btnModificar() throws InterruptedException {
-//		WebDriverWait wait=new WebDriverWait(driver, 20);
-//		WebElement guru99seleniumlink5;
-//		guru99seleniumlink5= wait.until(ExpectedConditions.elementToBeClickable(ByModificarTelefono));
-//		guru99seleniumlink5.click();
-//		}
 	
 	public void btnModificar() throws InterruptedException {
 		this.driver.findElement(ByModificarTelefono).click();
 		Thread.sleep(3000);
 	}
-//	public void btnModificar() throws InterruptedException {
-//		this.driver.findElement(ByModificarTelefono).click();
-//		Thread.sleep(3000);
-//	}
 	
 	public void btnBorrarTelefono() throws InterruptedException {
 		this.driver.findElement(ByBorrarTelefono).click();
@@ -556,10 +420,7 @@ public class CargaDeDatosFiscalesTarea {
 	// VALIDAR MENSAJES //	
 	public void checkPantallaDatosFiscales() {
 		String stringDatosFiscales2 = this.driver.findElement(By.xpath("/html/body/app-root/app-responsable-pago-datos-fiscales/mat-toolbar/span[1]")).getText();
-		//html/body/app-root/app-responsable-pago/mat-toolbar/span[1]
 		System.out.println("Se muestra el mensaje: "+stringDatosFiscales2);
-		//assertEquals(stringDatosFiscales2, "Responsable de pago guardado correctamente", "No se encontro el mensaje de Responsable de pago guardado: ");
-		//assertEquals(stringDatosFiscales2, "Alta de Responsable de Pago - Carga de Datos Fiscales", "No se encontro el mensaje de Responsable de pago guardado: ");
 	}
 	
 	public void checkBtnOnlyValidar() {
@@ -567,10 +428,6 @@ public class CargaDeDatosFiscalesTarea {
 		System.out.println("Se muestra el mensaje: "+stringValidar);
 		//assertEquals(stringValidar, "", "No se encontro el mensaje para el boton validar: ");
 	}
-	
-	
-	
-	
 	
 	// Validar campos telefono
 	public void checkTelefonoTipo() {
@@ -595,8 +452,4 @@ public class CargaDeDatosFiscalesTarea {
 		boolean StringInterno = this.driver.findElement(By.id("mat-form-field-label-75")).isDisplayed();
 		System.out.println("El campo Interno es visible: " +StringInterno);
 	}
-	
-	
-	
-	
 }

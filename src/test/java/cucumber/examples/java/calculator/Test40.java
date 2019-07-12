@@ -39,15 +39,15 @@ public class Test40 {
 	}
 
 	@Given("^Usuario: mveron$")
-	public void usuario_mveron() throws Exception {
+	public void usuario_mveron(String usuario) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
-		AltaResDePago.ingresoUser();
+		AltaResDePago.ingresoUser(usuario);
 	}
 
 	@Given("^Pass: Mv(\\d+)$")
-	public void pass_Mv(int arg1) throws Exception {
+	public void pass_Mv(int arg1, String password) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
-		AltaResDePago.ingresoPass();
+		AltaResDePago.ingresoPass(password);
 	}
 
 	@Given("^Seleccion alta de responsable de pago$")
@@ -58,7 +58,7 @@ public class Test40 {
 		AltaResDePago.ingresoInicio();
 		AltaResDePago.ingresoClientes();
 		//driver.get("http://sumedesa.medife.com/sume/page/plugin/process/edi/ediBuscar.jsf");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		//driver.manage().timeouts().pageLoadTimeout(450, TimeUnit.SECONDS);
 		driver.get("http://sumedesa.medife.com/sume/page/plugin/process/external/pg_external_content.jsf");
 		AltaResDePago.ingresoResponsableDePago();

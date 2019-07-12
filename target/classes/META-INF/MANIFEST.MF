@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: Equipo
-=======
-Built-By: blender
->>>>>>> a6fa1e052b03a44ed0926ff98785ea70e1ca7174
 Build-Jdk: 1.8.0_212
 Created-By: Maven Integration for Eclipse
 

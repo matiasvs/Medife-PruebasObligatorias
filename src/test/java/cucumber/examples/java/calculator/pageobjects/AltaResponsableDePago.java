@@ -21,16 +21,14 @@ public class AltaResponsableDePago {
 	private By ByInicio = By.xpath("//*[@id=\'menuAccordionPanel\']/h3[1]");
 	private By ByClientes = By.id("menuAccordionPanel:initTree:1:j_idt90");
 	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_2:j_idt89\']");
-	//private By ByLink = By.xpath("//*[@id=\'chargePaymentManager\']/mat-toolbar");
+	
 	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]");
-	// By ByLupa2 = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]");
 	private By ByDescrip = By.id("entityCuitId");
 
 	private By ByTipoResponsable = By.id("managerTypeId");
 	private By ByTipoResponsableNuevo = By.xpath("//*[@id=\'managerTypeId\']");
 	private By ByNombreApellido = By.id("fiscalNameId");
 	private By ByEstado = By.id("stateId");	
-	//private By estadoby =	By.xpath("driver.findElement(By.xpath(\"(.//*[normalize-space(text()) and normalize-space(.)='ACTIVO'])[1]/following::span[1]\")).click();");
 	private By ByMail = By.id("emailId");
 	private By ByCuitCuil = By.id("cuitId");
 	private By ByFechaBaja = By.id("lowDateId");
@@ -39,26 +37,24 @@ public class AltaResponsableDePago {
 	private By ByCancelar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[6]/div/button[1]");
 	private By ByGuardar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[5]/div[2]/div/button[2]");
 	private By ByConfirmar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[5]/div[2]/div/button[1]");
-	//private By ByBusquedaEntidad2 = By.xpath("//*[@id=\'mat-dialog-2\']/app-entidad/div/div/div[5]/div/button");
-	
-	//private By byMensajeCampoRequerido = By.xpath("/html/body/app-root/notifier-container/ul/li[1]/notifier-notification/p");
 	
 	// CONSTRUCTOR //
 	public AltaResponsableDePago (WebDriver driver) {
 		this.driver = driver;
 	}
+	
 	//LOGIN
-	public void ingresoUser(){
+	public void ingresoUser(String usuario){
 		WebDriverWait wait=new WebDriverWait(driver, 40);
 		WebElement guru99seleniumlink1;
 		guru99seleniumlink1= wait.until(ExpectedConditions.elementToBeClickable(ByUser));
-		guru99seleniumlink1.sendKeys("mveron");
+		guru99seleniumlink1.sendKeys(usuario.trim());
 	}
-	public void ingresoPass(){
+	public void ingresoPass(String password){
 		WebDriverWait wait=new WebDriverWait(driver, 40);
 		WebElement guru99seleniumlink2;
 		guru99seleniumlink2= wait.until(ExpectedConditions.elementToBeClickable(ByPass));
-		guru99seleniumlink2.sendKeys("Mv190319");
+		guru99seleniumlink2.sendKeys(password.trim());
 	}
 	public void ingresoConfirmar(){
 		this.driver.findElement(ByConfirmarLogin).click();
@@ -75,6 +71,7 @@ public class AltaResponsableDePago {
 		
 	// METODOS //
 	//public void
+	
 	public Object sss() {
 		this.driver.findElement(ByTipoResponsableNuevo);
 		Actions action = new Actions(driver);		 
@@ -90,9 +87,12 @@ public class AltaResponsableDePago {
 		System.out.println("Tipo forma de pago es visible?: " + tipoResponsables);
 		guru99seleniumlink30.sendKeys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.TAB);	
 	}
-//	public void ingresoTipoResponsableEmpresa(String tipoResponsable){
-//		this.driver.findElement(ByTipoResponsable).sendKeys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.TAB);		
-//	}
+	public WebElement ingresoTipoResponsableABC(String tipoResponsable){
+		this.driver.findElement(ByTipoResponsableNuevo).sendKeys(tipoResponsable);
+		Actions action = new Actions(driver);		 
+		action.sendKeys(Keys.TAB).build().perform();
+		return null;
+	}
 	
 	public WebElement ingresoTipoResponsable(String tipoResponsable){
 		WebDriverWait wait=new WebDriverWait(driver, 20);
