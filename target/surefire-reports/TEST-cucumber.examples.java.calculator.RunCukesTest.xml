@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="cucumber.examples.java.calculator.RunCukesTest" time="19.15" errors="3" skipped="0">
+<testsuite tests="13" failures="0" name="cucumber.examples.java.calculator.RunCukesTest" time="124.512" errors="2" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
     <property name="java.vm.version" value="25.212-b10"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\blender\Documents\Jmeter\Demo-Medife-master ss\Demo-Medife-master"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Equipo\Documents\Selenium\Medife\Demo-Medife-pro\Demo-Medife-master"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="MX"/>
+    <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\blender\Documents\Jmeter\Demo-Medife-master ss\Demo-Medife-master"/>
+    <property name="user.dir" value="C:\Users\Equipo\Documents\Selenium\Medife\Demo-Medife-pro\Demo-Medife-master"/>
     <property name="java.runtime.version" value="1.8.0_212-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\blender\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Equipo\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\blender\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3430702690081721274.tmp"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\Equipo\medife\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5028154335499867567.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_212\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_212/bin/server;C:/Program Files/Java/jre1.8.0_212/bin;C:/Program Files/Java/jre1.8.0_212/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\blender\AppData\Local\Microsoft\WindowsApps;C:\Users\blender\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_212\bin;C:\Users\blender\AppData\Roaming\npm;C:\adb;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\blender\AppData\Local\Microsoft\WindowsApps;C:\Users\blender\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_212\bin;C:\Users\blender\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\bin;;;C:\Users\blender\Desktop;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_212\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_212/bin/server;C:/Program Files/Java/jre1.8.0_212/bin;C:/Program Files/Java/jre1.8.0_212/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;%CLASSPATH%;C:\TestNGtestng-6.0.1.jar.;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\;C:\Program Files\apache-maven-3.0.5;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Equipo\Documents;C:\Users\Equipo\Downloads\oc-3.11.98-windows;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Equipo\AppData\Local\Programs\Python\Python37\;C:\Program Files\apache-maven-3.0.5\bin;C:\Program Files\Java\jdk1.8.0_212\bin;C:\Users\Equipo\AppData\Local\Programs\Fiddler;C:\Program Files\Docker Toolbox;C:\Users\Equipo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Equipo\AppData\Roaming\npm;C:\Windows\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\blender"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Equipo"/>
     <property name="user.timezone" value="America/Buenos_Aires"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="blender"/>
-    <property name="java.class.path" value="C:\Users\blender\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.11.0.20190220-2117\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="Equipo"/>
+    <property name="java.class.path" value="C:\Users\Equipo\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.11.0.20190220-2117\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_212\jre"/>
@@ -50,10 +50,10 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_212"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_212\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\blender\Documents\Jmeter\Demo-Medife-master ss\Demo-Medife-master\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\Equipo\Documents\Selenium\Medife\Demo-Medife-pro\Demo-Medife-master\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Feature: Med 146 - Obligatorios 04 - Segun criterio de búsqueda Descripción" name="Feature: Med 146 - Obligatorios 04 - Segun criterio de búsqueda Descripción" time="0.154">
+  <testcase classname="Feature: Med 146 - Obligatorios 04 - Segun criterio de búsqueda Descripción" name="Feature: Med 146 - Obligatorios 04 - Segun criterio de búsqueda Descripción" time="0.121">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
 	at java.util.regex.Matcher.reset(Matcher.java:309)
@@ -114,7 +114,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="Feature: Med 147 - Obligatorios 05 - Validar Funcionamiento de la Pantalla de" name="Feature: Med 147 - Obligatorios 05 - Validar Funcionamiento de la Pantalla de" time="0.012">
+  <testcase classname="Feature: Med 147 - Obligatorios 05 - Validar Funcionamiento de la Pantalla de" name="Feature: Med 147 - Obligatorios 05 - Validar Funcionamiento de la Pantalla de" time="0.009">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
 	at java.util.regex.Matcher.reset(Matcher.java:309)
@@ -167,75 +167,15 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="Feature: Med 126 - Obligatorios numero 42" name="Feature: Med 126 - Obligatorios numero 42" time="18.829">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
-	at java.util.regex.Matcher.reset(Matcher.java:309)
-	at java.util.regex.Matcher.&lt;init&gt;(Matcher.java:229)
-	at java.util.regex.Pattern.matcher(Pattern.java:1093)
-	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
-	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
-	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
-	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
-	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createResultMap(ExtentCucumberAdapter.java:401)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestStepFinished(ExtentCucumberAdapter.java:146)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$3(ExtentCucumberAdapter.java:143)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$4.receive(ExtentCucumberAdapter.java:85)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$4.receive(ExtentCucumberAdapter.java:1)
-	at cucumber.runner.EventBus.send(EventBus.java:28)
-	at cucumber.api.TestStep.run(TestStep.java:90)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>Se muestra la pantalla Alta de responsable de pago
-</system-out>
-    <system-err>Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 12682
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1562903301.793][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
-Jul 12, 2019 12:48:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1562903314.320][WARNING]: Timed out connecting to Chrome, retrying...
-</system-err>
-  </testcase>
-  <testcase classname="Basic Arithmetic" name="Addition" time="0.017"/>
-  <testcase classname="Basic Arithmetic" name="Another Addition" time="0.005"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0.029"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0.064"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="50.007"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="39.261"/>
+  <testcase classname="Med 126 - Obligatorios numero 42" name="Comportamiento" time="34.972"/>
+  <testcase classname="Basic Arithmetic" name="Addition" time="0.05"/>
+  <testcase classname="Basic Arithmetic" name="Another Addition" time="0"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.062"/>
   <testcase classname="Basic Arithmetic" name="Many additions" time="0.011"/>
-  <testcase classname="Basic Arithmetic" name="Many additions" time="0.012"/>
-  <testcase classname="Dates with different date formats" name="Determine past date" time="0.005"/>
-  <testcase classname="Shopping" name="Give correct change" time="0.012"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0"/>
+  <testcase classname="Basic Arithmetic" name="Many additions" time="0.009"/>
+  <testcase classname="Dates with different date formats" name="Determine past date" time="0.002"/>
+  <testcase classname="Shopping" name="Give correct change" time="0.008"/>
 </testsuite>

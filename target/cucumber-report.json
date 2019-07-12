@@ -9,7 +9,7 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
-              "duration": 252086,
+              "duration": 278077,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
           {
             "result": {
               "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat cucumber.examples.java.calculator.Steps05.obligatorio_Ingreso_al_sistema_medife(Steps05.java:13)\r\n\tat ✽.Obligatorio 4 Ingreso al sistema medife(cucumber/examples/java/calculator/Test 04.feature:5)\r\n",
-              "duration": 143359641,
+              "duration": 109843318,
               "status": "pending"
             },
             "line": 5,
@@ -68,7 +68,7 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
-              "duration": 44261,
+              "duration": 39451,
               "status": "passed"
             },
             "match": {
@@ -86,7 +86,7 @@
           {
             "result": {
               "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat cucumber.examples.java.calculator.Steps05.obligatorio_Ingreso_al_sistema_medife(Steps05.java:13)\r\n\tat ✽.Obligatorio 5 Ingreso al sistema medife(cucumber/examples/java/calculator/Test 05.feature:5)\r\n",
-              "duration": 386337,
+              "duration": 340300,
               "status": "pending"
             },
             "line": 5,
@@ -127,7 +127,7 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
-              "duration": 43382,
+              "duration": 35281,
               "status": "passed"
             },
             "match": {
@@ -139,14 +139,24 @@
         "name": "Comportamiento",
         "description": "",
         "id": "med-126---obligatorios-numero-42;comportamiento;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 56129,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.after(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d75.0.3770.100)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00274.0.0-alpha-2\u0027, revision: \u0027f148142cf8\u0027, time: \u00272019-07-01T20:55:26\u0027\nSystem info: host: \u0027DESKTOP-C97NRF6\u0027, ip: \u002710.5.222.7\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\blender\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54864}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}\nSession ID: 76311a94fd491b7fcbc9dc2dc366bd02\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:884)\r\n\tat cucumber.examples.java.calculator.Test40.ingreso_al_sistema_Sume(Test40.java:38)\r\n\tat ✽.Ingreso al sistema Sume(cucumber/examples/java/calculator/Test 40.feature:4)\r\n",
-              "duration": 4792782539,
-              "status": "failed"
+              "duration": 20071406143,
+              "status": "passed"
             },
             "line": 4,
             "name": "Ingreso al sistema Sume",
@@ -156,9 +166,854 @@
             "keyword": "Given "
           },
           {
+            "result": {
+              "duration": 327877208,
+              "status": "passed"
+            },
             "line": 5,
             "name": "Usuario: mveron",
+            "match": {
+              "location": "Test40.usuario_mveron()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91655412,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Pass: Mv190319",
+            "match": {
+              "arguments": [
+                {
+                  "val": "190319",
+                  "offset": 8
+                }
+              ],
+              "location": "Test40.pass_Mv(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16668736796,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Seleccion alta de responsable de pago",
+            "match": {
+              "location": "Test40.seleccion_alta_de_responsable_de_pago()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5701616279,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Tipo de responsable Empresa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Empresa",
+                  "offset": 20
+                }
+              ],
+              "location": "Test40.tipo_de_responsable_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249622736,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Busqueda de entidad",
+            "match": {
+              "location": "Test40.busqueda_de_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 254596049,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Ingreso de cuit - Cuil 20107321048",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20107321048",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_cuit_Cuil(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 853738854,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Ingreso de descripcion PONCE CESAR HERNAN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PONCE CESAR HERNAN",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_descripcion_BAZAR_AVENIDA(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2538606362,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Seleccionar resultado y confimar entidad",
+            "match": {
+              "location": "Test40.seleccionar_resultado_y_confimar_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 278797412,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Ingreso de fecha de vigencia 04/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_de_fecha_de_vigencia(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214972797,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Ingreso de correo Mveron@OpenDev.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mveron@OpenDev.com",
+                  "offset": 18
+                }
+              ],
+              "location": "Test40.ingreso_de_correo_Mveron_OpenDevSolutions_com(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163459586,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Seleccion boton confimar",
+            "match": {
+              "location": "Test40.seleccion_boton_confimar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50032699,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validacion ingreso a la pantalla de datos fiscales",
+            "match": {
+              "location": "Test40.validacion_ingreso_a_la_pantalla_de_datos_fiscales()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1217813224,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Ingreso fecha datos fiscales 04/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_fecha_datos_fiscales(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205438635,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Seleccion Tipo de pago \"Pago presencial\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pago presencial\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.seleccion_Tipo_de_pago(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1073993510,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Ingresar nuevo telefono",
+            "match": {
+              "location": "Test40.ingresar_nuevo_telefono()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30097108,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selecionar confimar datos fisacales",
+            "match": {
+              "location": "Test40.selecionar_confimar_datos_fisacales()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286095,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validar pantalla bandeja de entrada",
+            "match": {
+              "location": "Test40.validar_pantalla_bandeja_de_entrada()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "output": [
+              "Runs before scenarios *not* tagged with @foo"
+            ],
+            "result": {
+              "duration": 49072,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Comportamiento",
+        "description": "",
+        "id": "med-126---obligatorios-numero-42;comportamiento;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 26942,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16461699618,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Ingreso al sistema Sume",
+            "match": {
+              "location": "Test40.ingreso_al_sistema_Sume()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 110097340,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Usuario: mveron",
+            "match": {
+              "location": "Test40.usuario_mveron()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70284855,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Pass: Mv190319",
+            "match": {
+              "arguments": [
+                {
+                  "val": "190319",
+                  "offset": 8
+                }
+              ],
+              "location": "Test40.pass_Mv(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12020724598,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Seleccion alta de responsable de pago",
+            "match": {
+              "location": "Test40.seleccion_alta_de_responsable_de_pago()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4060609569,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Tipo de responsable Empresa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Empresa",
+                  "offset": 20
+                }
+              ],
+              "location": "Test40.tipo_de_responsable_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259051055,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Busqueda de entidad",
+            "match": {
+              "location": "Test40.busqueda_de_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261469716,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Ingreso de cuit - Cuil 30679250945",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30679250945",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_cuit_Cuil(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 490094909,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Ingreso de descripcion INSTITUTO MARIA MADRE NUESTRA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "INSTITUTO MARIA MADRE NUESTRA",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_descripcion_BAZAR_AVENIDA(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2423513899,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Seleccionar resultado y confimar entidad",
+            "match": {
+              "location": "Test40.seleccionar_resultado_y_confimar_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280985464,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Ingreso de fecha de vigencia 04/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_de_fecha_de_vigencia(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230155098,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Ingreso de correo Mveron@OpenDev.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mveron@OpenDev.com",
+                  "offset": 18
+                }
+              ],
+              "location": "Test40.ingreso_de_correo_Mveron_OpenDevSolutions_com(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164548160,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Seleccion boton confimar",
+            "match": {
+              "location": "Test40.seleccion_boton_confimar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203346,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validacion ingreso a la pantalla de datos fiscales",
+            "match": {
+              "location": "Test40.validacion_ingreso_a_la_pantalla_de_datos_fiscales()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1282719356,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Ingreso fecha datos fiscales 03/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "03/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_fecha_datos_fiscales(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129156041,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Seleccion Tipo de pago \"Pago presencial\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pago presencial\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.seleccion_Tipo_de_pago(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 972390831,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Ingresar nuevo telefono",
+            "match": {
+              "location": "Test40.ingresar_nuevo_telefono()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40109486,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selecionar confimar datos fisacales",
+            "match": {
+              "location": "Test40.selecionar_confimar_datos_fisacales()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163254,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validar pantalla bandeja de entrada",
+            "match": {
+              "location": "Test40.validar_pantalla_bandeja_de_entrada()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "output": [
+              "Runs before scenarios *not* tagged with @foo"
+            ],
+            "result": {
+              "duration": 38809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Comportamiento",
+        "description": "",
+        "id": "med-126---obligatorios-numero-42;comportamiento;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 28866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15195163897,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Ingreso al sistema Sume",
+            "match": {
+              "location": "Test40.ingreso_al_sistema_Sume()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74082033,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Usuario: mveron",
+            "match": {
+              "location": "Test40.usuario_mveron()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70508086,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Pass: Mv190319",
+            "match": {
+              "arguments": [
+                {
+                  "val": "190319",
+                  "offset": 8
+                }
+              ],
+              "location": "Test40.pass_Mv(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9687114898,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Seleccion alta de responsable de pago",
+            "match": {
+              "location": "Test40.seleccion_alta_de_responsable_de_pago()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3290849341,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Tipo de responsable Empresa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Empresa",
+                  "offset": 20
+                }
+              ],
+              "location": "Test40.tipo_de_responsable_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 283789006,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Busqueda de entidad",
+            "match": {
+              "location": "Test40.busqueda_de_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 342434717,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Ingreso de cuit - Cuil 30569151763",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30569151763",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_cuit_Cuil(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 365673233,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Ingreso de descripcion BANCO PIANO S.A.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BANCO PIANO S.A.",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.ingreso_de_descripcion_BAZAR_AVENIDA(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2378374651,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Seleccionar resultado y confimar entidad",
+            "match": {
+              "location": "Test40.seleccionar_resultado_y_confimar_entidad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 299283703,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Ingreso de fecha de vigencia 04/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_de_fecha_de_vigencia(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224768999,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Ingreso de correo Mveron@OpenDev.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mveron@OpenDev.com",
+                  "offset": 18
+                }
+              ],
+              "location": "Test40.ingreso_de_correo_Mveron_OpenDevSolutions_com(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149538736,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Seleccion boton confimar",
+            "match": {
+              "location": "Test40.seleccion_boton_confimar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 176725,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validacion ingreso a la pantalla de datos fiscales",
+            "match": {
+              "location": "Test40.validacion_ingreso_a_la_pantalla_de_datos_fiscales()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1319116337,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Ingreso fecha datos fiscales 01/07/2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01/07/2019",
+                  "offset": 29
+                }
+              ],
+              "location": "Test40.ingreso_fecha_datos_fiscales(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148882512,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Seleccion Tipo de pago \"Pago presencial\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pago presencial\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Test40.seleccion_Tipo_de_pago(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1084217252,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Ingresar nuevo telefono",
+            "match": {
+              "location": "Test40.ingresar_nuevo_telefono()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47541873,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selecionar confimar datos fisacales",
+            "match": {
+              "location": "Test40.selecionar_confimar_datos_fisacales()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171593,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validar pantalla bandeja de entrada",
+            "match": {
+              "location": "Test40.validar_pantalla_bandeja_de_entrada()"
+            },
+            "keyword": "Then "
           }
         ]
       }
@@ -182,7 +1037,7 @@
         "steps": [
           {
             "result": {
-              "duration": 289606,
+              "duration": 283209,
               "status": "passed"
             },
             "line": 5,
@@ -202,7 +1057,7 @@
         "after": [
           {
             "result": {
-              "duration": 36054,
+              "duration": 27904,
               "status": "passed"
             },
             "match": {
@@ -215,7 +1070,7 @@
         "steps": [
           {
             "result": {
-              "duration": 733688,
+              "duration": 1807982,
               "status": "passed"
             },
             "line": 9,
@@ -237,7 +1092,7 @@
           },
           {
             "result": {
-              "duration": 2659216,
+              "duration": 2405190,
               "status": "passed"
             },
             "line": 10,
@@ -269,7 +1124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 168839,
+              "duration": 158443,
               "status": "passed"
             },
             "line": 5,
@@ -289,7 +1144,7 @@
         "after": [
           {
             "result": {
-              "duration": 35175,
+              "duration": 17641,
               "status": "passed"
             },
             "match": {
@@ -302,7 +1157,7 @@
         "steps": [
           {
             "result": {
-              "duration": 446427,
+              "duration": 213609,
               "status": "passed"
             },
             "line": 14,
@@ -324,7 +1179,7 @@
           },
           {
             "result": {
-              "duration": 1013328,
+              "duration": 146255,
               "status": "passed"
             },
             "line": 15,
@@ -356,7 +1211,7 @@
         "steps": [
           {
             "result": {
-              "duration": 614094,
+              "duration": 116427,
               "status": "passed"
             },
             "line": 5,
@@ -376,7 +1231,7 @@
         "after": [
           {
             "result": {
-              "duration": 31071,
+              "duration": 20206,
               "status": "passed"
             },
             "match": {
@@ -389,7 +1244,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18840803,
+              "duration": 57002586,
               "status": "passed"
             },
             "line": 18,
@@ -424,7 +1279,7 @@
           },
           {
             "result": {
-              "duration": 656889,
+              "duration": 1008390,
               "status": "passed"
             },
             "line": 22,
@@ -442,7 +1297,7 @@
           },
           {
             "result": {
-              "duration": 565728,
+              "duration": 869191,
               "status": "passed"
             },
             "line": 23,
@@ -464,7 +1319,7 @@
           },
           {
             "result": {
-              "duration": 230688,
+              "duration": 183460,
               "status": "passed"
             },
             "line": 24,
@@ -482,7 +1337,7 @@
           },
           {
             "result": {
-              "duration": 260293,
+              "duration": 177366,
               "status": "passed"
             },
             "line": 25,
@@ -514,7 +1369,7 @@
         "steps": [
           {
             "result": {
-              "duration": 190530,
+              "duration": 149142,
               "status": "passed"
             },
             "line": 5,
@@ -534,7 +1389,7 @@
         "after": [
           {
             "result": {
-              "duration": 27847,
+              "duration": 17640,
               "status": "passed"
             },
             "match": {
@@ -547,7 +1402,7 @@
         "steps": [
           {
             "result": {
-              "duration": 667442,
+              "duration": 606830,
               "status": "passed"
             },
             "line": 18,
@@ -582,7 +1437,7 @@
           },
           {
             "result": {
-              "duration": 220722,
+              "duration": 117068,
               "status": "passed"
             },
             "line": 22,
@@ -600,7 +1455,7 @@
           },
           {
             "result": {
-              "duration": 390440,
+              "duration": 139841,
               "status": "passed"
             },
             "line": 23,
@@ -622,7 +1477,7 @@
           },
           {
             "result": {
-              "duration": 220135,
+              "duration": 138878,
               "status": "passed"
             },
             "line": 24,
@@ -640,7 +1495,7 @@
           },
           {
             "result": {
-              "duration": 303676,
+              "duration": 173838,
               "status": "passed"
             },
             "line": 25,
@@ -672,7 +1527,7 @@
         "steps": [
           {
             "result": {
-              "duration": 364353,
+              "duration": 132143,
               "status": "passed"
             },
             "line": 5,
@@ -692,7 +1547,7 @@
         "after": [
           {
             "result": {
-              "duration": 29312,
+              "duration": 21168,
               "status": "passed"
             },
             "match": {
@@ -705,7 +1560,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1110645,
+              "duration": 738973,
               "status": "passed"
             },
             "line": 18,
@@ -740,7 +1595,7 @@
           },
           {
             "result": {
-              "duration": 191996,
+              "duration": 152990,
               "status": "passed"
             },
             "line": 22,
@@ -758,7 +1613,7 @@
           },
           {
             "result": {
-              "duration": 242999,
+              "duration": 322980,
               "status": "passed"
             },
             "line": 23,
@@ -780,7 +1635,7 @@
           },
           {
             "result": {
-              "duration": 171478,
+              "duration": 160047,
               "status": "passed"
             },
             "line": 24,
@@ -798,7 +1653,7 @@
           },
           {
             "result": {
-              "duration": 194927,
+              "duration": 140802,
               "status": "passed"
             },
             "line": 25,
@@ -830,7 +1685,7 @@
         "steps": [
           {
             "result": {
-              "duration": 185547,
+              "duration": 105201,
               "status": "passed"
             },
             "line": 5,
@@ -850,7 +1705,7 @@
         "after": [
           {
             "result": {
-              "duration": 23450,
+              "duration": 22773,
               "status": "passed"
             },
             "match": {
@@ -863,7 +1718,7 @@
         "steps": [
           {
             "result": {
-              "duration": 611162,
+              "duration": 1621956,
               "status": "passed"
             },
             "line": 18,
@@ -898,7 +1753,7 @@
           },
           {
             "result": {
-              "duration": 226292,
+              "duration": 204308,
               "status": "passed"
             },
             "line": 22,
@@ -916,7 +1771,7 @@
           },
           {
             "result": {
-              "duration": 264690,
+              "duration": 188912,
               "status": "passed"
             },
             "line": 23,
@@ -938,7 +1793,7 @@
           },
           {
             "result": {
-              "duration": 216032,
+              "duration": 135350,
               "status": "passed"
             },
             "line": 24,
@@ -956,7 +1811,7 @@
           },
           {
             "result": {
-              "duration": 240361,
+              "duration": 308547,
               "status": "passed"
             },
             "line": 25,
@@ -1006,7 +1861,7 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
-              "duration": 46900,
+              "duration": 42337,
               "status": "passed"
             },
             "match": {
@@ -1021,7 +1876,7 @@
         "after": [
           {
             "result": {
-              "duration": 21984,
+              "duration": 25338,
               "status": "passed"
             },
             "match": {
@@ -1034,7 +1889,7 @@
         "steps": [
           {
             "result": {
-              "duration": 472808,
+              "duration": 787404,
               "status": "passed"
             },
             "line": 6,
@@ -1052,7 +1907,7 @@
           },
           {
             "result": {
-              "duration": 1880094,
+              "duration": 2630987,
               "status": "passed"
             },
             "line": 7,
@@ -1070,7 +1925,7 @@
           },
           {
             "result": {
-              "duration": 817228,
+              "duration": 441331,
               "status": "passed"
             },
             "line": 8,
@@ -1106,7 +1961,7 @@
               "Runs before scenarios *not* tagged with @foo"
             ],
             "result": {
-              "duration": 43675,
+              "duration": 217458,
               "status": "passed"
             },
             "match": {
@@ -1121,7 +1976,7 @@
         "after": [
           {
             "result": {
-              "duration": 26088,
+              "duration": 18603,
               "status": "passed"
             },
             "match": {
@@ -1134,7 +1989,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4190199,
+              "duration": 6226103,
               "status": "passed"
             },
             "line": 4,
@@ -1172,7 +2027,7 @@
           },
           {
             "result": {
-              "duration": 385750,
+              "duration": 187309,
               "status": "passed"
             },
             "line": 9,
@@ -1190,7 +2045,7 @@
           },
           {
             "result": {
-              "duration": 289606,
+              "duration": 144651,
               "status": "passed"
             },
             "line": 10,
