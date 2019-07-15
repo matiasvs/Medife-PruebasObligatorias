@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
 import utils.PropertyManager;
@@ -57,8 +59,28 @@ public class Base {
 	}
 	
 	public void type(By locator, String inputText) {
-		driver.findElement(locator).sendKeys(inputText);
+		WebDriverWait wait2=new WebDriverWait(driver, 300);
+		WebElement types;
+		types= wait2.until(ExpectedConditions.elementToBeClickable(locator));
+		types.click();
+		if (isDisplayed(locator)) {
+			types.clear();
+			types.sendKeys(inputText.trim());
+			String value = types.getText();
+			if (value == inputText) {
+				System.out.println("el valor coincide: " + value);
+			}
+		}		
 	}
+//	public void ingresoPass(String password){
+//		WebDriverWait wait2=new WebDriverWait(driver, 300);
+//		WebElement pass;
+//		pass= wait2
+//				.until(ExpectedConditions
+//						.elementToBeClickable(ByPass));
+//		pass.clear();
+//		pass.sendKeys(password.trim());
+//	}
 	
 	public void click(By locator) {
 		driver.findElement(locator).click();
@@ -67,7 +89,7 @@ public class Base {
 	public Boolean isDisplayed(By locator) {
 		try {
 			return driver.findElement(locator).isDisplayed();
-		}	catch (org.openqa.selenium.NoSuchElementException exception) {
+		}	catch (org.openqa.selenium.NoSuchElementException e) {
 				return false;
 		}
 	}

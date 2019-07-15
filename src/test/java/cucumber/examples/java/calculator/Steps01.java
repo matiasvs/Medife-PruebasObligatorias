@@ -19,26 +19,28 @@ public class Steps01 {
 	String pathChrome = PropertyManager.getInstance().getPathChrome();
 	String browser = PropertyManager.getInstance().getBrowser();
 	String baseURL = PropertyManager.getInstance().getURL();
+	String userLogin = PropertyManager.getInstance().getUser();
+	String passwordLogin = PropertyManager.getInstance().getPass();
 
 	@Given("^Obligatorio a Ingreso al sistema Sumes$")
 	public void obligatorio_a_Ingreso_al_sistema_Sumes() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe" );		
+		System.setProperty(pathChrome, browser);		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://sumedesa.medife.com/sume"); 
+		driver.get(baseURL); 
 		driver.manage().window().maximize();
 	}
 
 	@Given("^Obligatorio a Usuario: (.*)$")
 	public void obligatorio_a_Usuario_mveron(String usuario) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
-		AltaResDePago.ingresoUser(usuario);
+		AltaResDePago.ingresoUser(userLogin);
 	}
 
 	@Given("^Obligatorio a Pass: (.*)$")
 	public void obligatorio_a_Pass_Mv(String password) throws Exception {
 		AltaResponsableDePago AltaResDePago = new AltaResponsableDePago(driver);
-		AltaResDePago.ingresoPass(password);
+		AltaResDePago.ingresoPass(passwordLogin);
 	}
 
 	@Given("^Obligatorio a Seleccion alta de responsable de pago$")
