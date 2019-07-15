@@ -15,10 +15,6 @@ import cucumber.api.java.en.When;
 import cucumber.examples.java.calculator.pageobjects.AltaResponsableDePago;
 import cucumber.examples.java.calculator.pageobjects.BusquedaDeEntidad;
 import cucumber.examples.java.calculator.pageobjects.CargaDeDatosFiscalesTarea;
-//import cucumber.examples.java.calculator.PageObjects.AltaResponsableDePago;
-//import cucumber.examples.java.calculator.PageObjects.BusquedaDeEntidad;
-//import cucumber.examples.java.calculator.PageObjects.CargaDeDatosFiscalesTarea;
-//import util.PropertyManager;
 import utils.PropertyManager;
 
 public class Test40 {
