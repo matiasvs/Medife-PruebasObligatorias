@@ -1,8 +1,6 @@
 package cucumber.examples.java.calculator.pageobjects;
-//import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,12 +15,9 @@ public class BusquedaDeEntidad {
 	private By ByBusquedaCuitID = By.id("entityCuitId");
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
 	private By ByResponsablePopUp = By.id("entityId");	
-	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");//*[@id="mat-dialog-0"]/app-entidad/div/mat-toolbar
-	//private By ByValidarResponsable = By.id("entityId");
-	//private By ByBotonConfirmarEntidad = By.xpath("//*[normalize-space(text()) and normalize-space(.)='Registros por p�gina'])[1]/following::span[9]");
+	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");
 	private By ByDescripcionResultado = By.id("descriptionId");
-	//private By ByDescripcionResultado = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[3]");
-	                                              
+                                         
 	private By ByResultadoCuit = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[2]");
 	
 	private By ByEnabledDescripcion = By.id("descriptionId");
@@ -34,95 +29,80 @@ public class BusquedaDeEntidad {
 	
 	// CAMPOS PANTALLA //
 	public void botonBusquedaEntidades() {
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		WebElement guru99seleniumlink3;
-		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaEntidades));
-		guru99seleniumlink3.click();
+		WebDriverWait wait1=new WebDriverWait(driver, 300);
+		WebElement busquedaEntidad;
+		busquedaEntidad= wait1
+				.until(ExpectedConditions
+						.elementToBeClickable(ByBusquedaEntidades));
+		busquedaEntidad.click();
 	}
-//	public void botonBusquedaEntidades() throws InterruptedException {
-//		this.driver.findElement(ByBusquedaEntidades).click();
-//		Thread.sleep(2000);
-//	}
 	
 	public void ingresoDescripcion(String descipcion) {
-		WebDriverWait wait=new WebDriverWait(driver, 420);
-		WebElement guru99seleniumlinkA;
-		guru99seleniumlinkA= wait.until(ExpectedConditions.elementToBeClickable(ByDescripcionID));
-		guru99seleniumlinkA.sendKeys(descipcion.trim());
+		WebDriverWait wait2=new WebDriverWait(driver, 300);
+		WebElement wDescripcion;
+		wDescripcion= wait2
+				.until(ExpectedConditions
+						.elementToBeClickable(ByDescripcionID));
+		wDescripcion.sendKeys(descipcion.trim());
 	}
-//	public void ingresoDescripcion(String descipcion) {
-//		this.driver.findElement(ByDescripcionID).sendKeys(descipcion.trim());
-//	}
-	
+
 	public void ingresoBusquedaCuit(String BusquedaCuit) {
-		WebDriverWait wait=new WebDriverWait(driver, 420);
-		WebElement guru99seleniumlinkB;
-		guru99seleniumlinkB= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaCuitID));
-		guru99seleniumlinkB.sendKeys(BusquedaCuit.trim());
+		WebDriverWait wait3=new WebDriverWait(driver, 300);
+		WebElement wCuit;
+		wCuit= wait3
+				.until(ExpectedConditions
+						.elementToBeClickable(ByBusquedaCuitID));
+		wCuit.sendKeys(BusquedaCuit.trim());
 	}
-//	public void ingresoBusquedaCuit(String BusquedaCuit) {
-//		this.driver.findElement(ByBusquedaCuitID).sendKeys(BusquedaCuit.trim());
-//	}
-	
-//	public void check() throws InterruptedException {
-//		//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Descripci�n'])[2]/following::div[1]")).click();
-//		driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div/table/tbody/tr")).click();
-//		System.out.println("check");
-//		Thread.sleep(3000);
-//	}
+
 	public void check() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, 430);
-		WebElement guru99seleniumlinkC;
-		guru99seleniumlinkC= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[3]/table/tbody/tr")));
-		guru99seleniumlinkC.click();//*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr
+		WebDriverWait wait4=new WebDriverWait(driver, 300);
+		WebElement wCheck;
+		wCheck= wait4
+				.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[3]/table/tbody/tr")));
+		wCheck.click();
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		WebElement guru99seleniumlink3;
-		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(ByBusquedaEntidadesPopUp));
-		guru99seleniumlink3.click();
+		WebDriverWait wait5=new WebDriverWait(driver, 300);
+		WebElement wBusqueda;
+		wBusqueda= wait5
+				.until(ExpectedConditions
+						.elementToBeClickable(ByBusquedaEntidadesPopUp));
+		wBusqueda.click();
 	}
-//	public void botonBusqueda() throws InterruptedException {
-//		this.driver.findElement(ByBusquedaEntidadesPopUp).click();
-//		Thread.sleep(1000);
-//	}
-	
+
 	public void ConfirmarEntidad() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, 420);
-		WebElement guru99seleniumlink3;
-		guru99seleniumlink3= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button")));
-		guru99seleniumlink3.click();
+		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebElement wConfirmar;
+		wConfirmar= wait6
+				.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button")));
+		wConfirmar.click();
 	}
 	
 	public void ultimaPagina() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		WebElement guru99seleniumlink3;
-		guru99seleniumlink3= wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
-		guru99seleniumlink3.click();
+		WebDriverWait wait7=new WebDriverWait(driver, 300);
+		WebElement wUltimaPagina;
+		wUltimaPagina= wait7
+				.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
+		wUltimaPagina.click();
 	}
-//	public void ultimaPagina() throws InterruptedException {
-//		driver.findElement(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")).click();
-//		Thread.sleep(5000);
-//	}
-	
+
 	public void checkboxLast() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		WebElement guru99seleniumlink3;
-		guru99seleniumlink3= wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
-		guru99seleniumlink3.click();
+		WebDriverWait wait8=new WebDriverWait(driver, 300);
+		WebElement wCheckLast;
+		wCheckLast= wait8
+				.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
+		wCheckLast.click();
 	}
-//	public void checkboxLast() throws InterruptedException {
-//		driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")).click();
-//		Thread.sleep(500);           //*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div/table/tbody/tr
-//	}
-	
+
 	public void ValidarUltimaDescripcion() throws InterruptedException {
 		//String tomarUltimaDescripcion = driver.findElement(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[2]")).getText();
-		Thread.sleep(500);
-		
+		Thread.sleep(500);		
 	}
 	
 	public void validarUltimaCuit() throws InterruptedException {

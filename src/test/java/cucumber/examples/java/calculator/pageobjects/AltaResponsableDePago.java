@@ -65,9 +65,9 @@ public class AltaResponsableDePago extends Base{
 	}
 	
 	public void ingresoUser2(String usuario){
-		WebDriverWait wait2=new WebDriverWait(driver, 300);
+		WebDriverWait wait22=new WebDriverWait(driver, 300);
 		WebElement us;
-		us= wait2
+		us= wait22
 				.until(ExpectedConditions
 						.elementToBeClickable(ByUser));
 		us.clear();
