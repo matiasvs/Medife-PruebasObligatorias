@@ -138,121 +138,45 @@ public class Steps01 {
 
 	@Then("^Apagar el sistema$")
 	public void apagar_el_sistema() throws Exception {
-//		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
-//		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-//		Thread.sleep(1000);
 	    resp.closed();
-//	    driver.switchTo().defaultContent();
 	}
 
-//	@Then("^Validar Seleccion de excento$")
-//	public void validar_Seleccion_de_excento() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^A Seleccion Grupo\"([^\"]*)\"$")
-//	public void a_Seleccion_Grupo(String arg1) throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Validar seleccion de grupo familiar$")
-//	public void validar_seleccion_de_grupo_familiar() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Apagar el sistema$")
-//	public void apagar_el_sistema() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
+	@Then("^Se habilita el boton del Buscador que permitira la seleccion de entidades$")
+	public void se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades() throws Exception {
+		Thread.sleep(1000);
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+	    resp.lupa();
+		//resp.ingresoTipoResponsableABC(Externo);
+	    driver.switchTo().defaultContent();
+	}
 	
-
-//	@When("^seleciona el campo Tipo de Responsable$")
-//	public void seleciona_el_campo_Tipo_de_Responsable() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Validar seleccion de empresa$")
-//	public void validar_seleccion_de_empresa() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Se habilita el boton del uscardor de entidades$")
-//	public void se_habilita_el_boton_del_uscardor_de_entidades() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Validar boton busqueda de entidad$")
-//	public void validar_boton_busqueda_de_entidad() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^Selecciono boton busqueda de entidad$")
-//	public void selecciono_boton_busqueda_de_entidad() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^Ingresar un valor correspondiente a una \"([^\"]*)\"$")
-//	public void ingresar_un_valor_correspondiente_a_una(String arg1) throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos$")
-//	public void la_pantalla_lista_los_datos_que_coinciden_con_descripcion_y_cuit_cuil_validar_campos() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^correspondiente a grupo familiar existente$")
-//	public void correspondiente_a_grupo_familiar_existente() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^Ingreso \"([^\"]*)\"$")
-//	public void ingreso(String arg1) throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^Seleccion boton buscar$")
-//	public void seleccion_boton_buscar() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^La grilla se muestra vacia\\. No existe datos que coincida con los criterios de busqueda$")
-//	public void la_grilla_se_muestra_vacia_No_existe_datos_que_coincida_con_los_criterios_de_busqueda() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^Selecciono el resultado con checkBox$")
-//	public void selecciono_el_resultado_con_checkBox() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^seleccino el boton confirmar entidad$")
-//	public void seleccino_el_boton_confirmar_entidad() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^La ventana se cierra y los datos se cargan en la pantalla Alta de responsable de pago validar valores$")
-//	public void la_ventana_se_cierra_y_los_datos_se_cargan_en_la_pantalla_Alta_de_responsable_de_pago_validar_valores() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
+	
+	@Then("^Ingresar un valor correspondiente a una Empresa$")
+	public void ingresar_un_valor_correspondiente_a_una_Empresa() throws Exception {
+	    System.out.println("Ingreso para Empresa: a buscar");
+	}
+	@Then("^Ingreso de cuit (.*)$")
+	public void ingreso_de_cuit(String arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	@Then("^Ingreso de descripcion (.*)$")
+	public void ingreso_de_descripcion(String arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	@When("^Selecciono boton busqueda de entidad$")
+	public void selecciono_boton_busqueda_de_entidad() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	@Then("^La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos$")
+	public void la_pantalla_lista_los_datos_que_coinciden_con_descripcion_y_cuit_cuil_validar_campos() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
 	
 }

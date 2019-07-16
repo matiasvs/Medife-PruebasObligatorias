@@ -44,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 16, 2019 01:39:26 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 16, 2019 02:24:37 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -126,7 +126,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -140,7 +140,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>28</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -164,7 +164,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Pruebas critidad: Obligatorio</span>
-						<span class='test-time'>Jul 16, 2019 01:39:26 AM</span>
+						<span class='test-time'>Jul 16, 2019 02:24:37 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -172,7 +172,7 @@
 	<div class='category-list'>
 		<span class='category label'>@foo</span>
 	</div>
-	<span class='duration right label'>0h 0m 43s+509ms</span>
+	<span class='duration right label'>0h 0m 35s+259ms</span>
 	<div class='desc'>
 		<h6 class="desc-text">Scenario: Test obligatorios 01 - Validar la lista desplegable del combo</h6>
 		Tipo de Responsable
@@ -224,6 +224,96 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario node' test-id='14' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@foo</span>
+	</div>
+	<span class='duration right label'>0h 0m 31s+623ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Test Obligatorios 02 - Validar comportamiento de la pantalla</h6>
+		segun seleccion tipo de responsable = Empresa
+	</div>
+	<ul class='steps'>
+		<li test-id='15' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">Given: Given Ingreso al sitio Sume</h6>
+				Step passed
+		</li>
+		<li test-id='16' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
+				Step passed
+		</li>
+		<li test-id='17' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de password</h6>
+				Step passed
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Pantalla Alta de responsable de pago desplegada</h6>
+				Step passed
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And A Seleccion Empresa "Empresa"</h6>
+				Step passed
+		</li>
+		<li test-id='20' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Valiar Empresa</h6>
+				Step passed
+		</li>
+		<li test-id='21' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Se habilita el boton del Buscador que permitira la seleccion de entidades</h6>
+				Step passed
+		</li>
+		<li test-id='22' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Apagar el sistema</h6>
+				Step passed
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='23' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@foo</span>
+	</div>
+	<span class='duration right label'>0h 0m 29s+241ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Test Obligatorios 03 - Validar Buscador de Entidades segun criterio</h6>
+		de busqueda Con Resultado y validacion que unicamente visualice Empresas
+	</div>
+	<ul class='steps'>
+		<li test-id='24' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">Given: Given Ingreso al sitio Sume</h6>
+				Step passed
+		</li>
+		<li test-id='25' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
+				Step passed
+		</li>
+		<li test-id='26' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de password</h6>
+				Step passed
+		</li>
+		<li test-id='27' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Pantalla Alta de responsable de pago desplegada</h6>
+				Step passed
+		</li>
+		<li test-id='28' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And A Seleccion Empresa "Empresa"</h6>
+				Step passed
+		</li>
+		<li test-id='29' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Valiar Empresa</h6>
+				Step passed
+		</li>
+		<li test-id='30' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Se habilita el boton del Buscador que permitira la seleccion de entidades</h6>
+				Step passed
+		</li>
+		<li test-id='31' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Ingresar un valor correspondiente a una Empresa</h6>
+		</li>
+		<li test-id='32' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de cuit "20336685525"</h6>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -269,12 +359,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@foo</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -289,13 +379,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 16, 2019 01:39:26 AM</td>
+										<td>Jul 16, 2019 02:24:37 AM</td>
 										<td class='linked' test-id='1'>Pruebas critidad: Obligatorio</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 01:39:26 AM</td>
+										<td>Jul 16, 2019 02:24:37 AM</td>
 										<td class='linked' test-id='2'>Pruebas critidad: Obligatorio.Test obligatorios 01 - Validar la lista desplegable del combo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 02:25:13 AM</td>
+										<td class='linked' test-id='14'>Pruebas critidad: Obligatorio.Test Obligatorios 02 - Validar comportamiento de la pantalla</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 02:25:44 AM</td>
+										<td class='linked' test-id='23'>Pruebas critidad: Obligatorio.Test Obligatorios 03 - Validar Buscador de Entidades segun criterio</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -326,25 +426,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>28</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 16, 2019 01:39:26 AM</div>
+					<div class='panel-lead'>Jul 16, 2019 02:24:37 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 16, 2019 01:39:26 AM</div>
+			 		<div class='panel-lead'>Jul 16, 2019 02:24:37 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -367,7 +467,7 @@
 						</tr>
 						<tr>
 							<td>@foo</td>
-							<td>2</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -393,7 +493,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -403,7 +503,7 @@
 				debugChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 11,
+				passGrandChild: 28,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -416,7 +516,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Pruebas critidad: Obligatorio":43.513
+			        "Pruebas critidad: Obligatorio":96.136
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>

@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 198151,
+              "duration": 216912,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5491310942,
+              "duration": 5577574239,
               "status": "passed"
             },
             "line": 16,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 226990982,
+              "duration": 203832472,
               "status": "passed"
             },
             "line": 17,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 167990803,
+              "duration": 150733454,
               "status": "passed"
             },
             "line": 18,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 25734080173,
+              "duration": 19495521953,
               "status": "passed"
             },
             "line": 19,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 3305539271,
+              "duration": 3296360697,
               "status": "passed"
             },
             "line": 20,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 1119962820,
+              "duration": 1112667271,
               "status": "passed"
             },
             "line": 21,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 1209178750,
+              "duration": 1185715685,
               "status": "passed"
             },
             "line": 22,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 1122407176,
+              "duration": 1100143865,
               "status": "passed"
             },
             "line": 23,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 1227585143,
+              "duration": 1232720080,
               "status": "passed"
             },
             "line": 24,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 1103837220,
+              "duration": 1108280092,
               "status": "passed"
             },
             "line": 25,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 2770613320,
+              "duration": 768764297,
               "status": "passed"
             },
             "line": 26,
@@ -169,6 +169,257 @@
             "match": {
               "location": "Steps01.apagar_el_sistema()"
             },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Test Obligatorios 02 - Validar comportamiento de la pantalla",
+        "description": "segun seleccion tipo de responsable \u003d Empresa",
+        "id": "pruebas-critidad:-obligatorio;test-obligatorios-02---validar-comportamiento-de-la-pantalla",
+        "after": [
+          {
+            "result": {
+              "duration": 58331,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7191436575,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Ingreso al sitio Sume",
+            "match": {
+              "location": "Steps01.ingreso_al_sitio_Sume()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155560610,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Ingreso de usuario",
+            "match": {
+              "location": "Steps01.ingreso_de_usuario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128251764,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Ingreso de password",
+            "match": {
+              "location": "Steps01.ingreso_de_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19081084686,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Pantalla Alta de responsable de pago desplegada",
+            "match": {
+              "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1743473606,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "A Seleccion Empresa \"Empresa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Empresa\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1098317999,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Valiar Empresa",
+            "match": {
+              "location": "Steps01.valiar_Empresa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1349217009,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
+            "match": {
+              "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 870933059,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Apagar el sistema",
+            "match": {
+              "location": "Steps01.apagar_el_sistema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Test Obligatorios 03 - Validar Buscador de Entidades segun criterio",
+        "description": "  de busqueda Con Resultado y validacion que unicamente visualice Empresas",
+        "id": "pruebas-critidad:-obligatorio;test-obligatorios-03---validar-buscador-de-entidades-segun-criterio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4689048498,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Ingreso al sitio Sume",
+            "match": {
+              "location": "Steps01.ingreso_al_sitio_Sume()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 205700841,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Ingreso de usuario",
+            "match": {
+              "location": "Steps01.ingreso_de_usuario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165784462,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Ingreso de password",
+            "match": {
+              "location": "Steps01.ingreso_de_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19272656390,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Pantalla Alta de responsable de pago desplegada",
+            "match": {
+              "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2341572056,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "A Seleccion Empresa \"Empresa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Empresa\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1094646921,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Valiar Empresa",
+            "match": {
+              "location": "Steps01.valiar_Empresa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1462705612,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
+            "match": {
+              "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat cucumber.examples.java.calculator.Steps01.ingresar_un_valor_correspondiente_a_una_Empresa(Steps01.java:160)\r\n\tat ✽.Ingresar un valor correspondiente a una Empresa(cucumber/examples/java/calculator/Obligatorios01.feature:50)\r\n",
+              "duration": 2036036,
+              "status": "pending"
+            },
+            "line": 50,
+            "name": "Ingresar un valor correspondiente a una Empresa",
+            "match": {
+              "location": "Steps01.ingresar_un_valor_correspondiente_a_una_Empresa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "line": 51,
+            "name": "Ingreso de cuit \"20336685525\"",
             "keyword": "And "
           }
         ],
