@@ -1,7 +1,7 @@
 package cucumber.examples.java.calculator.pageobject;
 //import static org.testng.Assert.assertEquals;
 
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
 //import static org.testng.Assert.assertEquals;
 
@@ -29,6 +29,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //import junit.framework.*;
 //import org.testng.*;
 
+import junit.framework.Assert;
 import utils.PropertyManager;
 
 //import util.PropertyManager;
@@ -37,6 +38,7 @@ import utils.PropertyManager;
 
 //import utils.PropertyManager;
 
+@SuppressWarnings("deprecation")
 public class AltaResponsableDePago{
 	
 	
@@ -165,9 +167,11 @@ public class AltaResponsableDePago{
 		responsableDePago.sendKeys("Externo");
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void ValidarResponsableValorExterno() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
+		//assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
+		Assert.assertEquals(responsable, "Externo");
 	}
 	
 //	private void assertEquals(String responsable, String string, String string2) {
@@ -186,7 +190,10 @@ public class AltaResponsableDePago{
 	
 	public void ValidarResponsableValorEmpresa() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		assertEquals(responsable, "Empresa", "No se encontro el valor Empresa esperado: " + responsable);
+		//assertEquals(responsable, "Empresa", "No se encontro el valor Empresa esperado: " + responsable);
+		//Assert.assertEquals(responsable, "Empresass");
+		//Assert.assertEquals("Empresa", responsable);
+		org.junit.Assert.assertEquals("Empresa", responsable);
 	}
 	
 	public void ingresoGrupoFamiliar() {
@@ -200,7 +207,7 @@ public class AltaResponsableDePago{
 	
 	public void ValidarResponsableValorGrupoFamiliar() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		assertEquals(responsable, "Grupo Familiar", "No se encontro el valor Grupo Familiar esperado: " + responsable);
+		//assertEquals(responsable, "Grupo Familiar", "No se encontro el valor Grupo Familiar esperado: " + responsable);
 	}
 	
 	public void ingresoTipoResponsableEmpresa(String tipoResponsable){

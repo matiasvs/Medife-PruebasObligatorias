@@ -1,0 +1,198 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Test obligatorios 01 - Validar la lista desplegable del combo",
+        "description": "Tipo de Responsable  ",
+        "id": "pruebas-critidad:-obligatorio;test-obligatorios-01---validar-la-lista-desplegable-del-combo",
+        "after": [
+          {
+            "result": {
+              "duration": 198151,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RpnCalculatorStepdefs.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5491310942,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Ingreso al sitio Sume",
+            "match": {
+              "location": "Steps01.ingreso_al_sitio_Sume()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 226990982,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Ingreso de usuario",
+            "match": {
+              "location": "Steps01.ingreso_de_usuario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167990803,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Ingreso de password",
+            "match": {
+              "location": "Steps01.ingreso_de_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25734080173,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Pantalla Alta de responsable de pago desplegada",
+            "match": {
+              "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3305539271,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "A Seleccion Exento \"Externo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Externo\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Exento(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1119962820,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "validar Exento",
+            "match": {
+              "location": "Steps01.validar_Exento()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1209178750,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "A Seleccion Grupo Familiar \"Grupo familiar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Grupo familiar\"",
+                  "offset": 27
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Grupo_Familiar(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1122407176,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "validar Grupo familar",
+            "match": {
+              "location": "Steps01.validar_Grupo_familar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1227585143,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "A Seleccion Empresa \"Empresa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Empresa\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1103837220,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Valiar Empresa",
+            "match": {
+              "location": "Steps01.valiar_Empresa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2770613320,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Apagar el sistema",
+            "match": {
+              "location": "Steps01.apagar_el_sistema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo"
+          }
+        ]
+      }
+    ],
+    "name": "Pruebas critidad: Obligatorio",
+    "description": "",
+    "id": "pruebas-critidad:-obligatorio",
+    "keyword": "Feature",
+    "uri": "cucumber/examples/java/calculator/Obligatorios01.feature",
+    "tags": [
+      {
+        "name": "@foo",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
