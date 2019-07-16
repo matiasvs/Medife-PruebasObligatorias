@@ -26,7 +26,7 @@ Tipo de Responsable
   And Apagar el sistema
   
 Scenario: Test Obligatorios 02 - Validar comportamiento de la pantalla 
-segun seleccion tipo de responsable = Empresa
+segun seleccion tipo de responsable = Empresa 
   
   Given Ingreso al sitio Sume
 	And Ingreso de usuario

@@ -1,21 +1,4 @@
 package cucumber.examples.java.calculator.pageobject;
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import static org.testng.Assert.assertEquals;
-
-//import org.testng.Assert.assertEquals;
 
 //import org.hamcrest.core.Is;
 import org.openqa.selenium.By;
@@ -34,11 +17,7 @@ import utils.PropertyManager;
 
 //import util.PropertyManager;
 
-//import util.PropertyManager;
-
-//import utils.PropertyManager;
-
-@SuppressWarnings("deprecation")
+//@SuppressWarnings("deprecation")
 public class AltaResponsableDePago{
 	
 	
@@ -88,7 +67,7 @@ public class AltaResponsableDePago{
 	
 	public void ingresoUser(){
 		//System.out.println("1");
-		WebDriverWait wait1=new WebDriverWait(driver, 300);
+		WebDriverWait wait1=new WebDriverWait(driver, 60);
 		WebElement user;
 		user= wait1
 				.until(ExpectedConditions
@@ -103,8 +82,7 @@ public class AltaResponsableDePago{
 	}
 		
 	public void ingresoPass(){
-		//System.out.println("3");
-		WebDriverWait wait2=new WebDriverWait(driver, 300);
+		WebDriverWait wait2=new WebDriverWait(driver, 60);
 		WebElement pass;
 		pass= wait2
 				.until(ExpectedConditions
@@ -114,14 +92,12 @@ public class AltaResponsableDePago{
 			pass.sendKeys(passwordLogin);
 			//assertEquals(user.getText(), userLogin, "El valor usuario no es el esperado: " + user);
 			//pass.submit();
-			//System.out.println("4");
-			
 		}		
 	}
 	
 	public void ingresoConfirmar() {
 		//this.driver.findElement(ByConfirmarLogin).click();
-		WebDriverWait wait3=new WebDriverWait(driver, 300);
+		WebDriverWait wait3=new WebDriverWait(driver, 60);
 		WebElement confimarMedife;
 		confimarMedife= wait3
 				.until(ExpectedConditions
@@ -130,7 +106,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoInicio(){
-		WebDriverWait wait4=new WebDriverWait(driver, 300);
+		WebDriverWait wait4=new WebDriverWait(driver, 60);
 		WebElement inicioMedife;
 		inicioMedife= wait4
 				.until(ExpectedConditions
@@ -139,7 +115,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoClientes(){
-		WebDriverWait wait5=new WebDriverWait(driver, 300);
+		WebDriverWait wait5=new WebDriverWait(driver, 60);
 		WebElement clienteMedife;
 		clienteMedife= wait5
 				.until(ExpectedConditions
@@ -149,7 +125,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoResponsableDePago(){
-		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
 		responsableDePago= wait6
 				.until(ExpectedConditions
@@ -159,7 +135,7 @@ public class AltaResponsableDePago{
 		
 	// METODOS //
 	public void ingresoExterno() {
-		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
 		responsableDePago= wait6
 				.until(ExpectedConditions
@@ -173,14 +149,9 @@ public class AltaResponsableDePago{
 		//assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
 		Assert.assertEquals(responsable, "Externo");
 	}
-	
-//	private void assertEquals(String responsable, String string, String string2) {
-//		String responsable2 = this.driver.findElement(ByTipoResponsable).getText();
-//		assertEquals(responsable2, "Externo", "No se encontro el valor Externo esperado: " + responsable2);
-//	}
 
 	public void ingresoEmpresa() {
-		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
 		responsableDePago= wait6
 				.until(ExpectedConditions
@@ -190,14 +161,11 @@ public class AltaResponsableDePago{
 	
 	public void ValidarResponsableValorEmpresa() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		//assertEquals(responsable, "Empresa", "No se encontro el valor Empresa esperado: " + responsable);
-		//Assert.assertEquals(responsable, "Empresass");
-		//Assert.assertEquals("Empresa", responsable);
 		org.junit.Assert.assertEquals("Empresa", responsable);
 	}
 	
 	public void ingresoGrupoFamiliar() {
-		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
 		responsableDePago= wait6
 				.until(ExpectedConditions
@@ -211,7 +179,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoTipoResponsableEmpresa(String tipoResponsable){
-		WebDriverWait wait=new WebDriverWait(driver, 420);
+		WebDriverWait wait=new WebDriverWait(driver, 60);
 		WebElement guru99seleniumlink30;
 		guru99seleniumlink30= wait.until(ExpectedConditions.elementToBeClickable(ByTipoResponsable));
 		boolean tipoResponsables = guru99seleniumlink30.isEnabled();
@@ -229,12 +197,11 @@ public class AltaResponsableDePago{
 		driver.manage().deleteAllCookies();
 		driver.close();
 		driver.quit();
-		//System.out.println("---Closed browser---");
 	}
 	
 	// INGRESAR VALOR //
 	public void ingresoRazonSocial(String razonSocial) {		
-		WebDriverWait wait10=new WebDriverWait(driver, 300);
+		WebDriverWait wait10=new WebDriverWait(driver, 60);
 		WebElement social;
 		social= wait10
 				.until(ExpectedConditions
@@ -246,7 +213,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoEstadoActivo(String EstadoActivo) {
-		WebDriverWait wait11=new WebDriverWait(driver, 300);
+		WebDriverWait wait11=new WebDriverWait(driver, 60);
 		WebElement estado;
 		estado= wait11
 				.until(ExpectedConditions
@@ -262,7 +229,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoMail(String mail) {
-		WebDriverWait wait12=new WebDriverWait(driver, 300);
+		WebDriverWait wait12=new WebDriverWait(driver, 60);
 		WebElement email;
 		email= wait12
 				.until(ExpectedConditions
@@ -274,7 +241,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoCuitCuil(String cuitCuil) {
-		WebDriverWait wait14=new WebDriverWait(driver, 300);
+		WebDriverWait wait14=new WebDriverWait(driver, 60);
 		WebElement cuit;
 		cuit= wait14
 				.until(ExpectedConditions
@@ -286,7 +253,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoFechaBaja(String fechaBaja) {
-		WebDriverWait wait15=new WebDriverWait(driver, 300);
+		WebDriverWait wait15=new WebDriverWait(driver, 60);
 		WebElement fechabaja;
 		fechabaja= wait15
 				.until(ExpectedConditions
@@ -298,7 +265,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoFechaVigencia(String fechaVigencia) {
-		WebDriverWait wait16=new WebDriverWait(driver, 300);
+		WebDriverWait wait16=new WebDriverWait(driver, 60);
 		WebElement fechavigencia;
 		fechavigencia= wait16
 				.until(ExpectedConditions
@@ -310,7 +277,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void lupa() {
-		WebDriverWait wait17=new WebDriverWait(driver, 300);
+		WebDriverWait wait17=new WebDriverWait(driver, 60);
 		WebElement buscar;
 		buscar= wait17
 				.until(ExpectedConditions
@@ -319,7 +286,7 @@ public class AltaResponsableDePago{
 	}
 
 	public void lupa2() {
-		WebDriverWait wait18=new WebDriverWait(driver, 420);
+		WebDriverWait wait18=new WebDriverWait(driver, 60);
 		WebElement guru99seleniumlink3;
 		guru99seleniumlink3= wait18.until(ExpectedConditions.elementToBeClickable(ByDescrip));
 		guru99seleniumlink3.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER);
@@ -328,7 +295,7 @@ public class AltaResponsableDePago{
 	// BOTONES //	
 
 	public void btnConfirmar() throws InterruptedException {
-		WebDriverWait wait19=new WebDriverWait(driver, 300);
+		WebDriverWait wait19=new WebDriverWait(driver, 60);
 		WebElement confimar;
 		confimar= wait19
 				.until(ExpectedConditions
@@ -337,7 +304,7 @@ public class AltaResponsableDePago{
 	}
 	
 	public void btnGuardar() throws InterruptedException {
-		WebDriverWait wait20=new WebDriverWait(driver, 300);
+		WebDriverWait wait20=new WebDriverWait(driver, 60);
 		WebElement guardar;
 		guardar= wait20
 				.until(ExpectedConditions
@@ -346,7 +313,7 @@ public class AltaResponsableDePago{
 	}
 
 	public void btnCancelar() throws InterruptedException {
-		WebDriverWait wait21=new WebDriverWait(driver, 300);
+		WebDriverWait wait21=new WebDriverWait(driver, 60);
 		WebElement cancelar;
 		cancelar= wait21
 				.until(ExpectedConditions
