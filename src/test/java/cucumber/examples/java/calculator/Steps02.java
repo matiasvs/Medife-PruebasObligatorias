@@ -9,7 +9,8 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.examples.java.calculator.pageobjects.AltaResponsableDePago;
+import cucumber.examples.java.calculator.pageobject.AltaResponsableDePago;
+//import util.PropertyManager;
 import utils.PropertyManager;
 
 public class Steps02 {
@@ -18,44 +19,31 @@ public class Steps02 {
 	
 	String pathChrome = PropertyManager.getInstance().getPathChrome();
 	String browser = PropertyManager.getInstance().getBrowser();
-	String baseURL = PropertyManager.getInstance().getURL();//a\\(\\d+)
+	String baseURL = PropertyManager.getInstance().getURL();
+	String userLogin = PropertyManager.getInstance().getUser();
+	String passwordLogin = PropertyManager.getInstance().getPass();
+
+//	@Given("^Ingreso al sitio Sume$")
+//	public void ingreso_al_sitio_Sume() throws Exception {
+//		System.out.println("ss");
+//		System.setProperty(pathChrome,browser);		
+//		driver = new ChromeDriver();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.get("http://sumedesa.medife.com/sume"); 
+//		driver.manage().window().maximize();
+//	}
+//
+//	@Given("^Ingreso de usuario$")
+//	public void ingreso_de_usuario() throws Exception {
+//	    AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+//	    resp.ingresoUser();
+//	    resp.ingresoPass();
+//	}
+//
+//	@Given("^Ingreso de password$")
+//	public void ingreso_de_password() throws Exception {
+//		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+//	    resp.ingresoPass();
+//	}
 	
-	@Given("^Obligatorio b Ingreso al sistema Sumes$")
-	public void obligatorio_b_Ingreso_al_sistema_Sumes() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe" );		
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://sumedesa.medife.com/sume"); 
-		driver.manage().window().maximize();
-	}
-
-	@Given("^Obligatorio b Usuario: mveron$")
-	public void obligatorio_b_Usuario_mveron() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Given("^Obligatorio b Pass: Mv(\\d+)$")
-	public void obligatorio_b_Pass_Mv(int arg1) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Given("^Obligatorio b Desplegado el combo Tipo de responsable$")
-	public void obligatorio_b_Desplegado_el_combo_Tipo_de_responsable() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("^Obligatorio b selecciona el campo Tipo de Responsable Empresa$")
-	public void obligatorio_b_selecciona_el_campo_Tipo_de_Responsable_Empresa() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Then("^Obligatorio b Entonces se habilita el boton del Buscador que permitira la seleccion de entidades$")
-	public void obligatorio_b_Entonces_se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
 }

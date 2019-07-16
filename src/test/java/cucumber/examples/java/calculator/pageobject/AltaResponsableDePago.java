@@ -1,5 +1,21 @@
-package cucumber.examples.java.calculator.pageobjects;
+package cucumber.examples.java.calculator.pageobject;
+//import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import static org.testng.Assert.assertEquals;
+
+//import org.testng.Assert.assertEquals;
 
 //import org.hamcrest.core.Is;
 import org.openqa.selenium.By;
@@ -10,8 +26,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+//import junit.framework.*;
+//import org.testng.*;
 
-public class AltaResponsableDePago extends Base{
+import utils.PropertyManager;
+
+//import util.PropertyManager;
+
+//import util.PropertyManager;
+
+//import utils.PropertyManager;
+
+public class AltaResponsableDePago{
 	
 	
 	private WebDriver driver;
@@ -39,52 +65,60 @@ public class AltaResponsableDePago extends Base{
 	private By ByGuardar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[5]/div[2]/div/button[2]");
 	private By ByConfirmar = By.xpath("//*[@id=\"collapseChargePaymentManager\"]/form/div[5]/div[2]/div/button[1]");
 	
-	// CONSTRUCTOR //
-	public AltaResponsableDePago(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+	String userLogin = PropertyManager.getInstance().getUser();
+	String passwordLogin = PropertyManager.getInstance().getPass();
 	
-//	public AltaResponsableDePago (WebDriver driver) {
-//		this.driver = driver;
+	// CONSTRUCTOR //
+//	public AltaResponsableDePago(WebDriver driver) {
+//		super(driver);
+//		// TODO Auto-generated constructor stub
 //	}
 	
+	public AltaResponsableDePago (WebDriver driver) {
+		this.driver = driver;
+	}
+	
 	//LOGIN
-	public void ingresoUser(String usuario){
+	public void ue() {
+		this.driver.findElement(ByUser).sendKeys("mveron");
+		System.out.println("ss");
+	}
+	
+	public void ingresoUser(){
+		//System.out.println("1");
 		WebDriverWait wait1=new WebDriverWait(driver, 300);
 		WebElement user;
 		user= wait1
 				.until(ExpectedConditions
 						.elementToBeClickable(ByUser));
-		if (isDisplayed(ByUser)) {
+		if (user.isDisplayed()) {
 			user.clear();
-			user.sendKeys(usuario.trim());
-			assertEquals(user, usuario, "El valor usuario no es el esperado: " + user);
-			user.submit();
+			user.sendKeys(userLogin);
+			//assertEquals(user.getText(), userLogin, "El valor usuario no es el esperado: " + user);
+			//user.submit();
+			//System.out.println("2");
 		}		
 	}
-	
-	public void ingresoUser2(String usuario){
-		WebDriverWait wait22=new WebDriverWait(driver, 300);
-		WebElement us;
-		us= wait22
-				.until(ExpectedConditions
-						.elementToBeClickable(ByUser));
-		us.clear();
-		us.sendKeys(usuario.trim());
-	}
-	
-	public void ingresoPass(String password){
+		
+	public void ingresoPass(){
+		//System.out.println("3");
 		WebDriverWait wait2=new WebDriverWait(driver, 300);
 		WebElement pass;
 		pass= wait2
 				.until(ExpectedConditions
 						.elementToBeClickable(ByPass));
-		pass.clear();
-		pass.sendKeys(password.trim());
+		if (pass.isDisplayed()) {
+			pass.clear();
+			pass.sendKeys(passwordLogin);
+			//assertEquals(user.getText(), userLogin, "El valor usuario no es el esperado: " + user);
+			//pass.submit();
+			//System.out.println("4");
+			
+		}		
 	}
 	
-	public void ingresoConfirmar(){
+	public void ingresoConfirmar() {
+		//this.driver.findElement(ByConfirmarLogin).click();
 		WebDriverWait wait3=new WebDriverWait(driver, 300);
 		WebElement confimarMedife;
 		confimarMedife= wait3
@@ -92,6 +126,7 @@ public class AltaResponsableDePago extends Base{
 						.elementToBeClickable(ByConfirmarLogin));
 		confimarMedife.click();
 	}
+	
 	public void ingresoInicio(){
 		WebDriverWait wait4=new WebDriverWait(driver, 300);
 		WebElement inicioMedife;
@@ -100,6 +135,7 @@ public class AltaResponsableDePago extends Base{
 						.elementToBeClickable(ByInicio));
 		inicioMedife.click();
 	}
+	
 	public void ingresoClientes(){
 		WebDriverWait wait5=new WebDriverWait(driver, 300);
 		WebElement clienteMedife;
@@ -107,17 +143,66 @@ public class AltaResponsableDePago extends Base{
 				.until(ExpectedConditions
 						.elementToBeClickable(ByClientes));
 		clienteMedife.click();
+		//driver.navigate().to("http://sumedesa.medife.com/sume/page/plugin/process/external/pg_external_content.jsf");
 	}
+	
 	public void ingresoResponsableDePago(){
 		WebDriverWait wait6=new WebDriverWait(driver, 300);
 		WebElement responsableDePago;
 		responsableDePago= wait6
 				.until(ExpectedConditions
 						.elementToBeClickable(ByResponsableDePago));
-		responsableDePago.click();
+		responsableDePago.click();		
 	}
 		
-	// METODOS //	
+	// METODOS //
+	public void ingresoExterno() {
+		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebElement responsableDePago;
+		responsableDePago= wait6
+				.until(ExpectedConditions
+						.elementToBeClickable(ByTipoResponsable));
+		responsableDePago.sendKeys("Externo");
+	}
+	
+	public void ValidarResponsableValorExterno() {
+		String responsable = this.driver.findElement(ByTipoResponsable).getText();
+		assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
+	}
+	
+//	private void assertEquals(String responsable, String string, String string2) {
+//		String responsable2 = this.driver.findElement(ByTipoResponsable).getText();
+//		assertEquals(responsable2, "Externo", "No se encontro el valor Externo esperado: " + responsable2);
+//	}
+
+	public void ingresoEmpresa() {
+		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebElement responsableDePago;
+		responsableDePago= wait6
+				.until(ExpectedConditions
+						.elementToBeClickable(ByTipoResponsable));
+		responsableDePago.sendKeys("Empresa");
+	}
+	
+	public void ValidarResponsableValorEmpresa() {
+		String responsable = this.driver.findElement(ByTipoResponsable).getText();
+		assertEquals(responsable, "Empresa", "No se encontro el valor Empresa esperado: " + responsable);
+	}
+	
+	public void ingresoGrupoFamiliar() {
+		WebDriverWait wait6=new WebDriverWait(driver, 300);
+		WebElement responsableDePago;
+		responsableDePago= wait6
+				.until(ExpectedConditions
+						.elementToBeClickable(ByTipoResponsable));
+		responsableDePago.sendKeys("Grupo");
+	}
+	
+	public void ValidarResponsableValorGrupoFamiliar() {
+		String responsable = this.driver.findElement(ByTipoResponsable).getText();
+		assertEquals(responsable, "Grupo Familiar", "No se encontro el valor Grupo Familiar esperado: " + responsable);
+	}
+	
 	public void ingresoTipoResponsableEmpresa(String tipoResponsable){
 		WebDriverWait wait=new WebDriverWait(driver, 420);
 		WebElement guru99seleniumlink30;
@@ -134,9 +219,10 @@ public class AltaResponsableDePago extends Base{
 	}
 		
 	public void closed() {
+		driver.manage().deleteAllCookies();
 		driver.close();
 		driver.quit();
-		System.out.println("---Closed browser---");
+		//System.out.println("---Closed browser---");
 	}
 	
 	// INGRESAR VALOR //
@@ -149,7 +235,7 @@ public class AltaResponsableDePago extends Base{
 		social.click();
 		social.clear();
 		social.sendKeys(razonSocial.trim());
-		social.submit();
+		//social.submit();
 	}
 	
 	public void ingresoEstadoActivo(String EstadoActivo) {
@@ -161,7 +247,7 @@ public class AltaResponsableDePago extends Base{
 		estado.click();
 		estado.clear();
 		estado.sendKeys(EstadoActivo.trim());
-		estado.submit();
+		//estado.submit();
 	}
 	
 	public void ingresoEstadoInactivo(String EstadoInactivo) {
@@ -177,7 +263,7 @@ public class AltaResponsableDePago extends Base{
 		email.click();
 		email.clear();
 		email.sendKeys(mail.trim());
-		email.submit();
+		//email.submit();
 	}
 	
 	public void ingresoCuitCuil(String cuitCuil) {
@@ -189,7 +275,7 @@ public class AltaResponsableDePago extends Base{
 		cuit.click();
 		cuit.clear();
 		cuit.sendKeys(cuitCuil.trim());
-		cuit.submit();
+		//cuit.submit();
 	}
 	
 	public void ingresoFechaBaja(String fechaBaja) {
@@ -201,7 +287,7 @@ public class AltaResponsableDePago extends Base{
 		fechabaja.click();
 		fechabaja.clear();
 		fechabaja.sendKeys(fechaBaja.trim());
-		fechabaja.submit();
+		//fechabaja.submit();
 	}
 	
 	public void ingresoFechaVigencia(String fechaVigencia) {
@@ -213,7 +299,7 @@ public class AltaResponsableDePago extends Base{
 		fechavigencia.click();
 		fechavigencia.clear();
 		fechavigencia.sendKeys(fechaVigencia.trim());
-		fechavigencia.submit();
+		//fechavigencia.submit();
 	}
 	
 	public void lupa() {

@@ -1,17 +1,19 @@
-package cucumber.examples.java.calculator.pageobjects;
+package cucumber.examples.java.calculator.pageobject;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import utils.PropertyManager;
+import util.PropertyManager;
 
-public class Helpers {
+//import utils.PropertyManager;
+
+public class Browser {
 	
 	private WebDriver driver;
 	
-	public Helpers (WebDriver driver) {
+	public Browser (WebDriver driver) {
 		this.driver = driver;
 	}
 	
@@ -25,16 +27,6 @@ public class Helpers {
 	     driver = new ChromeDriver();
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 driver.get(baseURL); driver.manage().window().maximize();
-	}
-	
-	public void waits(int tiempo) throws InterruptedException {
-		Thread.sleep(tiempo*1000);
-	}
-	
-	public void closed() {
-		driver.close();
-		driver.quit();
-		System.out.println("---Closed browser---");
 	}
 
 }

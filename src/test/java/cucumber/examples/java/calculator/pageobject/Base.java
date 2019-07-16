@@ -1,4 +1,4 @@
-package cucumber.examples.java.calculator.pageobjects;
+package cucumber.examples.java.calculator.pageobject;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
-import utils.PropertyManager;
+import util.PropertyManager;
 
 public class Base {
 
@@ -22,14 +22,14 @@ public class Base {
 	String browser = PropertyManager.getInstance().getBrowser();
 	String baseURL = PropertyManager.getInstance().getURL();
 
-	@Given("^Obligatorio a Ingreso al sistema Sumes$")
-	public void obligatorio_a_Ingreso_al_sistema_Sumes() throws Exception {
-		System.setProperty("pathChrome", "browser" );		
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://sumedesa.medife.com/sume"); 
-		driver.manage().window().maximize();
-	}
+//	@Given("^Obligatorio a Ingreso al sistema Sumes$")
+//	public void obligatorio_a_Ingreso_al_sistema_Sumes() throws Exception {
+//		System.setProperty("pathChrome", "browser" );		
+//		driver = new ChromeDriver();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.get("http://sumedesa.medife.com/sume"); 
+//		driver.manage().window().maximize();
+//	}
 	
 	
 	public Base(WebDriver driver) {
