@@ -1,6 +1,7 @@
 package cucumber.examples.java.calculator.pageobject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +18,7 @@ public class BusquedaDeEntidad {
 	private By ByResponsablePopUp = By.id("entityId");	
 	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");
 	private By ByDescripcionResultado = By.id("descriptionId");
-                                         
+	private By ByLupa = By.id("entityCuitId");
 	private By ByResultadoCuit = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[2]");
 	
 	private By ByEnabledDescripcion = By.id("descriptionId");
@@ -29,75 +30,88 @@ public class BusquedaDeEntidad {
 	
 	// CAMPOS PANTALLA //
 	public void botonBusquedaEntidades() {
-		WebDriverWait wait1=new WebDriverWait(driver, 300);
-		WebElement busquedaEntidad;
-		busquedaEntidad= wait1
+		WebDriverWait wait1=new WebDriverWait(driver, 60);
+		WebElement BEEntidad;
+		BEEntidad= wait1
 				.until(ExpectedConditions
 						.elementToBeClickable(ByBusquedaEntidades));
-		busquedaEntidad.click();
+		BEEntidad.click();
 	}
 	
 	public void ingresoDescripcion(String descipcion) {
-		WebDriverWait wait2=new WebDriverWait(driver, 300);
-		WebElement wDescripcion;
-		wDescripcion= wait2
+		WebDriverWait wait2=new WebDriverWait(driver, 60);
+		WebElement BEdescripcion;
+		BEdescripcion= wait2
 				.until(ExpectedConditions
 						.elementToBeClickable(ByDescripcionID));
-		wDescripcion.sendKeys(descipcion.trim());
+		BEdescripcion.click();
+		BEdescripcion.clear();
+		BEdescripcion.sendKeys(descipcion.trim());
 	}
 
-	public void ingresoBusquedaCuit(String BusquedaCuit) {
-		WebDriverWait wait3=new WebDriverWait(driver, 300);
-		WebElement wCuit;
-		wCuit= wait3
+	public void ingresoCuit(String BusquedaCuit) {
+		WebDriverWait wait3=new WebDriverWait(driver, 60);
+		WebElement BEcuitCuil;
+		BEcuitCuil= wait3
 				.until(ExpectedConditions
 						.elementToBeClickable(ByBusquedaCuitID));
-		wCuit.sendKeys(BusquedaCuit.trim());
+		BEcuitCuil.click();
+		BEcuitCuil.clear();
+		BEcuitCuil.sendKeys(BusquedaCuit.trim());
 	}
 
 	public void check() throws InterruptedException {
-		WebDriverWait wait4=new WebDriverWait(driver, 300);
-		WebElement wCheck;
-		wCheck= wait4
+		WebDriverWait wait4=new WebDriverWait(driver, 60);
+		WebElement BEcheck;
+		BEcheck= wait4
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[3]/table/tbody/tr")));
-		wCheck.click();
+		BEcheck.click();
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
-		WebDriverWait wait5=new WebDriverWait(driver, 300);
-		WebElement wBusqueda;
-		wBusqueda= wait5
+		WebDriverWait wait5=new WebDriverWait(driver, 60);
+		WebElement BEBusqueda;
+		BEBusqueda= wait5
 				.until(ExpectedConditions
 						.elementToBeClickable(ByBusquedaEntidadesPopUp));
-		wBusqueda.click();
+		BEBusqueda.click();
 	}
 
 	public void ConfirmarEntidad() throws InterruptedException {
-		WebDriverWait wait6=new WebDriverWait(driver, 300);
-		WebElement wConfirmar;
-		wConfirmar= wait6
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
+		WebElement BEConfirmar;
+		BEConfirmar= wait6
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button")));
-		wConfirmar.click();
+		BEConfirmar.click();
 	}
 	
 	public void ultimaPagina() throws InterruptedException {
-		WebDriverWait wait7=new WebDriverWait(driver, 300);
-		WebElement wUltimaPagina;
-		wUltimaPagina= wait7
+		WebDriverWait wait7=new WebDriverWait(driver, 60);
+		WebElement BEUltimaPagina;
+		BEUltimaPagina= wait7
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
-		wUltimaPagina.click();
+		BEUltimaPagina.click();
 	}
 
 	public void checkboxLast() throws InterruptedException {
-		WebDriverWait wait8=new WebDriverWait(driver, 300);
-		WebElement wCheckLast;
-		wCheckLast= wait8
+		WebDriverWait wait8=new WebDriverWait(driver, 60);
+		WebElement BECheckLast;
+		BECheckLast= wait8
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
-		wCheckLast.click();
+		BECheckLast.click();
+	}
+	
+	public void lupaPopup() {
+		WebDriverWait wait9=new WebDriverWait(driver, 90);
+		WebElement BELupaBusqueda;
+		BELupaBusqueda= wait9
+				.until(ExpectedConditions
+						.elementToBeClickable(ByLupa));
+		BELupaBusqueda.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER);
 	}
 
 	public void ValidarUltimaDescripcion() throws InterruptedException {

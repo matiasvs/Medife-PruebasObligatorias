@@ -12,6 +12,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.examples.java.calculator.pageobject.AltaResponsableDePago;
+import cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad;
 //import util.PropertyManager;
 import utils.PropertyManager;
 
@@ -30,8 +31,8 @@ public class Steps01 {
 		System.setProperty(pathChrome,browser);		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get(baseURL); 		
+		driver.get(baseURL);
+		driver.manage().window().maximize();		 		
 	}
 
 	@Given("^Ingreso de usuario$")
@@ -134,7 +135,6 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.lupa();
-		//resp.ingresoTipoResponsableABC(Externo);
 	    driver.switchTo().defaultContent();
 	}
 	
@@ -142,33 +142,52 @@ public class Steps01 {
 	@Then("^Ingresar un valor correspondiente a una Empresa$")
 	public void ingresar_un_valor_correspondiente_a_una_Empresa() throws Exception {
 	    System.out.println("Ingreso de Empresa: a buscar");
-	}	
+	}
+	
 	@Then("^Ingreso de cuit (.*)$")
-	public void ingreso_de_cuit(String cuitCuil) throws Exception {
-		Thread.sleep(1000);
+	public void ingreso_de_cuit(String BusquedaCuit) throws Exception {
+		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
 		driver.switchTo().frame(frame);
-		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-	    resp.ingresoCuitCuil(cuitCuil);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.ingresoCuit(BusquedaCuit.trim());
+//		AltaResponsableDePago resp = new AltaResponsableDePago(driver); lupaPopup
+//	    resp.ingresoCuitCuil(cuitCuil);
 	    driver.switchTo().defaultContent();
 	}
+	
 	@Then("^Ingreso de descripcion (.*)$")
-	public void ingreso_de_descripcion(String razonSocial) throws Exception {
+	public void ingreso_de_descripcion(String descripcion) throws Exception {
 		Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
 		driver.switchTo().frame(frame);
-		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-	    resp.ingresoRazonSocial(razonSocial);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.ingresoDescripcion(descripcion.trim());
 	    driver.switchTo().defaultContent();
 	}
-	@When("^Selecciono boton busqueda de entidad$")
-	public void selecciono_boton_busqueda_de_entidad() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	
+	@When("^Selecciono boton busqueda de entidad en PopUp$")
+	public void selecciono_boton_busqueda_de_entidad_en_PopUp() throws Exception {
+		Thread.sleep(1000);
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.lupaPopup();
+	    driver.switchTo().defaultContent();
 	}
+	
+	
 	@Then("^La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos$")
 	public void la_pantalla_lista_los_datos_que_coinciden_con_descripcion_y_cuit_cuil_validar_campos() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}	
+	    System.out.println("Validacion de resultado");
+	}
+	@When("^correspondiente a grupo familiar existente$")
+	public void correspondiente_a_grupo_familiar_existente() throws Exception {
+	    System.out.println("Valor grupo");
+	}
+
+	@Then("^La grilla se muestra vacia\\. No existe datos que coincida con los criterios de busqueda$")
+	public void la_grilla_se_muestra_vacia_No_existe_datos_que_coincida_con_los_criterios_de_busqueda() throws Exception {
+	    System.out.println("No se muestra valores");
+	}
 }

@@ -31,8 +31,9 @@ public class AltaResponsableDePago{
 	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_2:j_idt89\']");
 	
 	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]");
+	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button
+	
 	private By ByDescrip = By.id("entityCuitId");
-
 	private By ByTipoResponsable = By.id("managerTypeId");
 	private By ByTipoResponsableNuevo = By.xpath("//*[@id=\'managerTypeId\']");
 	private By ByNombreApellido = By.id("fiscalNameId");
@@ -65,8 +66,9 @@ public class AltaResponsableDePago{
 		System.out.println("ss");
 	}
 	
-	public void ingresoUser(){
+	public void ingresoUser() throws InterruptedException{
 		//System.out.println("1");
+		Thread.sleep(4000);
 		WebDriverWait wait1=new WebDriverWait(driver, 60);
 		WebElement user;
 		user= wait1
@@ -209,7 +211,6 @@ public class AltaResponsableDePago{
 		social.click();
 		social.clear();
 		social.sendKeys(razonSocial.trim());
-		//social.submit();
 	}
 	
 	public void ingresoEstadoActivo(String EstadoActivo) {
@@ -221,7 +222,6 @@ public class AltaResponsableDePago{
 		estado.click();
 		estado.clear();
 		estado.sendKeys(EstadoActivo.trim());
-		//estado.submit();
 	}
 	
 	public void ingresoEstadoInactivo(String EstadoInactivo) {
