@@ -56,6 +56,14 @@
 							<span class="nav-text">Tags</span>
 							</a>
 						</li>
+						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
 						<li class="pb-2 hidden-folded"></li>
 					</ul>
 				</div>
@@ -93,7 +101,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -110,7 +118,7 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@foo</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@test</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -127,38 +135,38 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
-												tags="@foo"
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags="@test"
 												devices="">
-												<span class="tt">07.17.2019 10:38:42</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.17.2019 13:19:52</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Pruebas critidad: Obligatorio] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @foo</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @test</span>
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
-												tags="@foo"
+											<div class="st fail test l1" 
+												tags="@test"
 												devices="">
-												<span class="tt">07.17.2019 10:38:42</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.17.2019 13:19:52</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Test obligatorios 01 - Validar la lista desplegable del combo] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @foo</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @test</span>
 												</span>
 												
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.17.2019 10:38:43</span>&nbsp;
+												<span class="tt">07.17.2019 13:19:52</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.17.2019 10:38:49</span>&nbsp;
+													<span class="tt">07.17.2019 13:19:58</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume]</span>
 													
@@ -168,12 +176,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.17.2019 10:38:49</span>&nbsp;
+												<span class="tt">07.17.2019 13:19:58</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.17.2019 10:38:50</span>&nbsp;
+													<span class="tt">07.17.2019 13:19:58</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario]</span>
 													
@@ -183,673 +191,70 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.17.2019 10:38:50</span>&nbsp;
+												<span class="tt">07.17.2019 13:19:58</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.17.2019 10:38:50</span>&nbsp;
+													<span class="tt">07.17.2019 13:19:58</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password]</span>
 													
 													<span class="td">Step passed</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.17.2019 10:38:50</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.17.2019 13:19:58</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:38:58</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">07.17.2019 13:20:04</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada]</span>
 													
-													<span class="td">Step passed</span>
+													<span class="td">threw an exception<br><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EQUIPO-PC', ip: '10.5.222.12', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Equipo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a76d094550c1035b71af527de451ae39
+*** Element info: {Using=xpath, value=//*[@id='menuAccordionPanel']/h3[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at cucumber.examples.java.calculator.pageobject.AltaResponsableDePago.ingresoInicio(AltaResponsableDePago.java:116)
+	at cucumber.examples.java.calculator.Steps01.pantalla_Alta_de_responsable_de_pago_desplegada(Steps01.java:56)
+	at ?.Pantalla Alta de responsable de pago desplegada(cucumber/examples/java/calculator/Obligatorios01.feature:9)
+</pre></span>
 												</div>
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.17.2019 10:38:58</span>&nbsp;
+												<span class="tt">07.17.2019 13:20:04</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Exento "Externo"] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:01</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Exento "Externo"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:01</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validar Exento] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validar Exento]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Grupo Familiar "Grupo familiar"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Grupo Familiar "Grupo familiar"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validar Grupo familar] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then validar Grupo familar]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:06</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:07</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:10</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags="@foo"
-												devices="">
-												<span class="tt">07.17.2019 10:39:10</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test Obligatorios 02 - Validar comportamiento de la pantalla] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @foo</span>
-												</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:10</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:15</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:24</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:24</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:25</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:25</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:26</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:26</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:28</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:28</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:29</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:29</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test Obligatorios 03 - Validar Buscador de Entidades segun criterio] started</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags="@foo"
-												devices="">
-												<span class="tt">07.17.2019 10:39:29</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test Obligatorios 03 - Validar Buscador de Entidades segun criterio] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @foo</span>
-												</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:29</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:34</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:34</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:34</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:34</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:35</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:35</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:44</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:44</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:45</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:45</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:46</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Valiar Empresa]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Ingresar un valor correspondiente a una Empresa] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Ingresar un valor correspondiente a una Empresa]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de cuit 30587375296] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de cuit 30587375296]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:48</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de descripcion NALCO ARGENTINA SA] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:49</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de descripcion NALCO ARGENTINA SA]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:49</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Selecciono boton busqueda de entidad en PopUp] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Selecciono boton busqueda de entidad en PopUp]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:39:54</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags="@foo"
-												devices="">
-												<span class="tt">07.17.2019 10:39:54</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test Obligatorios 04 - Segun criterio de busqueda Descripcion] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @foo</span>
-												</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:39:54</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Ingreso al sitio Sume]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de usuario]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de password]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:00</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:09</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Pantalla Alta de responsable de pago desplegada]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:10</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And A Seleccion Empresa "Empresa"]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:10</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:11</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Se habilita el boton del Buscador que permitira la seleccion de entidades]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:11</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And correspondiente a grupo familiar existente] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:11</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And correspondiente a grupo familiar existente]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:11</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de cuit 30587375296] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:12</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de cuit 30587375296]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de descripcion NALCO] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:13</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Ingreso de descripcion NALCO]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:13</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Selecciono boton busqueda de entidad en PopUp] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:14</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Selecciono boton busqueda de entidad en PopUp]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:14</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then La grilla se muestra vacia. No existe datos que coincida con los criterios de busqueda] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:14</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then La grilla se muestra vacia. No existe datos que coincida con los criterios de busqueda]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.17.2019 10:40:14</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema] started</span>
-												
-												<div class="st pass">
-													<span class="tt">07.17.2019 10:40:18</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Apagar el sistema]</span>
-													
-													<span class="td">Step passed</span>
-												</div>
 											</div>
 											</div>
 									</div>

@@ -1,4 +1,4 @@
-@foo
+@test
 Feature: Pruebas critidad: Obligatorio
 
   Scenario: Test obligatorios 01 - Validar la lista desplegable del combo
@@ -65,4 +65,4 @@ Feature: Pruebas critidad: Obligatorio
       
       
   #Scenario Outline: Test Obligatorios 05 - Validar Funcionamiento de la Pantalla de
-   #                  Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro
+  #                  Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro

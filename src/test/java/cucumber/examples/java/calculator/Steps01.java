@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -32,7 +34,7 @@ public class Steps01 {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(baseURL);
-		driver.manage().window().maximize();		 		
+		driver.manage().window().maximize();		
 	}
 
 	@Given("^Ingreso de usuario$")
