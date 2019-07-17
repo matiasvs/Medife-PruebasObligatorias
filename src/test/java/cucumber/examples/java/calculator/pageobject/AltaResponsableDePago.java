@@ -68,12 +68,12 @@ public class AltaResponsableDePago{
 	
 	public void ingresoUser() throws InterruptedException{
 		//System.out.println("1");
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		WebDriverWait wait1=new WebDriverWait(driver, 60);
 		WebElement user;
 		user= wait1
 				.until(ExpectedConditions
-						.elementToBeClickable(ByUser));
+						.presenceOfElementLocated(ByUser)); //elementToBeClickable
 		if (user.isDisplayed()) {
 			user.clear();
 			user.sendKeys(userLogin);
@@ -81,6 +81,8 @@ public class AltaResponsableDePago{
 			//user.submit();
 			//System.out.println("2");
 		}		
+//		WebElement mydynamicelement = (new WebDriverWait(driver, 10))
+//				.until(ExpectedConditions.presenceOfElementLocated(By.id("wx")));
 	}
 		
 	public void ingresoPass(){
@@ -88,7 +90,7 @@ public class AltaResponsableDePago{
 		WebElement pass;
 		pass= wait2
 				.until(ExpectedConditions
-						.elementToBeClickable(ByPass));
+						.presenceOfElementLocated(ByPass));
 		if (pass.isDisplayed()) {
 			pass.clear();
 			pass.sendKeys(passwordLogin);
@@ -135,7 +137,7 @@ public class AltaResponsableDePago{
 		responsableDePago.click();		
 	}
 		
-	// METODOS //
+	// METODOS // presenceOfElementLocated elementToBeClickable
 	public void ingresoExterno() {
 		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
@@ -284,7 +286,7 @@ public class AltaResponsableDePago{
 						.elementToBeClickable(ByLupa));
 		buscar.click();
 	}
-
+	
 	public void lupa2() {
 		WebDriverWait wait18=new WebDriverWait(driver, 60);
 		WebElement guru99seleniumlink3;

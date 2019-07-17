@@ -135,6 +135,7 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.lupa();
+	    //Thread.sleep(3000);
 	    driver.switchTo().defaultContent();
 	}
 	

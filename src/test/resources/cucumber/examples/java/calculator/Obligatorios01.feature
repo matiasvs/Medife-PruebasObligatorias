@@ -1,4 +1,4 @@
-
+@foo
 Feature: Pruebas critidad: Obligatorio
 
   #Background:
@@ -52,9 +52,9 @@ Feature: Pruebas critidad: Obligatorio
     Examples: 
       | Responsable | Descripcion        | CuitCuil    | FechaVigencia | mail | FechaCondicionIVA | FormaDePago |
       | Empresa     | NALCO ARGENTINA SA | 30587375296 | xxxxxxxxxxxxx | xxxx | xxxxxxxxxxxxxxxxx | xxxxxxxxxxx |
-	@foo
+	
   Scenario Outline: Test Obligatorios 04 - Segun criterio de búsqueda Descripción
-            Sin Resultados Validar que el buscador sea especifico de empresas 
+                    Sin Resultados Validar que el buscador sea especifico de empresas 
     Given Ingreso al sitio Sume
     And Ingreso de usuario
     And Ingreso de password
@@ -71,8 +71,21 @@ Feature: Pruebas critidad: Obligatorio
       | Responsable | Descripcion        | CuitCuil    | FechaVigencia | mail | FechaCondicionIVA | FormaDePago |
       | Empresa     | NALCO | 30587375296 | xxxxxxxxxxxxx | xxxx | xxxxxxxxxxxxxxxxx | xxxxxxxxxxx |
   
-  Scenario: Test Obligatorios 05 - Validar Funcionamiento de la Pantalla de
-    Resultados del Buscador de Entidades Boton Seleccionar 1 registro
+  Scenario Outline: Test Obligatorios 05 - Validar Funcionamiento de la Pantalla de 
+                     Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro
+    #Given Obligatorio 5 Dado un usuario perfil situado en la pantalla Alta de responsabilidad de pago
+    #And Obligatorio 5 Usuario: <maru>
+    #And Obligatorio 5 Pass: <p456>    
+    #And Obligatorio 5 La pantalla Alta de responsable de pago desplegada
+    #And Obligatorio 5 los siguientes datos ingresados:
+    #And Obligatorio 5 Tipo de Responsable <tipoResponsable>
+    #And Obligatorio 5 Selecciono el boton Busqueda de entidad
+    #And Obligatorio 5 Se ingresa un valor de descripcion <descripcion>
+    #And Obligatorio 5 Se ingresa un valor de cuit <BusquedaCuit>    
+    #When Obligatorio 5 Selecciono el Boton Seleccionar y se selecciona el boton Confirmar entidad
+    #And Obligatorio 5 Se selecciona el valor con checkbox
+    #Then Obligatorio 5 La aplicacion cierra la ventana Buscador de Entidades y los datos seleccionados se 
+    #visualizan cargados en la pantalla Alta de Responsable de Pago no permitiendo su edicion
 
 #Scenario:   
 #  Scenario Outline:    
