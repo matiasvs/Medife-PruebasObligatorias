@@ -13,7 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.testng.*;
 
 import junit.framework.Assert;
-import utils.PropertyManager;
+//import util.PropertyManager;
+import util.PropertyManager;
 
 //import util.PropertyManager;
 
@@ -28,10 +29,20 @@ public class AltaResponsableDePago{
 	private By ByConfirmarLogin = By.id("j_idt18");
 	private By ByInicio = By.xpath("//*[@id=\'menuAccordionPanel\']/h3[1]");
 	private By ByClientes = By.id("menuAccordionPanel:initTree:1:j_idt90");
-	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_2:j_idt89\']");
+	//menuAccordionPanel:initTree:1:j_idt89 menuAccordionPanel:initTree:1:j_idt90");
+	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1\']/span/span[3]");
+	//*[@id="menuAccordionPanel:initTree:1_1"]/span/span[3]
+	//*[@id="menuAccordionPanel:initTree:1_1:j_idt89"]
 	
-	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]");
+	//*[@id="menuAccordionPanel:initTree:1_1_2"]/span/span[3]
+	
+										      
+	private By ByAltaReponsableNueva = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1_2\']/span/span[3]");
+	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button/span
+	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]/button");
 	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button
+	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button
+	//*[@id="menuAccordionPanel:initTree:1_1_2"]/span/span[3]
 	
 	private By ByDescrip = By.id("entityCuitId");
 	private By ByTipoResponsable = By.id("managerTypeId");
@@ -135,6 +146,15 @@ public class AltaResponsableDePago{
 				.until(ExpectedConditions
 						.elementToBeClickable(ByResponsableDePago));
 		responsableDePago.click();		
+	}//*[@id="menuAccordionPanel:initTree:1_1_2:j_idt89"]
+	
+	public void ingresoAltaDeResponsable() {
+		WebDriverWait wait6=new WebDriverWait(driver, 60);
+		WebElement responsableDePago;
+		responsableDePago= wait6
+				.until(ExpectedConditions
+						.elementToBeClickable(ByAltaReponsableNueva));
+		responsableDePago.click();	
 	}
 		
 	// METODOS // presenceOfElementLocated elementToBeClickable
@@ -151,7 +171,8 @@ public class AltaResponsableDePago{
 	public void ValidarResponsableValorExterno() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
 		//assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
-		Assert.assertEquals(responsable, "Externo");
+		//Assert.assertEquals(responsable, "Externo");
+		org.junit.Assert.assertEquals("Externo", responsable);
 	}
 
 	public void ingresoEmpresa() {
@@ -180,6 +201,7 @@ public class AltaResponsableDePago{
 	public void ValidarResponsableValorGrupoFamiliar() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
 		//assertEquals(responsable, "Grupo Familiar", "No se encontro el valor Grupo Familiar esperado: " + responsable);
+		org.junit.Assert.assertEquals("Grupo Familiar", responsable);
 	}
 	
 	public void ingresoTipoResponsableEmpresa(String tipoResponsable){
@@ -331,16 +353,18 @@ public class AltaResponsableDePago{
 	}
 	
 	// Validar test 05
-	public void validTipoResonsable05() {		
+	public void validarNombre05() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
 		System.out.println("Valor Descripcion encontrado: "+checkTipoResponsable);
-		//assertEquals(checkTipoResponsable, "GARRI FABIO DANIEL", "No se encontro el valor esperado: ");		
+		//assertEquals(checkTipoResponsable, "GARRI FABIO DANIEL", "No se encontro el valor esperado: ");	30709492817
+		org.junit.Assert.assertEquals("BALDINI MARTINEZ Y ASOCIADOS", checkTipoResponsable);  
  	}
 	
-	public void validAltaCuitCuil05() {
+	public void validarCuitCuil05() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
 		System.out.println("Valor CUIT - CUIL encontrado: "+checkCuitCuil);
 		//assertEquals(checkCuitCuil, "20200081170", "No se encontro el cuit/cuil esperado: ");
+		org.junit.Assert.assertEquals("30709492817", checkCuitCuil);
 	}
 	
 	// Validar test 11

@@ -15,8 +15,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.examples.java.calculator.pageobject.AltaResponsableDePago;
 import cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad;
-//import util.PropertyManager;
-import utils.PropertyManager;
+import util.PropertyManager;
 
 
 
@@ -55,10 +54,9 @@ public class Steps01 {
 	    resp.ingresoConfirmar();
 	    resp.ingresoInicio();
 	    resp.ingresoClientes();
-	    //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    Thread.sleep(4000);
-		driver.get("http://sumedesa.medife.com/sume/page/plugin/process/external/pg_external_content.jsf");
-		resp.ingresoResponsableDePago();
+	    resp.ingresoResponsableDePago();
+		resp.ingresoAltaDeResponsable();
 	}
 
 	@Given("^A Seleccion Exento (.*)$")
@@ -89,7 +87,6 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.ingresoGrupoFamiliar();
-		//resp.ingresoTipoResponsableABC(Externo);
 	    driver.switchTo().defaultContent();
 	}
 	
@@ -110,7 +107,6 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.ingresoEmpresa();
-		//resp.ingresoTipoResponsableABC(Externo);
 	    driver.switchTo().defaultContent();
 	}
 	
@@ -132,12 +128,11 @@ public class Steps01 {
 
 	@Then("^Se habilita el boton del Buscador que permitira la seleccion de entidades$")
 	public void se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades() throws Exception {
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.lupa();
-	    //Thread.sleep(3000);
 	    driver.switchTo().defaultContent();
 	}
 	
@@ -154,14 +149,12 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
 		busqueda.ingresoCuit(BusquedaCuit.trim());
-//		AltaResponsableDePago resp = new AltaResponsableDePago(driver); lupaPopup
-//	    resp.ingresoCuitCuil(cuitCuil);
 	    driver.switchTo().defaultContent();
 	}
 	
 	@Then("^Ingreso de descripcion (.*)$")
 	public void ingreso_de_descripcion(String descripcion) throws Exception {
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
@@ -171,15 +164,14 @@ public class Steps01 {
 	
 	@When("^Selecciono boton busqueda de entidad en PopUp$")
 	public void selecciono_boton_busqueda_de_entidad_en_PopUp() throws Exception {
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
 		busqueda.lupaPopup();
 	    driver.switchTo().defaultContent();
 	}
-	
-	
+	//		
 	@Then("^La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos$")
 	public void la_pantalla_lista_los_datos_que_coinciden_con_descripcion_y_cuit_cuil_validar_campos() throws Exception {
 	    System.out.println("Validacion de resultado");
@@ -188,9 +180,66 @@ public class Steps01 {
 	public void correspondiente_a_grupo_familiar_existente() throws Exception {
 	    System.out.println("Valor grupo");
 	}
-
 	@Then("^La grilla se muestra vacia\\. No existe datos que coincida con los criterios de busqueda$")
 	public void la_grilla_se_muestra_vacia_No_existe_datos_que_coincida_con_los_criterios_de_busqueda() throws Exception {
 	    System.out.println("No se muestra valores");
+	}
+	//check
+	@When("^Seleccionar valor con checkbox$")
+	public void seleccionar_valor_con_checkbox() throws Exception {
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.check();
+	    driver.switchTo().defaultContent();
+	}
+	@When("^Seleccionar boton confirmar entidad$")
+	public void seleccionar_boton_confirmar_entidad() throws Exception {
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.ConfirmarEntidad();
+	    driver.switchTo().defaultContent();
+	}
+	@When("^Se cierra el popUp de busqueda de entidad$")
+	public void se_cierra_el_popUp_de_busqueda_de_entidad() throws Exception {
+	    Thread.sleep(1000);
+	}
+	@When("^Los valores seleccionados se cargan en Alta de responsable$")
+	public void los_valores_seleccionados_se_cargan_en_Alta_de_responsable() throws Exception {
+	    System.out.println("carga de datos");
+	}
+	@Then("^validando los valores de los campos razon social y cuit$")
+	public void validando_los_valores_de_los_campos_razon_social_y_cuit() throws Exception {
+		Thread.sleep(1000);
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+	    resp.validarNombre05();
+	    Thread.sleep(1000);
+	    resp.validarCuitCuil05();
+	    Thread.sleep(1000);
+	    driver.switchTo().defaultContent();
+	}
+	//
+	@When("^seleccionar boton ultima pagina$")
+	public void seleccionar_boton_ultima_pagina() throws Exception {
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.ultimaPagina();
+	    driver.switchTo().defaultContent();
+	}
+	@When("^seleccionar el ultimo resultado$")
+	public void seleccionar_el_ultimo_resultado() throws Exception {
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt94\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.checkboxLast();
+	    driver.switchTo().defaultContent();
+	}
+	@Then("^validando los valores de los campos razon social y cuit test seis$")
+	public void validando_los_valores_de_los_campos_razon_social_y_cuit_test_seis() throws Exception {
+	    System.out.println("To do");
 	}
 }

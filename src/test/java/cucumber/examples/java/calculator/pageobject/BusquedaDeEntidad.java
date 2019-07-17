@@ -43,7 +43,7 @@ public class BusquedaDeEntidad {
 		WebElement BEdescripcion;
 		BEdescripcion= wait2
 				.until(ExpectedConditions
-						.elementToBeClickable(ByDescripcionID));
+						.presenceOfElementLocated(ByDescripcionID));
 		BEdescripcion.click();
 		BEdescripcion.clear();
 		BEdescripcion.sendKeys(descipcion.trim());
@@ -53,8 +53,8 @@ public class BusquedaDeEntidad {
 		WebDriverWait wait3=new WebDriverWait(driver, 60);
 		WebElement BEcuitCuil;
 		BEcuitCuil= wait3
-				.until(ExpectedConditions
-						.elementToBeClickable(ByBusquedaCuitID));
+				.until(ExpectedConditions //presenceOfElementLocated
+						.presenceOfElementLocated(ByBusquedaCuitID));//elementToBeClickable
 		BEcuitCuil.click();
 		BEcuitCuil.clear();
 		BEcuitCuil.sendKeys(BusquedaCuit.trim());
@@ -84,6 +84,7 @@ public class BusquedaDeEntidad {
 		BEConfirmar= wait6
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button")));
+		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div[2]/div/button
 		BEConfirmar.click();
 	}
 	
@@ -93,15 +94,17 @@ public class BusquedaDeEntidad {
 		BEUltimaPagina= wait7
 				.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
+		
+		
 		BEUltimaPagina.click();
 	}
-
+	//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]
 	public void checkboxLast() throws InterruptedException {
-		WebDriverWait wait8=new WebDriverWait(driver, 60);
+		WebDriverWait wait18=new WebDriverWait(driver, 60);
 		WebElement BECheckLast;
-		BECheckLast= wait8
-				.until(ExpectedConditions
-						.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
+		BECheckLast= wait18
+				.until(ExpectedConditions 
+						.elementToBeClickable(By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]")));
 		BECheckLast.click();
 	}
 	
@@ -109,8 +112,8 @@ public class BusquedaDeEntidad {
 		WebDriverWait wait9=new WebDriverWait(driver, 90);
 		WebElement BELupaBusqueda;
 		BELupaBusqueda= wait9
-				.until(ExpectedConditions
-						.elementToBeClickable(ByLupa));
+				.until(ExpectedConditions //elementToBeClickable             presenceOfElementLocated
+						.presenceOfElementLocated(ByLupa));
 		BELupaBusqueda.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER);
 	}
 
