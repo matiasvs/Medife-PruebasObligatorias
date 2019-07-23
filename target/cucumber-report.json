@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8630559730,
+              "duration": 7113379854,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 152693130,
+              "duration": 190001735,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 91603690,
+              "duration": 121553308,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 8021482945,
+              "duration": 14616055485,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 4664879521,
+              "duration": 6870320138,
               "status": "passed"
             },
             "line": 11,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 1089781906,
+              "duration": 1110589319,
               "status": "passed"
             },
             "line": 12,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 1143912641,
+              "duration": 1221254264,
               "status": "passed"
             },
             "line": 13,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 1104033842,
+              "duration": 1108098356,
               "status": "passed"
             },
             "line": 14,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 1145175382,
+              "duration": 1223912014,
               "status": "passed"
             },
             "line": 15,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 1104753575,
+              "duration": 1104011336,
               "status": "passed"
             },
             "line": 16,
@@ -150,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 3088032607,
+              "duration": 2762452177,
               "status": "passed"
             },
             "line": 17,
@@ -177,7 +177,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6512798358,
+              "duration": 5030135141,
               "status": "passed"
             },
             "line": 22,
@@ -189,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 92993763,
+              "duration": 132689946,
               "status": "passed"
             },
             "line": 23,
@@ -201,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 95501283,
+              "duration": 123307652,
               "status": "passed"
             },
             "line": 24,
@@ -213,7 +213,7 @@
           },
           {
             "result": {
-              "duration": 10540211404,
+              "duration": 9126031941,
               "status": "passed"
             },
             "line": 25,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 2230138218,
+              "duration": 6907878338,
               "status": "passed"
             },
             "line": 26,
@@ -243,7 +243,7 @@
           },
           {
             "result": {
-              "duration": 1073309509,
+              "duration": 1107957070,
               "status": "passed"
             },
             "line": 27,
@@ -255,7 +255,7 @@
           },
           {
             "result": {
-              "duration": 248194734,
+              "duration": 495713070,
               "status": "passed"
             },
             "line": 28,
@@ -267,7 +267,7 @@
           },
           {
             "result": {
-              "duration": 898492281,
+              "duration": 2829890793,
               "status": "passed"
             },
             "line": 29,
@@ -294,7 +294,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5924819955,
+              "duration": 4979952115,
               "status": "passed"
             },
             "line": 34,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 126795885,
+              "duration": 154207846,
               "status": "passed"
             },
             "line": 35,
@@ -318,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 105921698,
+              "duration": 129156050,
               "status": "passed"
             },
             "line": 36,
@@ -330,7 +330,7 @@
           },
           {
             "result": {
-              "duration": 11218431969,
+              "duration": 9982997668,
               "status": "passed"
             },
             "line": 37,
@@ -342,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 2344529290,
+              "duration": 7014958383,
               "status": "passed"
             },
             "line": 38,
@@ -360,7 +360,7 @@
           },
           {
             "result": {
-              "duration": 1088722192,
+              "duration": 1104911811,
               "status": "passed"
             },
             "line": 39,
@@ -372,7 +372,7 @@
           },
           {
             "result": {
-              "duration": 244969726,
+              "duration": 426464708,
               "status": "passed"
             },
             "line": 40,
@@ -384,7 +384,7 @@
           },
           {
             "result": {
-              "duration": 720054,
+              "duration": 1004534,
               "status": "passed"
             },
             "line": 41,
@@ -396,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 454828723,
+              "duration": 422928467,
               "status": "passed"
             },
             "line": 42,
@@ -414,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 470555728,
+              "duration": 445364721,
               "status": "passed"
             },
             "line": 43,
@@ -432,7 +432,7 @@
           },
           {
             "result": {
-              "duration": 129936860,
+              "duration": 134424065,
               "status": "passed"
             },
             "line": 44,
@@ -444,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 527291,
+              "duration": 397475,
               "status": "passed"
             },
             "line": 45,
@@ -456,7 +456,7 @@
           },
           {
             "result": {
-              "duration": 990639940,
+              "duration": 2706584315,
               "status": "passed"
             },
             "line": 46,
@@ -483,7 +483,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5779816488,
+              "duration": 5048615402,
               "status": "passed"
             },
             "line": 55,
@@ -495,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 97467720,
+              "duration": 198331425,
               "status": "passed"
             },
             "line": 56,
@@ -507,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 95752420,
+              "duration": 186672732,
               "status": "passed"
             },
             "line": 57,
@@ -519,7 +519,7 @@
           },
           {
             "result": {
-              "duration": 8782521902,
+              "duration": 9443586342,
               "status": "passed"
             },
             "line": 58,
@@ -531,7 +531,7 @@
           },
           {
             "result": {
-              "duration": 2125522239,
+              "duration": 7054420712,
               "status": "passed"
             },
             "line": 59,
@@ -549,7 +549,7 @@
           },
           {
             "result": {
-              "duration": 552034722,
+              "duration": 678128184,
               "status": "passed"
             },
             "line": 60,
@@ -561,7 +561,7 @@
           },
           {
             "result": {
-              "duration": 173519,
+              "duration": 184961,
               "status": "passed"
             },
             "line": 61,
@@ -573,7 +573,7 @@
           },
           {
             "result": {
-              "duration": 361775624,
+              "duration": 448631582,
               "status": "passed"
             },
             "line": 62,
@@ -591,7 +591,7 @@
           },
           {
             "result": {
-              "duration": 292430100,
+              "duration": 296833797,
               "status": "passed"
             },
             "line": 63,
@@ -609,7 +609,7 @@
           },
           {
             "result": {
-              "duration": 101653012,
+              "duration": 117979547,
               "status": "passed"
             },
             "line": 64,
@@ -621,7 +621,7 @@
           },
           {
             "result": {
-              "duration": 530819,
+              "duration": 171477,
               "status": "passed"
             },
             "line": 65,
@@ -633,7 +633,7 @@
           },
           {
             "result": {
-              "duration": 2954623772,
+              "duration": 2746432981,
               "status": "passed"
             },
             "line": 66,
@@ -660,7 +660,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5852094828,
+              "duration": 4797026966,
               "status": "passed"
             },
             "line": 75,
@@ -672,7 +672,7 @@
           },
           {
             "result": {
-              "duration": 84848654,
+              "duration": 131392290,
               "status": "passed"
             },
             "line": 76,
@@ -684,7 +684,7 @@
           },
           {
             "result": {
-              "duration": 93911711,
+              "duration": 117453684,
               "status": "passed"
             },
             "line": 77,
@@ -696,7 +696,7 @@
           },
           {
             "result": {
-              "duration": 8037384431,
+              "duration": 11894734975,
               "status": "passed"
             },
             "line": 78,
@@ -708,7 +708,7 @@
           },
           {
             "result": {
-              "duration": 1954524344,
+              "duration": 7220495660,
               "status": "passed"
             },
             "line": 79,
@@ -726,7 +726,7 @@
           },
           {
             "result": {
-              "duration": 534670998,
+              "duration": 644597207,
               "status": "passed"
             },
             "line": 80,
@@ -738,7 +738,7 @@
           },
           {
             "result": {
-              "duration": 360553617,
+              "duration": 402246850,
               "status": "passed"
             },
             "line": 81,
@@ -756,7 +756,7 @@
           },
           {
             "result": {
-              "duration": 492553776,
+              "duration": 599055497,
               "status": "passed"
             },
             "line": 82,
@@ -774,7 +774,7 @@
           },
           {
             "result": {
-              "duration": 115857800,
+              "duration": 123307945,
               "status": "passed"
             },
             "line": 83,
@@ -786,7 +786,7 @@
           },
           {
             "result": {
-              "duration": 311719206,
+              "duration": 1292989777,
               "status": "passed"
             },
             "line": 84,
@@ -798,7 +798,7 @@
           },
           {
             "result": {
-              "duration": 187056220,
+              "duration": 217834685,
               "status": "passed"
             },
             "line": 85,
@@ -810,7 +810,7 @@
           },
           {
             "result": {
-              "duration": 999780295,
+              "duration": 1000621422,
               "status": "passed"
             },
             "line": 86,
@@ -822,7 +822,7 @@
           },
           {
             "result": {
-              "duration": 542366,
+              "duration": 291657,
               "status": "passed"
             },
             "line": 87,
@@ -834,7 +834,7 @@
           },
           {
             "result": {
-              "duration": 3196958967,
+              "duration": 3138614558,
               "status": "passed"
             },
             "line": 88,
@@ -846,7 +846,7 @@
           },
           {
             "result": {
-              "duration": 2824432248,
+              "duration": 2809681106,
               "status": "passed"
             },
             "line": 89,
@@ -868,7 +868,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5898962160,
+              "duration": 6113402718,
               "status": "passed"
             },
             "line": 97,
@@ -880,7 +880,7 @@
           },
           {
             "result": {
-              "duration": 87119149,
+              "duration": 185536879,
               "status": "passed"
             },
             "line": 98,
@@ -892,7 +892,7 @@
           },
           {
             "result": {
-              "duration": 134058968,
+              "duration": 149356652,
               "status": "passed"
             },
             "line": 99,
@@ -904,7 +904,7 @@
           },
           {
             "result": {
-              "duration": 8091016101,
+              "duration": 9214445885,
               "status": "passed"
             },
             "line": 100,
@@ -916,7 +916,7 @@
           },
           {
             "result": {
-              "duration": 1987616034,
+              "duration": 7717234662,
               "status": "passed"
             },
             "line": 101,
@@ -934,7 +934,7 @@
           },
           {
             "result": {
-              "duration": 553421908,
+              "duration": 635892320,
               "status": "passed"
             },
             "line": 102,
@@ -946,7 +946,7 @@
           },
           {
             "result": {
-              "duration": 119497842,
+              "duration": 183092816,
               "status": "passed"
             },
             "line": 103,
@@ -958,7 +958,7 @@
           },
           {
             "result": {
-              "duration": 848124748,
+              "duration": 835894841,
               "status": "passed"
             },
             "line": 104,
@@ -970,8 +970,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5] (tried for 60 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat ✽.seleccionar el ultimo resultado(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:105)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]\"}\n  (Session info: chrome\u003d75.0.3770.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EQUIPO-PC\u0027, ip: \u002710.5.222.2\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\\Users\\Equipo\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: a2efcda14d49d8c311839a65d5c09cf7\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
-              "duration": 60685056107,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5] (tried for 60 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat ✽.seleccionar el ultimo resultado(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:105)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]\"}\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-C97NRF6\u0027, ip: \u002710.5.222.6\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\\Users\\blender\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 182730093c6e5be6692c292bfbd35ef6\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+              "duration": 60657807695,
               "status": "failed"
             },
             "line": 105,

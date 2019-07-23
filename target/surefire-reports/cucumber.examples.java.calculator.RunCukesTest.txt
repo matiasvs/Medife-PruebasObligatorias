@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.examples.java.calculator.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 200.481 sec <<< FAILURE!
-Feature: Pruebas critidad: Obligatorio  Time elapsed: 78.43 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 238.318 sec <<< FAILURE!
+Feature: Pruebas critidad: Obligatorio  Time elapsed: 85.714 sec  <<< ERROR!
 java.lang.NullPointerException
 	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
 	at java.util.regex.Matcher.reset(Matcher.java:309)
