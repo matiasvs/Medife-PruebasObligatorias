@@ -1,4 +1,4 @@
-package util;
+package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class PropertyManager {
 	private static PropertyManager instance;
     private static final Object lock = new Object();
     private static String propertyFilePath = System.getProperty("user.dir")+
-            "/src/test/java/util/Configurations.properties";
+            "/src/test/java/utils/Configurations.properties";
     
     private static String path;
     private static String browser;

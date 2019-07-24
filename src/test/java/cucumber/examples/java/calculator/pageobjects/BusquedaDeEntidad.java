@@ -1,4 +1,4 @@
-package cucumber.examples.java.calculator.pageobject;
+package cucumber.examples.java.calculator.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -98,15 +98,28 @@ public class BusquedaDeEntidad {
 		
 		BEUltimaPagina.click();
 	}
-	//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]
+	//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]  mat-checkbox-1
+	
+	//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]"
 	public void checkboxLast() throws InterruptedException {
 		WebDriverWait wait18=new WebDriverWait(driver, 60);
 		WebElement BECheckLast;
 		BECheckLast= wait18
-				.until(ExpectedConditions 
-						.elementToBeClickable(By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]")));
-		BECheckLast.click();
+				.until(ExpectedConditions               //*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]
+									             		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]/td[1]
+						.elementToBeClickable(By.id("mat-checkbox-1")));
+		BECheckLast.sendKeys(Keys.TAB);
 	}
+	
+//	public void checkboxLast() throws InterruptedException {
+//		WebDriverWait wait18=new WebDriverWait(driver, 60);
+//		WebElement BECheckLast;
+//		BECheckLast= wait18
+//				.until(ExpectedConditions               //*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]
+//									             		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]/td[1]
+//						.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
+//		BECheckLast.click();
+//	}
 	
 	public void lupaPopup() {
 		WebDriverWait wait9=new WebDriverWait(driver, 90);

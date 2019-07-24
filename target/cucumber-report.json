@@ -1,6 +1,6 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
         "line": 4,
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7113379854,
+              "duration": 6935349968,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 190001735,
+              "duration": 177274888,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 121553308,
+              "duration": 107198917,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 14616055485,
+              "duration": 13967561763,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 6870320138,
+              "duration": 3222517338,
               "status": "passed"
             },
             "line": 11,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 1110589319,
+              "duration": 1117347092,
               "status": "passed"
             },
             "line": 12,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 1221254264,
+              "duration": 1131794129,
               "status": "passed"
             },
             "line": 13,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 1108098356,
+              "duration": 1104528768,
               "status": "passed"
             },
             "line": 14,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 1223912014,
+              "duration": 1268009322,
               "status": "passed"
             },
             "line": 15,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 1104011336,
+              "duration": 1087863501,
               "status": "passed"
             },
             "line": 16,
@@ -150,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 2762452177,
+              "duration": 823684121,
               "status": "passed"
             },
             "line": 17,
@@ -160,27 +160,22 @@
             },
             "keyword": "And "
           }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
         ]
       },
       {
-        "line": 19,
+        "line": 20,
         "name": "Test 02 - Validar comportamiento de la pantalla",
-        "description": "            segun seleccion tipo de responsable \u003d Empresa",
+        "description": "            segun seleccion tipo de responsable \u003d Empresa ",
         "id": "pruebas-critidad:-obligatorio;test-02---validar-comportamiento-de-la-pantalla",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5030135141,
+              "duration": 6116041365,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "Ingreso al sitio Sume",
             "match": {
               "location": "Steps01.ingreso_al_sitio_Sume()"
@@ -189,10 +184,10 @@
           },
           {
             "result": {
-              "duration": 132689946,
+              "duration": 132347083,
               "status": "passed"
             },
-            "line": 23,
+            "line": 24,
             "name": "Ingreso de usuario",
             "match": {
               "location": "Steps01.ingreso_de_usuario()"
@@ -201,10 +196,10 @@
           },
           {
             "result": {
-              "duration": 123307652,
+              "duration": 95404070,
               "status": "passed"
             },
-            "line": 24,
+            "line": 25,
             "name": "Ingreso de password",
             "match": {
               "location": "Steps01.ingreso_de_password()"
@@ -213,10 +208,10 @@
           },
           {
             "result": {
-              "duration": 9126031941,
+              "duration": 7976655990,
               "status": "passed"
             },
-            "line": 25,
+            "line": 26,
             "name": "Pantalla Alta de responsable de pago desplegada",
             "match": {
               "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
@@ -225,10 +220,10 @@
           },
           {
             "result": {
-              "duration": 6907878338,
+              "duration": 2077794228,
               "status": "passed"
             },
-            "line": 26,
+            "line": 27,
             "name": "A Seleccion Empresa \"Empresa\"",
             "match": {
               "arguments": [
@@ -243,10 +238,10 @@
           },
           {
             "result": {
-              "duration": 1107957070,
+              "duration": 1108750652,
               "status": "passed"
             },
-            "line": 27,
+            "line": 28,
             "name": "Valiar Empresa",
             "match": {
               "location": "Steps01.valiar_Empresa()"
@@ -255,10 +250,10 @@
           },
           {
             "result": {
-              "duration": 495713070,
+              "duration": 245111139,
               "status": "passed"
             },
-            "line": 28,
+            "line": 29,
             "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
             "match": {
               "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
@@ -267,25 +262,20 @@
           },
           {
             "result": {
-              "duration": 2829890793,
+              "duration": 3052785585,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "Apagar el sistema",
             "match": {
               "location": "Steps01.apagar_el_sistema()"
             },
             "keyword": "And "
           }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
         ]
       },
       {
-        "line": 50,
+        "line": 52,
         "name": "Test 03 - Validar Buscador de Entidades segun criterio",
         "description": "                    de busqueda Con Resultado y validacion que unicamente visualice Empresas",
         "id": "pruebas-critidad:-obligatorio;test-03---validar-buscador-de-entidades-segun-criterio;;2",
@@ -294,10 +284,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4979952115,
+              "duration": 5957240710,
               "status": "passed"
             },
-            "line": 34,
+            "line": 36,
             "name": "Ingreso al sitio Sume",
             "match": {
               "location": "Steps01.ingreso_al_sitio_Sume()"
@@ -306,10 +296,10 @@
           },
           {
             "result": {
-              "duration": 154207846,
+              "duration": 91863435,
               "status": "passed"
             },
-            "line": 35,
+            "line": 37,
             "name": "Ingreso de usuario",
             "match": {
               "location": "Steps01.ingreso_de_usuario()"
@@ -318,10 +308,10 @@
           },
           {
             "result": {
-              "duration": 129156050,
+              "duration": 87194440,
               "status": "passed"
             },
-            "line": 36,
+            "line": 38,
             "name": "Ingreso de password",
             "match": {
               "location": "Steps01.ingreso_de_password()"
@@ -330,10 +320,10 @@
           },
           {
             "result": {
-              "duration": 9982997668,
+              "duration": 8570955756,
               "status": "passed"
             },
-            "line": 37,
+            "line": 39,
             "name": "Pantalla Alta de responsable de pago desplegada",
             "match": {
               "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
@@ -342,10 +332,10 @@
           },
           {
             "result": {
-              "duration": 7014958383,
+              "duration": 2034946415,
               "status": "passed"
             },
-            "line": 38,
+            "line": 40,
             "name": "A Seleccion Empresa \"Empresa\"",
             "match": {
               "arguments": [
@@ -360,10 +350,10 @@
           },
           {
             "result": {
-              "duration": 1104911811,
+              "duration": 1145637856,
               "status": "passed"
             },
-            "line": 39,
+            "line": 41,
             "name": "Valiar Empresa",
             "match": {
               "location": "Steps01.valiar_Empresa()"
@@ -372,10 +362,10 @@
           },
           {
             "result": {
-              "duration": 426464708,
+              "duration": 384162304,
               "status": "passed"
             },
-            "line": 40,
+            "line": 42,
             "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
             "match": {
               "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
@@ -384,10 +374,10 @@
           },
           {
             "result": {
-              "duration": 1004534,
+              "duration": 157162,
               "status": "passed"
             },
-            "line": 41,
+            "line": 43,
             "name": "Ingresar un valor correspondiente a una Empresa",
             "match": {
               "location": "Steps01.ingresar_un_valor_correspondiente_a_una_Empresa()"
@@ -396,10 +386,10 @@
           },
           {
             "result": {
-              "duration": 422928467,
+              "duration": 389371102,
               "status": "passed"
             },
-            "line": 42,
+            "line": 44,
             "name": "Ingreso de cuit 30587375296",
             "match": {
               "arguments": [
@@ -414,10 +404,10 @@
           },
           {
             "result": {
-              "duration": 445364721,
+              "duration": 386133565,
               "status": "passed"
             },
-            "line": 43,
+            "line": 45,
             "name": "Ingreso de descripcion NALCO ARGENTINA SA",
             "match": {
               "arguments": [
@@ -432,10 +422,10 @@
           },
           {
             "result": {
-              "duration": 134424065,
+              "duration": 133409370,
               "status": "passed"
             },
-            "line": 44,
+            "line": 46,
             "name": "Selecciono boton busqueda de entidad en PopUp",
             "match": {
               "location": "Steps01.selecciono_boton_busqueda_de_entidad_en_PopUp()"
@@ -444,10 +434,10 @@
           },
           {
             "result": {
-              "duration": 397475,
+              "duration": 197255,
               "status": "passed"
             },
-            "line": 45,
+            "line": 47,
             "name": "La pantalla lista los datos que coinciden con descripcion y cuit-cuil validar campos",
             "match": {
               "location": "Steps01.la_pantalla_lista_los_datos_que_coinciden_con_descripcion_y_cuit_cuil_validar_campos()"
@@ -456,25 +446,20 @@
           },
           {
             "result": {
-              "duration": 2706584315,
+              "duration": 2752253351,
               "status": "passed"
             },
-            "line": 46,
+            "line": 48,
             "name": "Apagar el sistema",
             "match": {
               "location": "Steps01.apagar_el_sistema()"
             },
             "keyword": "And "
           }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
         ]
       },
       {
-        "line": 70,
+        "line": 73,
         "name": "Test 04 - Segun criterio de busqueda Descripcion",
         "description": "                    Sin Resultados Validar que el buscador sea especifico de empresas",
         "id": "pruebas-critidad:-obligatorio;test-04---segun-criterio-de-busqueda-descripcion;;2",
@@ -483,10 +468,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5048615402,
+              "duration": 6236058287,
               "status": "passed"
             },
-            "line": 55,
+            "line": 58,
             "name": "Ingreso al sitio Sume",
             "match": {
               "location": "Steps01.ingreso_al_sitio_Sume()"
@@ -495,10 +480,10 @@
           },
           {
             "result": {
-              "duration": 198331425,
+              "duration": 93762529,
               "status": "passed"
             },
-            "line": 56,
+            "line": 59,
             "name": "Ingreso de usuario",
             "match": {
               "location": "Steps01.ingreso_de_usuario()"
@@ -507,10 +492,10 @@
           },
           {
             "result": {
-              "duration": 186672732,
+              "duration": 98747451,
               "status": "passed"
             },
-            "line": 57,
+            "line": 60,
             "name": "Ingreso de password",
             "match": {
               "location": "Steps01.ingreso_de_password()"
@@ -519,10 +504,10 @@
           },
           {
             "result": {
-              "duration": 9443586342,
+              "duration": 8501414137,
               "status": "passed"
             },
-            "line": 58,
+            "line": 61,
             "name": "Pantalla Alta de responsable de pago desplegada",
             "match": {
               "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
@@ -531,10 +516,10 @@
           },
           {
             "result": {
-              "duration": 7054420712,
+              "duration": 1988826423,
               "status": "passed"
             },
-            "line": 59,
+            "line": 62,
             "name": "A Seleccion Empresa \"Empresa\"",
             "match": {
               "arguments": [
@@ -549,10 +534,10 @@
           },
           {
             "result": {
-              "duration": 678128184,
+              "duration": 549810411,
               "status": "passed"
             },
-            "line": 60,
+            "line": 63,
             "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
             "match": {
               "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
@@ -561,10 +546,10 @@
           },
           {
             "result": {
-              "duration": 184961,
+              "duration": 329399,
               "status": "passed"
             },
-            "line": 61,
+            "line": 64,
             "name": "correspondiente a grupo familiar existente",
             "match": {
               "location": "Steps01.correspondiente_a_grupo_familiar_existente()"
@@ -573,10 +558,10 @@
           },
           {
             "result": {
-              "duration": 448631582,
+              "duration": 395997565,
               "status": "passed"
             },
-            "line": 62,
+            "line": 65,
             "name": "Ingreso de cuit 30587375296",
             "match": {
               "arguments": [
@@ -591,10 +576,10 @@
           },
           {
             "result": {
-              "duration": 296833797,
+              "duration": 288228694,
               "status": "passed"
             },
-            "line": 63,
+            "line": 66,
             "name": "Ingreso de descripcion NALCO",
             "match": {
               "arguments": [
@@ -609,10 +594,10 @@
           },
           {
             "result": {
-              "duration": 117979547,
+              "duration": 94671182,
               "status": "passed"
             },
-            "line": 64,
+            "line": 67,
             "name": "Selecciono boton busqueda de entidad en PopUp",
             "match": {
               "location": "Steps01.selecciono_boton_busqueda_de_entidad_en_PopUp()"
@@ -621,10 +606,10 @@
           },
           {
             "result": {
-              "duration": 171477,
+              "duration": 371736,
               "status": "passed"
             },
-            "line": 65,
+            "line": 68,
             "name": "La grilla se muestra vacia. No existe datos que coincida con los criterios de busqueda",
             "match": {
               "location": "Steps01.la_grilla_se_muestra_vacia_No_existe_datos_que_coincida_con_los_criterios_de_busqueda()"
@@ -633,37 +618,32 @@
           },
           {
             "result": {
-              "duration": 2746432981,
+              "duration": 2744965845,
               "status": "passed"
             },
-            "line": 66,
+            "line": 69,
             "name": "Apagar el sistema",
             "match": {
               "location": "Steps01.apagar_el_sistema()"
             },
             "keyword": "And "
           }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
         ]
       },
       {
-        "line": 93,
+        "line": 96,
         "name": "Test 05 - Validar Funcionamiento de la Pantalla de",
-        "description": "                    Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro ",
+        "description": "                    Resultados del Buscador de Entidades Bot�n Seleccionar 1 registro",
         "id": "pruebas-critidad:-obligatorio;test-05---validar-funcionamiento-de-la-pantalla-de;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4797026966,
+              "duration": 6493914303,
               "status": "passed"
             },
-            "line": 75,
+            "line": 78,
             "name": "Ingreso al sitio Sume",
             "match": {
               "location": "Steps01.ingreso_al_sitio_Sume()"
@@ -672,10 +652,10 @@
           },
           {
             "result": {
-              "duration": 131392290,
+              "duration": 186035547,
               "status": "passed"
             },
-            "line": 76,
+            "line": 79,
             "name": "Ingreso de usuario",
             "match": {
               "location": "Steps01.ingreso_de_usuario()"
@@ -684,10 +664,10 @@
           },
           {
             "result": {
-              "duration": 117453684,
+              "duration": 91557450,
               "status": "passed"
             },
-            "line": 77,
+            "line": 80,
             "name": "Ingreso de password",
             "match": {
               "location": "Steps01.ingreso_de_password()"
@@ -696,10 +676,10 @@
           },
           {
             "result": {
-              "duration": 11894734975,
+              "duration": 7881162113,
               "status": "passed"
             },
-            "line": 78,
+            "line": 81,
             "name": "Pantalla Alta de responsable de pago desplegada",
             "match": {
               "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
@@ -708,10 +688,10 @@
           },
           {
             "result": {
-              "duration": 7220495660,
+              "duration": 1965785191,
               "status": "passed"
             },
-            "line": 79,
+            "line": 82,
             "name": "A Seleccion Empresa \"Empresa\"",
             "match": {
               "arguments": [
@@ -726,10 +706,10 @@
           },
           {
             "result": {
-              "duration": 644597207,
+              "duration": 532203777,
               "status": "passed"
             },
-            "line": 80,
+            "line": 83,
             "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
             "match": {
               "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
@@ -738,10 +718,10 @@
           },
           {
             "result": {
-              "duration": 402246850,
+              "duration": 386103415,
               "status": "passed"
             },
-            "line": 81,
+            "line": 84,
             "name": "Ingreso de cuit 30709492817",
             "match": {
               "arguments": [
@@ -756,10 +736,10 @@
           },
           {
             "result": {
-              "duration": 599055497,
+              "duration": 493419081,
               "status": "passed"
             },
-            "line": 82,
+            "line": 85,
             "name": "Ingreso de descripcion BALDINI MARTINEZ Y ASOCIADOS",
             "match": {
               "arguments": [
@@ -774,10 +754,10 @@
           },
           {
             "result": {
-              "duration": 123307945,
+              "duration": 128965534,
               "status": "passed"
             },
-            "line": 83,
+            "line": 86,
             "name": "Selecciono boton busqueda de entidad en PopUp",
             "match": {
               "location": "Steps01.selecciono_boton_busqueda_de_entidad_en_PopUp()"
@@ -786,10 +766,10 @@
           },
           {
             "result": {
-              "duration": 1292989777,
+              "duration": 298431716,
               "status": "passed"
             },
-            "line": 84,
+            "line": 87,
             "name": "Seleccionar valor con checkbox",
             "match": {
               "location": "Steps01.seleccionar_valor_con_checkbox()"
@@ -798,10 +778,10 @@
           },
           {
             "result": {
-              "duration": 217834685,
+              "duration": 194430563,
               "status": "passed"
             },
-            "line": 85,
+            "line": 88,
             "name": "Seleccionar boton confirmar entidad",
             "match": {
               "location": "Steps01.seleccionar_boton_confirmar_entidad()"
@@ -810,10 +790,10 @@
           },
           {
             "result": {
-              "duration": 1000621422,
+              "duration": 999394766,
               "status": "passed"
             },
-            "line": 86,
+            "line": 89,
             "name": "Se cierra el popUp de busqueda de entidad",
             "match": {
               "location": "Steps01.se_cierra_el_popUp_de_busqueda_de_entidad()"
@@ -822,10 +802,10 @@
           },
           {
             "result": {
-              "duration": 291657,
+              "duration": 260119,
               "status": "passed"
             },
-            "line": 87,
+            "line": 90,
             "name": "Los valores seleccionados se cargan en Alta de responsable",
             "match": {
               "location": "Steps01.los_valores_seleccionados_se_cargan_en_Alta_de_responsable()"
@@ -834,10 +814,10 @@
           },
           {
             "result": {
-              "duration": 3138614558,
+              "duration": 3160279582,
               "status": "passed"
             },
-            "line": 88,
+            "line": 91,
             "name": "validando los valores de los campos razon social y cuit",
             "match": {
               "location": "Steps01.validando_los_valores_de_los_campos_razon_social_y_cuit()"
@@ -846,10 +826,10 @@
           },
           {
             "result": {
-              "duration": 2809681106,
+              "duration": 2780496644,
               "status": "passed"
             },
-            "line": 89,
+            "line": 92,
             "name": "Apagar el sistema",
             "match": {
               "location": "Steps01.apagar_el_sistema()"
@@ -859,19 +839,19 @@
         ]
       },
       {
-        "line": 95,
-        "name": "Test 06 - N registros",
-        "description": "",
-        "id": "pruebas-critidad:-obligatorio;test-06---n-registros",
+        "line": 113,
+        "name": "Test 07 - Validar comportamiento de la pantalla segun",
+        "description": "    \tseleccion tipo de responsable \u003d Grupo Familiar",
+        "id": "pruebas-critidad:-obligatorio;test-07---validar-comportamiento-de-la-pantalla-segun",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6113402718,
+              "duration": 6357946720,
               "status": "passed"
             },
-            "line": 97,
+            "line": 116,
             "name": "Ingreso al sitio Sume",
             "match": {
               "location": "Steps01.ingreso_al_sitio_Sume()"
@@ -880,10 +860,10 @@
           },
           {
             "result": {
-              "duration": 185536879,
+              "duration": 141815613,
               "status": "passed"
             },
-            "line": 98,
+            "line": 117,
             "name": "Ingreso de usuario",
             "match": {
               "location": "Steps01.ingreso_de_usuario()"
@@ -892,10 +872,10 @@
           },
           {
             "result": {
-              "duration": 149356652,
+              "duration": 89837649,
               "status": "passed"
             },
-            "line": 99,
+            "line": 118,
             "name": "Ingreso de password",
             "match": {
               "location": "Steps01.ingreso_de_password()"
@@ -904,10 +884,10 @@
           },
           {
             "result": {
-              "duration": 9214445885,
+              "duration": 9411195451,
               "status": "passed"
             },
-            "line": 100,
+            "line": 119,
             "name": "Pantalla Alta de responsable de pago desplegada",
             "match": {
               "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
@@ -916,15 +896,15 @@
           },
           {
             "result": {
-              "duration": 7717234662,
+              "duration": 2201593944,
               "status": "passed"
             },
-            "line": 101,
-            "name": "A Seleccion Empresa \"Empresa\"",
+            "line": 120,
+            "name": "A Seleccion Empresa \"Grupo\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Empresa\"",
+                  "val": "\"Grupo\"",
                   "offset": 20
                 }
               ],
@@ -934,10 +914,10 @@
           },
           {
             "result": {
-              "duration": 635892320,
+              "duration": 532142516,
               "status": "passed"
             },
-            "line": 102,
+            "line": 121,
             "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
             "match": {
               "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
@@ -946,44 +926,125 @@
           },
           {
             "result": {
-              "duration": 183092816,
+              "duration": 2884407349,
               "status": "passed"
             },
-            "line": 103,
-            "name": "Selecciono boton busqueda de entidad en PopUp",
+            "line": 122,
+            "name": "Apagar el sistema",
             "match": {
-              "location": "Steps01.selecciono_boton_busqueda_de_entidad_en_PopUp()"
+              "location": "Steps01.apagar_el_sistema()"
             },
-            "keyword": "When "
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 124,
+        "name": "Test 08 - Validar Boton Buscador de Entidades",
+        "description": "    \t\tAsociados segun selecci�n tipo de responsable \u003d Grupo Familiar",
+        "id": "pruebas-critidad:-obligatorio;test-08---validar-boton-buscador-de-entidades",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5742228339,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "Ingreso al sitio Sume",
+            "match": {
+              "location": "Steps01.ingreso_al_sitio_Sume()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 835894841,
+              "duration": 90167689,
               "status": "passed"
             },
-            "line": 104,
-            "name": "seleccionar boton ultima pagina",
+            "line": 128,
+            "name": "Ingreso de usuario",
             "match": {
-              "location": "Steps01.seleccionar_boton_ultima_pagina()"
+              "location": "Steps01.ingreso_de_usuario()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5] (tried for 60 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat ✽.seleccionar el ultimo resultado(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:105)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]\"}\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-C97NRF6\u0027, ip: \u002710.5.222.6\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\\Users\\blender\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 182730093c6e5be6692c292bfbd35ef6\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027mat-dialog-0\u0027]/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat cucumber.examples.java.calculator.pageobject.BusquedaDeEntidad.checkboxLast(BusquedaDeEntidad.java:106)\r\n\tat cucumber.examples.java.calculator.Steps01.seleccionar_el_ultimo_resultado(Steps01.java:238)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
-              "duration": 60657807695,
-              "status": "failed"
+              "duration": 90395093,
+              "status": "passed"
             },
-            "line": 105,
-            "name": "seleccionar el ultimo resultado",
+            "line": 129,
+            "name": "Ingreso de password",
             "match": {
-              "location": "Steps01.seleccionar_el_ultimo_resultado()"
+              "location": "Steps01.ingreso_de_password()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
-            "line": 106,
-            "name": "Se cierra el popUp de busqueda de entidad",
+            "result": {
+              "duration": 7883884544,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "Pantalla Alta de responsable de pago desplegada",
+            "match": {
+              "location": "Steps01.pantalla_Alta_de_responsable_de_pago_desplegada()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2184111435,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "A Seleccion Empresa \"Grupo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Grupo\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps01.a_Seleccion_Empresa(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 539925884,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "Se habilita el boton del Buscador que permitira la seleccion de entidades",
+            "match": {
+              "location": "Steps01.se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 133,
+            "name": "Obligatorio H La aplicacion despliega la ventana Buscador de Entidades. Mostrando los siguientes campos:",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 134,
+            "name": "Obligatorio H Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "line": 135,
+            "name": "Apagar el sistema",
             "keyword": "And "
           }
         ]

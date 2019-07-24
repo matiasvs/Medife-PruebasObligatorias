@@ -1,4 +1,4 @@
-package cucumber.examples.java.calculator.pageobject;
+package cucumber.examples.java.calculator.pageobjects;
 
 //import static org.testng.Assert.assertEquals;
 

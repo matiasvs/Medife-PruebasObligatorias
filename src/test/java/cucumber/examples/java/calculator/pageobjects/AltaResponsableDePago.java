@@ -1,6 +1,5 @@
-package cucumber.examples.java.calculator.pageobject;
+package cucumber.examples.java.calculator.pageobjects;
 
-//import org.hamcrest.core.Is;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -9,16 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import junit.framework.*;
-//import org.testng.*;
-
 import junit.framework.Assert;
 //import util.PropertyManager;
-import util.PropertyManager;
+import utils.PropertyManager;
 
-//import util.PropertyManager;
-
-//@SuppressWarnings("deprecation")
 public class AltaResponsableDePago{
 	
 	
@@ -27,22 +20,15 @@ public class AltaResponsableDePago{
 	private By ByUser = By.id("j_username");
 	private By ByPass = By.id("j_password");
 	private By ByConfirmarLogin = By.id("j_idt18");
+	//private By ByInicio = By.id("menuAccordionPanel");//*[@id="menuAccordionPanel"]/h3[1]  menuAccordionPanel
 	private By ByInicio = By.xpath("//*[@id=\'menuAccordionPanel\']/h3[1]");
-	private By ByClientes = By.id("menuAccordionPanel:initTree:1:j_idt90");
+	//private By ByClientes = By.id("menuAccordionPanel:initTree:1:j_idt90");
+	private By ByClientes = By.linkText("Clientes");
 	//menuAccordionPanel:initTree:1:j_idt89 menuAccordionPanel:initTree:1:j_idt90");
 	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1\']/span/span[3]");
-	//*[@id="menuAccordionPanel:initTree:1_1"]/span/span[3]
-	//*[@id="menuAccordionPanel:initTree:1_1:j_idt89"]
-	
-	//*[@id="menuAccordionPanel:initTree:1_1_2"]/span/span[3]
-	
 										      
 	private By ByAltaReponsableNueva = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1_2\']/span/span[3]");
-	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button/span
 	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]/button");
-	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button
-	//*[@id="collapseChargePaymentManager"]/form/div[1]/div[3]/button
-	//*[@id="menuAccordionPanel:initTree:1_1_2"]/span/span[3]
 	
 	private By ByDescrip = By.id("entityCuitId");
 	private By ByTipoResponsable = By.id("managerTypeId");
@@ -60,12 +46,6 @@ public class AltaResponsableDePago{
 	
 	String userLogin = PropertyManager.getInstance().getUser();
 	String passwordLogin = PropertyManager.getInstance().getPass();
-	
-	// CONSTRUCTOR //
-//	public AltaResponsableDePago(WebDriver driver) {
-//		super(driver);
-//		// TODO Auto-generated constructor stub
-//	}
 	
 	public AltaResponsableDePago (WebDriver driver) {
 		this.driver = driver;
@@ -169,6 +149,7 @@ public class AltaResponsableDePago{
 	
 	@SuppressWarnings("deprecation")
 	public void ValidarResponsableValorExterno() {
+		
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
 		//assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
 		//Assert.assertEquals(responsable, "Externo");
