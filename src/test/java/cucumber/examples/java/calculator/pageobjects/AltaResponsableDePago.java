@@ -297,6 +297,8 @@ public class AltaResponsableDePago{
 		guru99seleniumlink3.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER);
 	}
 	
+	
+	
 	// BOTONES //	
 
 	public void btnConfirmar() throws InterruptedException {
@@ -359,7 +361,11 @@ public class AltaResponsableDePago{
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
 		System.out.println(checkCuitCuil);
 		//assertEquals(checkCuitCuil, "20208377923", "No se encontro el cuit/cuil esperado: ");
-	}	
+	}
+	
+	public void validarPantallaDescrCuil() {
+		System.out.println("a validar");
+	}
 	
 		
 	// VALIDAR MENSAJES //	

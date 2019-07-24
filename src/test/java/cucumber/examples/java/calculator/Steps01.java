@@ -277,26 +277,38 @@ public class Steps01 {
 
 	@Then("^La pantalla lista los datos que coinciden con la informacion ingresada\\. Dispuestos de la siguiente manera: Descripcion - Cuit - Cuil$")
 	public void la_pantalla_lista_los_datos_que_coinciden_con_la_informacion_ingresada_Dispuestos_de_la_siguiente_manera_Descripcion_Cuit_Cuil() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.validarPosicionamiento();
+	    driver.switchTo().defaultContent();
 	}
 
 	@Then("^La Grilla se muestra vacia\\. No existen datos que coincidan con los criterios de busqueda ingresados\\.$")
 	public void la_Grilla_se_muestra_vacia_No_existen_datos_que_coincidan_con_los_criterios_de_busqueda_ingresados() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.validarPosicionamiento();
+	    driver.switchTo().defaultContent();
 	}
 
-	@Then("^Ingreso fecha de vigencia alta de responsable (\\d+)/(\\d+)/(\\d+)$")
-	public void ingreso_fecha_de_vigencia_alta_de_responsable(int arg1, int arg2, int arg3) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	@Then("^Ingreso fecha de vigencia alta de responsable (.*)$")
+	public void ingreso_fecha_de_vigencia_alta_de_responsable(String fechaDeVigencia) throws Exception {
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+	    resp.ingresoFechaVigencia(fechaDeVigencia);
+	    driver.switchTo().defaultContent();
 	}
 
 	@Then("^La aplicacion cierra la ventana Buscador de Entidades y los datos seleccionados se visualizan ingresados en la pantalla Alta de Responsable de Pago no permitiendo su edicion$")
 	public void la_aplicacion_cierra_la_ventana_Buscador_de_Entidades_y_los_datos_seleccionados_se_visualizan_ingresados_en_la_pantalla_Alta_de_Responsable_de_Pago_no_permitiendo_su_edicion() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+	    resp.validarPantallaDescrCuil();
+	    driver.switchTo().defaultContent();
 	}
 
 	@Then("^La aplicacion habilita los campos para ingresar los datos manualmente$")

@@ -158,7 +158,16 @@ public class BusquedaDeEntidad {
 	public void validarTituloPopup() {
 		String checkTitlePopUp = this.driver.findElement(ByTitleBusquedaEntidad).getText();
 		System.out.println("titulo validado: " + checkTitlePopUp);
-		//assertEquals(checkTitlePopUp, "B�squeda de entidad", "No se encontre el valor: ");
+		org.junit.Assert.assertEquals("Búsqueda de entidad", checkTitlePopUp); 
+		//assertEquals(checkTitlePopUp, "Búsqueda de entidad", "No se encontre el valor: ");
+	}
+	
+	public void validarPosicionamiento() {
+		
+	}
+	
+	public void validarGrillaVacia() {
+		
 	}
 	
 	public void validarResposableGrupoFamiliar() {
