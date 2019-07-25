@@ -16,7 +16,8 @@ public class BusquedaDeEntidad {
 	private By ByBusquedaCuitID = By.id("entityCuitId");
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
 	private By ByResponsablePopUp = By.id("entityId");	
-	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar");
+	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/h3");
+	//private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar"); 
 	private By ByDescripcionResultado = By.id("descriptionId");
 	private By ByLupa = By.id("entityCuitId");
 	private By ByResultadoCuit = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[2]");
