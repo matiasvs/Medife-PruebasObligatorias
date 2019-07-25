@@ -149,6 +149,7 @@ public class Steps01 {
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
+	    resp.validarLupa();
 	    resp.lupa();
 	    driver.switchTo().defaultContent();
 	}
@@ -208,6 +209,7 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
 		busqueda.check();
+		System.out.println("05 check");
 	    driver.switchTo().defaultContent();
 	}
 	@When("^Seleccionar boton confirmar entidad$")
@@ -254,13 +256,17 @@ public class Steps01 {
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
 		busqueda.checkboxLast();
 	    driver.switchTo().defaultContent();
-	}
+	}//
 	@Then("^validando los valores de los campos razon social y cuit test seis$")
 	public void validando_los_valores_de_los_campos_razon_social_y_cuit_test_seis() throws Exception {
-	    System.out.println("To do");
+		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
+		driver.switchTo().frame(frame);
+		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
+		busqueda.validarTituloPopup();
+	    driver.switchTo().defaultContent();
 	}
 	
-	//nuevo
+	//nuevo  entityId
 	@Then("^La aplicacion despliega la ventana Buscador de entidades Mostrando los siguientes campos: #validarPopUp$")
 	public void la_aplicacion_despliega_la_ventana_Buscador_de_entidades_Mostrando_los_siguientes_campos_validarPopUp() throws Exception {
 	    System.out.println("Pop up busqueda entidad");
@@ -271,7 +277,7 @@ public class Steps01 {
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
-		busqueda.validarTituloPopup();
+		busqueda.validarValorTipoResponsableGrupo();
 	    driver.switchTo().defaultContent();
 	}
 
@@ -298,16 +304,20 @@ public class Steps01 {
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-	    resp.ingresoFechaVigencia(fechaDeVigencia);
+	    //resp.ingresoFechaVigencia(fechaDeVigencia);   -  tomar valor de descripcion y comparar con valor en alta de responsable
 	    driver.switchTo().defaultContent();
 	}
 
 	@Then("^La aplicacion cierra la ventana Buscador de Entidades y los datos seleccionados se visualizan ingresados en la pantalla Alta de Responsable de Pago no permitiendo su edicion$")
 	public void la_aplicacion_cierra_la_ventana_Buscador_de_Entidades_y_los_datos_seleccionados_se_visualizan_ingresados_en_la_pantalla_Alta_de_Responsable_de_Pago_no_permitiendo_su_edicion() throws Exception {
+		Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-	    resp.validarPantallaDescrCuil();
+	    resp.validAltaRazonSocial11();
+	    Thread.sleep(1000);
+	    resp.validAltaCuitCuil11();
+	    Thread.sleep(1000);
 	    driver.switchTo().defaultContent();
 	}
 

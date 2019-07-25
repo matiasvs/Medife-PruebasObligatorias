@@ -172,7 +172,7 @@ Feature: Pruebas critidad: Obligatorio
       | Grupo       | TIERRA COOP DE TRAB. VIV. Y CONS. LTDA. |
 
   Scenario Outline: Test 11 - Validar Funcionamiento de la Pantalla de
-    						Resultados del Buscador de Entidades. Bot�n Seleccionar 1 registro
+    								Resultados del Buscador de Entidades. Bot�n Seleccionar 1 registro
 
     Given Ingreso al sitio Sume
     And Ingreso de usuario
@@ -182,6 +182,9 @@ Feature: Pruebas critidad: Obligatorio
     Then Se habilita el boton del Buscador que permitira la seleccion de entidades
     And Ingreso de cuit <CuitCuil>
     And Ingreso de descripcion <Descripcion>
+    When Selecciono boton busqueda de entidad en PopUp
+    When Seleccionar valor con checkbox
+    When Seleccionar boton confirmar entidad
     And Ingreso fecha de vigencia alta de responsable <FechaDeVigencia>
     When Selecciono boton busqueda de entidad en PopUp
     Then La aplicacion cierra la ventana Buscador de Entidades y los datos seleccionados se visualizan ingresados en la pantalla Alta de Responsable de Pago no permitiendo su edicion
@@ -190,29 +193,29 @@ Feature: Pruebas critidad: Obligatorio
     #canbio no se puede ver fecha en busqueda
     Examples: 
       | Responsable | Descripcion | CuitCuil    | FechaDeVigencia |
-      | Grupo       | RETEGUI     | 20208377923 | 15/06/2019      |
+      | Grupo       | RETEGUI     | 27060599071 | 15/06/2019      |
 
-  Scenario Outline: Test 12 - Validar comportamiento de la pantalla segun seleccion
-    							tipo de responsable = Externo
+  #Scenario Outline: Test 12 - Validar comportamiento de la pantalla segun seleccion
+   # 								tipo de responsable = Externo
 
-    Given Ingreso al sitio Sume
-    And Ingreso de usuario
-    And Ingreso de password
-    And Pantalla Alta de responsable de pago desplegada
-    And A Seleccion Empresa <Responsable>
-    Then Se habilita el boton del Buscador que permitira la seleccion de entidades
-    And Ingreso de descripcion <Descripcion>
-    #cambiaVerPorque
-    And A Seleccion Empresa "Externo"
-    Then Se habilita el boton del Buscador que permitira la seleccion de entidades
-    Then La aplicacion habilita los campos para ingresar los datos manualmente
-    Then Excepto Fecha de bja y estado que no son editables
-    Then Inhabilita el boton buscador de entidades
-    And Apagar el sistema
+    #Given Ingreso al sitio Sume
+    #And Ingreso de usuario
+    #And Ingreso de password
+    #And Pantalla Alta de responsable de pago desplegada
+    #And A Seleccion Empresa <Responsable>
+    #Then Se habilita el boton del Buscador que permitira la seleccion de entidades
+    #And Ingreso de descripcion <Descripcion>
+    ##cambiaVerPorque
+    #And A Seleccion Empresa "Externo"
+    #Then Se habilita el boton del Buscador que permitira la seleccion de entidades
+    #Then La aplicacion habilita los campos para ingresar los datos manualmente
+    #Then Excepto Fecha de bja y estado que no son editables
+    #Then Inhabilita el boton buscador de entidades
+    #And Apagar el sistema
 
-    Examples: 
-      | Responsable | Descripcion | CuitCuil    | FechaDeVigencia |
-      | Externo     | GOMEZ       | 20318861200 | 15/06/2019      |
+    #Examples: 
+     # | Responsable | Descripcion | CuitCuil    | FechaDeVigencia |
+      #| Externo     | GOMEZ       | 20318861200 | 15/06/2019      |
 
   Scenario Outline: Test 13 - Validar Botón Guardar en el Ingreso Manual de datos
     							según selección tipo de responsable = Externo

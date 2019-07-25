@@ -16,7 +16,7 @@ public class BusquedaDeEntidad {
 	private By ByBusquedaCuitID = By.id("entityCuitId");
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
 	private By ByResponsablePopUp = By.id("entityId");	
-	private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/h3");
+	private By ByTitleBusquedaEntidad = By.xpath("//h3");
 	//private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar"); 
 	private By ByDescripcionResultado = By.id("descriptionId");
 	private By ByLupa = By.id("entityCuitId");
@@ -169,6 +169,16 @@ public class BusquedaDeEntidad {
 	
 	public void validarGrillaVacia() {
 		
+	}
+	
+	public void validarValorTipoResponsableGrupo() {
+		WebDriverWait wait20=new WebDriverWait(driver, 60);
+		WebElement buscar;
+		buscar= wait20
+				.until(ExpectedConditions
+						.elementToBeClickable(ByResponsablePopUp));
+		buscar.isDisplayed();
+		System.out.println("Boton busqueda es visible: " + buscar);
 	}
 	
 	public void validarResposableGrupoFamiliar() {

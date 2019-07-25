@@ -297,7 +297,15 @@ public class AltaResponsableDePago{
 		guru99seleniumlink3.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER);
 	}
 	
-	
+	public void validarLupa() {
+		WebDriverWait wait22=new WebDriverWait(driver, 60);
+		WebElement buscar;
+		buscar= wait22
+				.until(ExpectedConditions
+						.elementToBeClickable(ByLupa));
+		buscar.isDisplayed();
+		System.out.println("Boton busqueda es visible: " + buscar);
+	}
 	
 	// BOTONES //	
 
@@ -346,21 +354,18 @@ public class AltaResponsableDePago{
 	public void validarCuitCuil05() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
 		System.out.println("Valor CUIT - CUIL encontrado: "+checkCuitCuil);
-		//assertEquals(checkCuitCuil, "20200081170", "No se encontro el cuit/cuil esperado: ");
 		org.junit.Assert.assertEquals("30709492817", checkCuitCuil);
 	}
 	
 	// Validar test 11
-	public void validTipoResonsable11() {		
+	public void validAltaRazonSocial11() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
-		System.out.println(checkTipoResponsable);
-		//assertEquals(checkTipoResponsable, "RETEGUI ", "No se encontro el valor esperado: ");	
+		org.junit.Assert.assertEquals("RETEGUI", checkTipoResponsable);
  	}
 	
 	public void validAltaCuitCuil11() {
 		String checkCuitCuil = this.driver.findElement(ByCuitCuil).getAttribute("value");
-		System.out.println(checkCuitCuil);
-		//assertEquals(checkCuitCuil, "20208377923", "No se encontro el cuit/cuil esperado: ");
+		org.junit.Assert.assertEquals("27060599071", checkCuitCuil);
 	}
 	
 	public void validarPantallaDescrCuil() {
