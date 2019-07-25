@@ -20,14 +20,11 @@ public class AltaResponsableDePago{
 	private By ByUser = By.id("j_username");
 	private By ByPass = By.id("j_password");
 	private By ByConfirmarLogin = By.id("j_idt18");
-	//private By ByInicio = By.id("menuAccordionPanel");//*[@id="menuAccordionPanel"]/h3[1]  menuAccordionPanel
 	private By ByInicio = By.xpath("//*[@id=\'menuAccordionPanel\']/h3[1]");
-	//private By ByClientes = By.id("menuAccordionPanel:initTree:1:j_idt90");
 	private By ByClientes = By.linkText("Clientes");
-	//menuAccordionPanel:initTree:1:j_idt89 menuAccordionPanel:initTree:1:j_idt90");
 	private By ByResponsableDePago = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1\']/span/span[3]");
 										      
-	private By ByAltaReponsableNueva = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_1_2\']/span/span[3]");
+	private By ByAltaReponsableNueva = By.xpath("//*[@id=\'menuAccordionPanel:initTree:1_2\']");
 	private By ByLupa = By.xpath("//*[@id=\'collapseChargePaymentManager\']/form/div[1]/div[3]/button");
 	
 	private By ByDescrip = By.id("entityCuitId");
@@ -58,8 +55,6 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoUser() throws InterruptedException{
-		//System.out.println("1");
-		//Thread.sleep(4000);
 		WebDriverWait wait1=new WebDriverWait(driver, 60);
 		WebElement user;
 		user= wait1
@@ -72,8 +67,6 @@ public class AltaResponsableDePago{
 			//user.submit();
 			//System.out.println("2");
 		}		
-//		WebElement mydynamicelement = (new WebDriverWait(driver, 10))
-//				.until(ExpectedConditions.presenceOfElementLocated(By.id("wx")));
 	}
 		
 	public void ingresoPass(){
@@ -91,7 +84,6 @@ public class AltaResponsableDePago{
 	}
 	
 	public void ingresoConfirmar() {
-		//this.driver.findElement(ByConfirmarLogin).click();
 		WebDriverWait wait3=new WebDriverWait(driver, 60);
 		WebElement confimarMedife;
 		confimarMedife= wait3
@@ -116,7 +108,6 @@ public class AltaResponsableDePago{
 				.until(ExpectedConditions
 						.elementToBeClickable(ByClientes));
 		clienteMedife.click();
-		//driver.navigate().to("http://sumedesa.medife.com/sume/page/plugin/process/external/pg_external_content.jsf");
 	}
 	
 	public void ingresoResponsableDePago(){
@@ -126,7 +117,7 @@ public class AltaResponsableDePago{
 				.until(ExpectedConditions
 						.elementToBeClickable(ByResponsableDePago));
 		responsableDePago.click();		
-	}//*[@id="menuAccordionPanel:initTree:1_1_2:j_idt89"]
+	}
 	
 	public void ingresoAltaDeResponsable() {
 		WebDriverWait wait6=new WebDriverWait(driver, 60);
@@ -137,7 +128,7 @@ public class AltaResponsableDePago{
 		responsableDePago.click();	
 	}
 		
-	// METODOS // presenceOfElementLocated elementToBeClickable
+	// METODOS //
 	public void ingresoExterno() {
 		WebDriverWait wait6=new WebDriverWait(driver, 60);
 		WebElement responsableDePago;
@@ -151,8 +142,6 @@ public class AltaResponsableDePago{
 	public void ValidarResponsableValorExterno() {
 		
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		//assertEquals(responsable, "Externo", "No se encontro el valor Externo esperado: " + responsable);
-		//Assert.assertEquals(responsable, "Externo");
 		org.junit.Assert.assertEquals("Externo", responsable);
 	}
 
@@ -181,7 +170,6 @@ public class AltaResponsableDePago{
 	
 	public void ValidarResponsableValorGrupoFamiliar() {
 		String responsable = this.driver.findElement(ByTipoResponsable).getText();
-		//assertEquals(responsable, "Grupo Familiar", "No se encontro el valor Grupo Familiar esperado: " + responsable);
 		org.junit.Assert.assertEquals("Grupo Familiar", responsable);
 	}
 	
@@ -242,7 +230,6 @@ public class AltaResponsableDePago{
 		email.click();
 		email.clear();
 		email.sendKeys(mail.trim());
-		//email.submit();
 	}
 	
 	public void ingresoCuitCuil(String cuitCuil) {
@@ -254,7 +241,6 @@ public class AltaResponsableDePago{
 		cuit.click();
 		cuit.clear();
 		cuit.sendKeys(cuitCuil.trim());
-		//cuit.submit();
 	}
 	
 	public void ingresoFechaBaja(String fechaBaja) {
@@ -266,7 +252,6 @@ public class AltaResponsableDePago{
 		fechabaja.click();
 		fechabaja.clear();
 		fechabaja.sendKeys(fechaBaja.trim());
-		//fechabaja.submit();
 	}
 	
 	public void ingresoFechaVigencia(String fechaVigencia) {
@@ -278,7 +263,6 @@ public class AltaResponsableDePago{
 		fechavigencia.click();
 		fechavigencia.clear();
 		fechavigencia.sendKeys(fechaVigencia.trim());
-		//fechavigencia.submit();
 	}
 	
 	public void lupa() {
@@ -304,11 +288,10 @@ public class AltaResponsableDePago{
 				.until(ExpectedConditions
 						.elementToBeClickable(ByLupa));
 		buscar.isDisplayed();
-		System.out.println("Boton busqueda es visible: " + buscar);
+		//System.out.println("Boton busqueda es visible: " + buscar); crear funcion para validar display button por separado
 	}
 	
 	// BOTONES //	
-
 	public void btnConfirmar() throws InterruptedException {
 		WebDriverWait wait19=new WebDriverWait(driver, 60);
 		WebElement confimar;
@@ -347,7 +330,6 @@ public class AltaResponsableDePago{
 	public void validarNombre05() {		
 		String checkTipoResponsable = this.driver.findElement(ByNombreApellido).getAttribute("value");
 		System.out.println("Valor Descripcion encontrado: "+checkTipoResponsable);
-		//assertEquals(checkTipoResponsable, "GARRI FABIO DANIEL", "No se encontro el valor esperado: ");	30709492817
 		org.junit.Assert.assertEquals("BALDINI MARTINEZ Y ASOCIADOS", checkTipoResponsable);  
  	}
 	

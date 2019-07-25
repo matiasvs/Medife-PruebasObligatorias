@@ -64,35 +64,21 @@ public class Steps01 {
 	@Given("^A Seleccion Exento (.*)$")
 	public void a_Seleccion_Exento(String Externo) throws Exception {
 		Thread.sleep(3000);
-		System.out.println("1");
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
-		System.out.println("2");
-		//*[@id=\"j_idt94\"]/div/iframe
-		//*[@id="j_idt93"]/div/iframe
-		driver.switchTo().frame(frame);
+		System.out.println("2");driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
-		System.out.println("3");
-	    resp.ingresoExterno();
-	    System.out.println("4");
-		//resp.ingresoTipoResponsableABC(Externo);
+		resp.ingresoExterno();
 	    driver.switchTo().defaultContent();
-	    System.out.println("5");	
 	}
 	
 	@Then("^validar Exento$")
 	public void validar_Exento() throws Exception {
-		System.out.println("6");
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
-		System.out.println("7");
 		driver.switchTo().frame(frame);
-		System.out.println("8");
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 		Thread.sleep(1000);
-		System.out.println("9");
-	    resp.ValidarResponsableValorExterno();
-	    System.out.println("99");
+		resp.ValidarResponsableValorExterno();
 	    driver.switchTo().defaultContent();
-	    System.out.println("555");
 	}
 	
 	@Given("^A Seleccion Grupo Familiar (.*)$")
@@ -119,8 +105,6 @@ public class Steps01 {
 	public void a_Seleccion_Empresa(String arg1) throws Exception {
 		Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe")); 
-		// id viejo //*[@id=\"j_idt94\"]/div/iframe
-		// nuevo id //*[@id="j_idt93"]/div/iframe
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
 	    resp.ingresoEmpresa();
@@ -145,7 +129,6 @@ public class Steps01 {
 
 	@Then("^Se habilita el boton del Buscador que permitira la seleccion de entidades$")
 	public void se_habilita_el_boton_del_Buscador_que_permitira_la_seleccion_de_entidades() throws Exception {
-		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		AltaResponsableDePago resp = new AltaResponsableDePago(driver);
@@ -162,7 +145,6 @@ public class Steps01 {
 	
 	@Then("^Ingreso de cuit (.*)$")
 	public void ingreso_de_cuit(String BusquedaCuit) throws Exception {
-		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
@@ -172,7 +154,6 @@ public class Steps01 {
 	
 	@Then("^Ingreso de descripcion (.*)$")
 	public void ingreso_de_descripcion(String descripcion) throws Exception {
-		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
@@ -182,7 +163,6 @@ public class Steps01 {
 	
 	@When("^Selecciono boton busqueda de entidad en PopUp$")
 	public void selecciono_boton_busqueda_de_entidad_en_PopUp() throws Exception {
-		//Thread.sleep(1000);
 		WebElement frame = driver.findElement(By.xpath("//*[@id=\"j_idt93\"]/div/iframe"));
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
@@ -209,8 +189,7 @@ public class Steps01 {
 		driver.switchTo().frame(frame);
 		BusquedaDeEntidad busqueda = new BusquedaDeEntidad(driver);
 		busqueda.check();
-		System.out.println("05 check");
-	    driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();
 	}
 	@When("^Seleccionar boton confirmar entidad$")
 	public void seleccionar_boton_confirmar_entidad() throws Exception {

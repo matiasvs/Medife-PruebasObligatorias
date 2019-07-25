@@ -17,7 +17,6 @@ public class BusquedaDeEntidad {
 	private By ByBusquedaEntidadesPopUp = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/div/button[1]");	
 	private By ByResponsablePopUp = By.id("entityId");	
 	private By ByTitleBusquedaEntidad = By.xpath("//h3");
-	//private By ByTitleBusquedaEntidad = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/mat-toolbar"); 
 	private By ByDescripcionResultado = By.id("descriptionId");
 	private By ByLupa = By.id("entityCuitId");
 	private By ByResultadoCuit = By.xpath("//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[4]/div/table/tbody/tr/td[2]");
@@ -54,20 +53,20 @@ public class BusquedaDeEntidad {
 		WebDriverWait wait3=new WebDriverWait(driver, 60);
 		WebElement BEcuitCuil;
 		BEcuitCuil= wait3
-				.until(ExpectedConditions //presenceOfElementLocated
-						.presenceOfElementLocated(ByBusquedaCuitID));//elementToBeClickable
+				.until(ExpectedConditions
+						.presenceOfElementLocated(ByBusquedaCuitID));
 		BEcuitCuil.click();
 		BEcuitCuil.clear();
 		BEcuitCuil.sendKeys(BusquedaCuit.trim());
 	}
 
 	public void check() throws InterruptedException {
-		WebDriverWait wait4=new WebDriverWait(driver, 60);
+		WebDriverWait wait4=new WebDriverWait(driver, 160);
 		WebElement BEcheck;
 		BEcheck= wait4
 				.until(ExpectedConditions
-						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[3]/table/tbody/tr")));
-		BEcheck.click();
+						.elementToBeClickable(ByDescripcionID));
+		BEcheck.sendKeys(Keys.TAB, Keys.TAB, Keys.SPACE);
 	}
 	
 	public void botonBusqueda() throws InterruptedException {
@@ -80,12 +79,11 @@ public class BusquedaDeEntidad {
 	}
 
 	public void ConfirmarEntidad() throws InterruptedException {
-		WebDriverWait wait6=new WebDriverWait(driver, 60);
+		WebDriverWait wait6=new WebDriverWait(driver, 160);
 		WebElement BEConfirmar;
 		BEConfirmar= wait6
-				.until(ExpectedConditions
-						.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button")));
-		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[4]/div[2]/div/button
+				.until(ExpectedConditions               //*[@id="mat-dialog-2"]/app-entidad/div/div/div[4]/div[2]/div/button - //*[@id=\"mat-dialog-0\"]/app-entidad/div/div/div[4]/div[2]/div/button
+						.elementToBeClickable(By.xpath("//div[4]/div[2]/div/button")));
 		BEConfirmar.click();
 	}
 	
@@ -93,15 +91,11 @@ public class BusquedaDeEntidad {
 		WebDriverWait wait7=new WebDriverWait(driver, 60);
 		WebElement BEUltimaPagina;
 		BEUltimaPagina= wait7
-				.until(ExpectedConditions
+				.until(ExpectedConditions 
 						.elementToBeClickable(By.xpath("//button[@class='mat-paginator-navigation-last mat-icon-button ng-star-inserted']")));
-		
-		
 		BEUltimaPagina.click();
 	}
-	//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]  mat-checkbox-1
 	
-	//*[@id=\'mat-dialog-0\']/app-entidad/div/div/div[3]/table/tbody/tr[last()][5]"
 	public void checkboxLast() throws InterruptedException {
 		WebDriverWait wait18=new WebDriverWait(driver, 60);
 		WebElement BECheckLast;
@@ -111,16 +105,6 @@ public class BusquedaDeEntidad {
 						.elementToBeClickable(By.id("mat-checkbox-1")));
 		BECheckLast.sendKeys(Keys.TAB);
 	}
-	
-//	public void checkboxLast() throws InterruptedException {
-//		WebDriverWait wait18=new WebDriverWait(driver, 60);
-//		WebElement BECheckLast;
-//		BECheckLast= wait18
-//				.until(ExpectedConditions               //*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]
-//									             		//*[@id="mat-dialog-0"]/app-entidad/div/div/div[3]/table/tbody/tr[1]/td[1]
-//						.elementToBeClickable(By.xpath("//*[@id='mat-dialog-0']/app-entidad/div/div/div[4]/div/table/tbody/tr[last()]/td[1]")));
-//		BECheckLast.click();
-//	}
 	
 	public void lupaPopup() {
 		WebDriverWait wait9=new WebDriverWait(driver, 90);
@@ -178,7 +162,7 @@ public class BusquedaDeEntidad {
 				.until(ExpectedConditions
 						.elementToBeClickable(ByResponsablePopUp));
 		buscar.isDisplayed();
-		System.out.println("Boton busqueda es visible: " + buscar);
+		//System.out.println("Boton busqueda es visible: " + buscar);
 	}
 	
 	public void validarResposableGrupoFamiliar() {
@@ -187,11 +171,6 @@ public class BusquedaDeEntidad {
 		//assertEquals(checkValorResponsable, "Grupo Familiar", "No se encontre el valor: ");
 	}
 	
-//	public void validarResultadoDescripcionTest3 () {
-//		String checkRestDescripcion = this.driver.findElement(ByDescripcionResultado).getText();
-//		System.out.println("Resultado encontrado: " + checkRestDescripcion);
-//		assertEquals(checkRestDescripcion, "QUITRAL COM S.A.", "No se encontre el valor: ");
-//	}
 	public void validarResultadoDescripcionTest3 () {
 		String checkRestDescripcion = this.driver.findElement(ByDescripcionResultado).getAttribute("value");
 		System.out.println("Resultado encontrado: " + checkRestDescripcion);

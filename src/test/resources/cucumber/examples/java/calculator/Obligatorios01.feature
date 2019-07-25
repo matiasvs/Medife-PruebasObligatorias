@@ -124,8 +124,6 @@ Feature: Pruebas critidad: Obligatorio
   Scenario: Test 08 - Validar Boton Buscador de Entidades
     		Asociados segun seleccion tipo de responsable = Grupo Familiar
 
-		#nuevo
-
     Given Ingreso al sitio Sume
     And Ingreso de usuario
     And Ingreso de password
@@ -171,14 +169,13 @@ Feature: Pruebas critidad: Obligatorio
       | Responsable | Descripcion                             |
       | Grupo       | TIERRA COOP DE TRAB. VIV. Y CONS. LTDA. |
 
-  Scenario Outline: Test 11 - Validar Funcionamiento de la Pantalla de
-    								Resultados del Buscador de Entidades. Bot�n Seleccionar 1 registro
+  Scenario Outline: Test 11 - Validar Funcionamiento de la Pantalla de Resultados del Buscador de Entidades. Boton Seleccionar 1 registro
 
     Given Ingreso al sitio Sume
     And Ingreso de usuario
     And Ingreso de password
     And Pantalla Alta de responsable de pago desplegada
-    And A Seleccion Empresa <Responsable>
+    And A Seleccion Grupo Familiar "Grupo familiar"
     Then Se habilita el boton del Buscador que permitira la seleccion de entidades
     And Ingreso de cuit <CuitCuil>
     And Ingreso de descripcion <Descripcion>
@@ -190,10 +187,10 @@ Feature: Pruebas critidad: Obligatorio
     Then La aplicacion cierra la ventana Buscador de Entidades y los datos seleccionados se visualizan ingresados en la pantalla Alta de Responsable de Pago no permitiendo su edicion
     And Apagar el sistema
 
-    #canbio no se puede ver fecha en busqueda
+    #cambio no se puede ver fecha en busqueda - 27060599071
     Examples: 
       | Responsable | Descripcion | CuitCuil    | FechaDeVigencia |
-      | Grupo       | RETEGUI     | 27060599071 | 15/06/2019      |
+      | Grupo       | SOSA     | 20301016310 | 15/06/2019      |
 
   #Scenario Outline: Test 12 - Validar comportamiento de la pantalla segun seleccion
    # 								tipo de responsable = Externo
@@ -295,9 +292,8 @@ Feature: Pruebas critidad: Obligatorio
     And Pantalla Alta de responsable de pago desplegada
     And A Seleccion Empresa <Responsable>  
     Then Se habilita el boton del Buscador que permitira la seleccion de entidades
-      
     
-      
-      
-      
-      
+    Examples: 
+      | Responsable | CuitCuil     |
+      | Externo         | 20/336898243 |
+    
