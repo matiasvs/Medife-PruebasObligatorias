@@ -44,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 24, 2019 06:17:21 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 25, 2019 10:15:03 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -117,10 +117,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -131,10 +131,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='97.826%'><span class='strong'>45</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='98.667%'><span class='strong'>74</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='2.174%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.333%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,12 +155,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Pruebas critidad: Obligatorio</span>
-						<span class='test-time'>Jul 24, 2019 06:17:21 PM</span>
+						<span class='test-time'>Jul 25, 2019 10:15:03 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 32s+168ms</span>
+	<span class='duration right label'>0h 0m 39s+893ms</span>
 	<div class='desc'>
 		<h6 class="desc-text">Scenario: Test 01 - Validar la lista desplegable del combo</h6>
 		Tipo de Responsable
@@ -213,7 +213,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='14' status='pass'>
-	<span class='duration right label'>0h 0m 22s+563ms</span>
+	<span class='duration right label'>0h 0m 19s+895ms</span>
 	<div class='desc'>
 		<h6 class="desc-text">Scenario: Test 02 - Validar comportamiento de la pantalla</h6>
 		segun seleccion tipo de responsable = Empresa
@@ -253,8 +253,8 @@
 		</li>
 	</ul>
 </div>
-<div class='scenariooutline node' test-id='23' status='fail'>
-	<span class='duration right label'>0h 0m 49s+720ms</span>
+<div class='scenariooutline node' test-id='23' status='pass'>
+	<span class='duration right label'>0h 1m 18s+513ms</span>
 	<div class='desc'>
 		<h6 class="desc-text">ScenarioOutline: Test 03 - Validar Buscador de Entidades segun criterio</h6>
 		de busqueda Con Resultado y validacion que unicamente visualice Empresas<table class='runtime-table table-striped table'><tr><td>Responsable</td><td>Descripcion</td><td>CuitCuil</td></tr><tr><td>Empresa</td><td>NALCO ARGENTINA SA</td><td>30587375296</td></tr></table><table class='runtime-table table-striped table'><tr><td>Responsable</td><td>Descripcion</td><td>CuitCuil</td></tr><tr><td>Empresa</td><td>NALCO</td><td>30587375296</td></tr></table><table class='runtime-table table-striped table'><tr><td>tipoResponsable</td><td>Descripcion</td><td>CuitCuil</td></tr><tr><td>Empresa</td><td>BALDINI MARTINEZ Y ASOCIADOS</td><td>30709492817</td></tr></table>
@@ -372,81 +372,178 @@
 					</li>
 			</ul>
 		</li>
-		<li test-id='51' class='node scenario fail' status='fail'>
+		<li test-id='51' class='node scenario pass' status='pass'>
 			<h6 class="bdd-step-name">Scenario: Test 05 - Validar Funcionamiento de la Pantalla de</h6>
 			Resultados del Buscador de Entidades Bot?n Seleccionar 1 registro
 			<ul class='gc steps'>
-					<li test-id='52' class='gc given fail' status='fail'>
+					<li test-id='52' class='gc given pass' status='pass'>
 						<h6 class="bdd-step-name">Given: Given Ingreso al sitio Sume</h6>
-							<pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
+							Step passed
+					</li>
+					<li test-id='53' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
+							Step passed
+					</li>
+					<li test-id='54' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Ingreso de password</h6>
+							Step passed
+					</li>
+					<li test-id='55' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Pantalla Alta de responsable de pago desplegada</h6>
+							Step passed
+					</li>
+					<li test-id='56' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And A Seleccion Empresa "Empresa"</h6>
+							Step passed
+					</li>
+					<li test-id='57' class='gc then pass' status='pass'>
+						<h6 class="bdd-step-name">Then: Then Se habilita el boton del Buscador que permitira la seleccion de entidades</h6>
+							Step passed
+					</li>
+					<li test-id='58' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Ingreso de cuit 30709492817</h6>
+							Step passed
+					</li>
+					<li test-id='59' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Ingreso de descripcion BALDINI MARTINEZ Y ASOCIADOS</h6>
+							Step passed
+					</li>
+					<li test-id='60' class='gc when pass' status='pass'>
+						<h6 class="bdd-step-name">When: When Selecciono boton busqueda de entidad en PopUp</h6>
+							Step passed
+					</li>
+					<li test-id='61' class='gc when pass' status='pass'>
+						<h6 class="bdd-step-name">When: When Seleccionar valor con checkbox</h6>
+							Step passed
+					</li>
+					<li test-id='62' class='gc when pass' status='pass'>
+						<h6 class="bdd-step-name">When: When Seleccionar boton confirmar entidad</h6>
+							Step passed
+					</li>
+					<li test-id='63' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Se cierra el popUp de busqueda de entidad</h6>
+							Step passed
+					</li>
+					<li test-id='64' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Los valores seleccionados se cargan en Alta de responsable</h6>
+							Step passed
+					</li>
+					<li test-id='65' class='gc then pass' status='pass'>
+						<h6 class="bdd-step-name">Then: Then validando los valores de los campos razon social y cuit</h6>
+							Step passed
+					</li>
+					<li test-id='66' class='gc and pass' status='pass'>
+						<h6 class="bdd-step-name">And: And Apagar el sistema</h6>
+							Step passed
+					</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='67' status='pass'>
+	<span class='duration right label'>0h 0m 20s+718ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Test 07 - Validar comportamiento de la pantalla segun</h6>
+		seleccion tipo de responsable = Grupo Familiar
+	</div>
+	<ul class='steps'>
+		<li test-id='68' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">Given: Given Ingreso al sitio Sume</h6>
+				Step passed
+		</li>
+		<li test-id='69' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
+				Step passed
+		</li>
+		<li test-id='70' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de password</h6>
+				Step passed
+		</li>
+		<li test-id='71' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Pantalla Alta de responsable de pago desplegada</h6>
+				Step passed
+		</li>
+		<li test-id='72' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And A Seleccion Empresa "Grupo"</h6>
+				Step passed
+		</li>
+		<li test-id='73' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Se habilita el boton del Buscador que permitira la seleccion de entidades</h6>
+				Step passed
+		</li>
+		<li test-id='74' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Apagar el sistema</h6>
+				Step passed
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='75' status='fail'>
+	<span class='duration right label'>0h 0m 47s+770ms</span>
+	<div class='desc'>
+		<h6 class="desc-text">Scenario: Test 08 - Validar Boton Buscador de Entidades</h6>
+		Asociados segun seleccion tipo de responsable = Grupo Familiar
+	</div>
+	<ul class='steps'>
+		<li test-id='76' class='node given pass' status='pass'>
+			<h6 class="bdd-step-name">Given: Given Ingreso al sitio Sume</h6>
+				Step passed
+		</li>
+		<li test-id='77' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
+				Step passed
+		</li>
+		<li test-id='78' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Ingreso de password</h6>
+				Step passed
+		</li>
+		<li test-id='79' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Pantalla Alta de responsable de pago desplegada</h6>
+				Step passed
+		</li>
+		<li test-id='80' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And A Seleccion Empresa "Grupo"</h6>
+				Step passed
+		</li>
+		<li test-id='81' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then Se habilita el boton del Buscador que permitira la seleccion de entidades</h6>
+				Step passed
+		</li>
+		<li test-id='82' class='node then pass' status='pass'>
+			<h6 class="bdd-step-name">Then: Then La aplicacion despliega la ventana Buscador de entidades Mostrando los siguientes campos: #validarPopUp</h6>
+				Step passed
+		</li>
+		<li test-id='83' class='node then fail' status='fail'>
+			<h6 class="bdd-step-name">Then: Then Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil</h6>
+				<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='mat-dialog-0']/app-entidad/div/mat-toolbar"}
   (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Equipo-PC', ip: '10.5.222.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_212'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x014A1B43+1448771]
-	Ordinal0 [0x01425A31+940593]
-	Ordinal0 [0x013B213C+467260]
-	Ordinal0 [0x013ABB2E+441134]
-	Ordinal0 [0x013AC1C8+442824]
-	Ordinal0 [0x013AD275+447093]
-	Ordinal0 [0x013A9515+431381]
-	Ordinal0 [0x013B2EF0+470768]
-	Ordinal0 [0x013694BE+169150]
-	Ordinal0 [0x013688DD+166109]
-	Ordinal0 [0x01366FEB+159723]
-	Ordinal0 [0x013509F6+68086]
-	Ordinal0 [0x01351990+72080]
-	Ordinal0 [0x01351929+71977]
-	GetHandleVerifier [0x015E2E8C+1172172]
-	GetHandleVerifier [0x0153FE55+504469]
-	GetHandleVerifier [0x0153FBF0+503856]
-	Ordinal0 [0x014AC9C8+1493448]
-	GetHandleVerifier [0x0154062A+506474]
-	Ordinal0 [0x01437156+1012054]
-	Ordinal0 [0x01436FCF+1011663]
-	Ordinal0 [0x0144135B+1053531]
-	Ordinal0 [0x014414C3+1053891]
-	Ordinal0 [0x014404F5+1049845]
-	BaseThreadInitThunk [0x761D343D+18]
-	RtlInitializeExceptionChain [0x77979802+99]
-	RtlInitializeExceptionChain [0x779797D5+54]
-
+System info: host: 'EQUIPO-PC', ip: '10.5.222.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Equipo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cd28ba24bec730051fc35df4120517a5
+*** Element info: {Using=xpath, value=//*[@id='mat-dialog-0']/app-entidad/div/mat-toolbar}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at cucumber.examples.java.calculator.Steps01.ingreso_al_sitio_Sume(Steps01.java:35)
-	at ?.Ingreso al sitio Sume(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:78)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at cucumber.examples.java.calculator.pageobjects.BusquedaDeEntidad.validarTituloPopup(BusquedaDeEntidad.java:159)
+	at cucumber.examples.java.calculator.Steps01.solo_lectura_Tipo_de_Entidad_Grupo_Familiar_habilitados_para_el_ingreso_de_datos_descripcion_cuit_cuil(Steps01.java:274)
+	at ?.Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:136)
 </pre>
-					</li>
-					<li test-id='53' class='gc and pass' status='pass'>
-						<h6 class="bdd-step-name">And: And Ingreso de usuario</h6>
-					</li>
-			</ul>
+		</li>
+		<li test-id='84' class='node and pass' status='pass'>
+			<h6 class="bdd-step-name">And: And Apagar el sistema</h6>
 		</li>
 	</ul>
 </div>
@@ -493,7 +590,7 @@ remote stacktrace: Backtrace:
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -508,72 +605,35 @@ remote stacktrace: Backtrace:
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 24, 2019 06:18:58 PM</td>
-										<td class='linked' test-id='52'>Pruebas critidad: Obligatorio.Test 03 - Validar Buscador de Entidades segun criterio.Test 05 - Validar Funcionamiento de la Pantalla de.Given Ingreso al sitio Sume</td>
+										<td>Jul 25, 2019 10:18:00 AM</td>
+										<td class='linked' test-id='83'>Pruebas critidad: Obligatorio.Test 08 - Validar Boton Buscador de Entidades.Then Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil</td>
 										<td>
-											<pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
+											<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='mat-dialog-0']/app-entidad/div/mat-toolbar"}
   (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Equipo-PC', ip: '10.5.222.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_212'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x014A1B43+1448771]
-	Ordinal0 [0x01425A31+940593]
-	Ordinal0 [0x013B213C+467260]
-	Ordinal0 [0x013ABB2E+441134]
-	Ordinal0 [0x013AC1C8+442824]
-	Ordinal0 [0x013AD275+447093]
-	Ordinal0 [0x013A9515+431381]
-	Ordinal0 [0x013B2EF0+470768]
-	Ordinal0 [0x013694BE+169150]
-	Ordinal0 [0x013688DD+166109]
-	Ordinal0 [0x01366FEB+159723]
-	Ordinal0 [0x013509F6+68086]
-	Ordinal0 [0x01351990+72080]
-	Ordinal0 [0x01351929+71977]
-	GetHandleVerifier [0x015E2E8C+1172172]
-	GetHandleVerifier [0x0153FE55+504469]
-	GetHandleVerifier [0x0153FBF0+503856]
-	Ordinal0 [0x014AC9C8+1493448]
-	GetHandleVerifier [0x0154062A+506474]
-	Ordinal0 [0x01437156+1012054]
-	Ordinal0 [0x01436FCF+1011663]
-	Ordinal0 [0x0144135B+1053531]
-	Ordinal0 [0x014414C3+1053891]
-	Ordinal0 [0x014404F5+1049845]
-	BaseThreadInitThunk [0x761D343D+18]
-	RtlInitializeExceptionChain [0x77979802+99]
-	RtlInitializeExceptionChain [0x779797D5+54]
-
+System info: host: 'EQUIPO-PC', ip: '10.5.222.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Equipo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cd28ba24bec730051fc35df4120517a5
+*** Element info: {Using=xpath, value=//*[@id='mat-dialog-0']/app-entidad/div/mat-toolbar}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at cucumber.examples.java.calculator.Steps01.ingreso_al_sitio_Sume(Steps01.java:35)
-	at ?.Ingreso al sitio Sume(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:78)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at cucumber.examples.java.calculator.pageobjects.BusquedaDeEntidad.validarTituloPopup(BusquedaDeEntidad.java:159)
+	at cucumber.examples.java.calculator.Steps01.solo_lectura_Tipo_de_Entidad_Grupo_Familiar_habilitados_para_el_ingreso_de_datos_descripcion_cuit_cuil(Steps01.java:274)
+	at ?.Solo lectura Tipo de Entidad Grupo Familiar habilitados para el ingreso de datos: descripcion cuit cuil(src/test/resources/cucumber/examples/java/calculator/Obligatorios01.feature:136)
 </pre>
 										</td>
 									</tr>
@@ -605,25 +665,25 @@ remote stacktrace: Backtrace:
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>46</div>
+					<div class='panel-lead'>75</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 24, 2019 06:17:21 PM</div>
+					<div class='panel-lead'>Jul 25, 2019 10:15:03 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 24, 2019 06:17:21 PM</div>
+			 		<div class='panel-lead'>Jul 25, 2019 10:15:03 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -648,7 +708,7 @@ remote stacktrace: Backtrace:
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 4,
+				passChild: 6,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
@@ -658,7 +718,7 @@ remote stacktrace: Backtrace:
 				debugChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 45,
+				passGrandChild: 74,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -671,7 +731,7 @@ remote stacktrace: Backtrace:
 		</script>
 		<script>
 			var timeline = {
-			        "Pruebas critidad: Obligatorio":104.46
+			        "Pruebas critidad: Obligatorio":206.793
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>
